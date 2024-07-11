@@ -1,18 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>	
@@ -31,97 +17,27 @@
 <defs>
 <style>
 
- body {
+
+body {
     background-color: white;
+
+    zoom: 0.85;
   }
 
-	
-	
-  /* Dark Mode Styles */
-  body.dark-mode,
-  body.dark-mode * {
-    color: #f2f2f2;
-  }
 
-  body.dark-mode {
-    background-color: #0F0F0E;
-  }
-
-  /* Override specific element styles for dark mode */
-  body.dark-mode table {
-    /* Override table background color */
-    background-color: #333333;
-  }
-
-  body.dark-mode th
-  body.dark-mode td {
-    /* Override table cell text color */
-    color: #f2f2f2;
-  }
-
- body.dark-mode .metrics-table th {
-  color: #bcbcbc;
-  padding: 9px;
-}
+body, html {
+            margin: 0;
+            padding: 0;
+        }
 
 svg text.label {
     /* Override SVG text color */
     fill: #bcbcbc;
-font-size: 12px;
+font-size: 17.7px;
   }
 
 
-
-  body.dark-mode svg text.label {
-    /* Override SVG text color */
-    fill: #bcbcbc;
-  }
-
-
-
-  body.dark-mode svg text.label {
-    /* Override SVG text color */
-    fill: #bcbcbc;
-  }
-
-body.dark-mode button {
-  /* Override button background color */
-  background-color: #333333;
-}
-
-body.dark-mode button,
-body.dark-mode button:focus {
-  /* Override button text color */
-  color: #f2f2f2;
-}
-
-body.dark-mode button:hover {
-  /* Preserve button hover property */
-  color: initial;
-}
-
-body.dark-mode .button-8 {
-  /* Override button background color */
-  background-color: #13293d; /* Dark blue color */
-  color: #f2f2f2; /* Off-white color */
-}
-
-body.dark-mode .button-8:hover,
-body.dark-mode .button-8:focus {
-  /* Override button hover and focus state */
-  background-color: #3a6ea5; /* Darker blue color */
-  color: #f2f2f2; /* Off-white color */
-}
-
-body.dark-mode .button-8:hover,
-body.dark-mode .button-8:focus {
-  /* Override button hover and focus state */
-  background-color: #3a6ea5; /* Darker blue color */
-  color: #f2f2f2; /* Off-white color */
-}
-
-
-.dark-mode-toggle {
+  .dark-mode-toggle {
     position: absolute;
     top: 15.3px;
     left: 93%;
@@ -137,355 +53,23 @@ body.dark-mode .button-8:focus {
   }
 
 
-.dark-mode-toggle .toggle-icon::before {
-  font-family: "Ionicons";
-  content: "\f467"; /* Unicode value for the moon icon in Ionicons */
-  font-size: 35px; /* Adjust the value as needed */
+  .button-10 {
+
+position: absolute;
+top: 61px;
+left: 93%;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 40.1px;
+height: 40.1px;
+border-radius: 50%;
+background-color: #e0e0de;
+color: #333;
+border: 0.1px solid #ccc;
+cursor: pointer;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
-
-body.dark-mode .dark-mode-toggle {
-  background-color: #333333;
-}
-
-
-
-body.dark-mode .dark-mode-toggle .toggle-icon::before {
-  font-family: "Ionicons";
-  content: "\f3b0"; /* Unicode value for the sun icon in Ionicons */
-  font-size: 24px; /* Adjust the value as needed */
-}
-
-
-
-body.dark-mode .toggle-slider {
-  background-color: #2B2C2E; /* Darker background color for dark mode */
-}
-
-body.dark-mode input:checked + .toggle-slider:before {
-  background-color: #ccc; /* Darker background color for dark mode */
-}
-
-
-body.dark-mode .button-10 {
-  border: 0.1px solid #000000; /* Darker background color for dark mode */
-}
-
-
-	
- .button-10 {
-
-    position: absolute;
-    top: 65.3px;
-    left: 93%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40.1px;
-    height: 40.1px;
-    border-radius: 50%;
-  background-color: #e0e0de;
-  color: #333;
-  border: 0.1px solid #ccc;
-  cursor: pointer;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  }
-
-.icon2::before {
-  content: "\f118";
-  font-family: "Ionicons"; /* Replace with the appropriate font */
-font-size: 22px;
-}
-
-
-.icon3::before {
-  content: "\f448";
-  font-family: "Ionicons"; /* Replace with the appropriate font */
-font-size: 22px;
-}
-
-
-body.dark-mode #searchInput1 {
-    color: #000; /* Specify the desired text color for dark mode */
-background-color : #999;
-  }
-	
- body.dark-mode	  #searchInput1::placeholder {
-    color: #fff; /* Specify the desired color for the placeholder text */
-  }
-
- body.dark-mode	  #searchButton1 {
-    color: #fff !important; /* Specify the desired color for the placeholder text */
-background-color : #333333;
-  }
-
-.button-1 {
-  align-items: center;
-height: 20px;
-  background-color: #F9F9F9;
-  border-radius: 6px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  color: #121212;
-  cursor: pointer;
-  display: inline-flex;
-  flex: 1 1 auto;
-  font-family: Inter,sans-serif;
-  font-size: 0.82rem;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1;
-  margin: 0;
-  outline: none;
-  padding: 1rem 1.2rem;
-  text-align: center;
-  text-decoration: none;
-  transition: box-shadow .1s,-webkit-box-shadow .1s;
-  white-space: nowrap;
-  border: 0;
-  user-select: none;
-  position: absolute;
-  top: 15px;
-  left: 15px;
-width: 85px; 
- 
-  touch-action: manipulation;
-}
-
-.button-1:hover {
-   box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
-}
-
-.button-2 {
-  align-items: center;
-  background-color: #F9F9F9;
-  border-radius: 6px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  color: #121212;
-  cursor: pointer;
-  display: inline-flex;
-  flex: 1 1 auto;
-  font-family: Inter,sans-serif;
-  font-size: 0.82rem;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1;
-  margin: 0;
-  outline: none;
-  padding: 1rem 1.2rem;
-  text-align: center;
-  text-decoration: none;
-  transition: box-shadow .1s,-webkit-box-shadow .1s;
-  white-space: nowrap;
-  border: 0;
-  user-select: none;
-  position: absolute;
-  top: 15px;
-  left: 115px;
-height: 20px;
-width: 85px; 
- 
-  touch-action: manipulation;
-}
-
-.button-2:hover {
-   box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
-}
-
-.button-3 {
-  align-items: center;
-height: 20px;
-  background-color: #F9F9F9;
-  border-radius: 6px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  color: #121212;
-  cursor: pointer;
-  display: inline-flex;
-  flex: 1 1 auto;
-  font-family: Inter,sans-serif;
-  font-size: 0.82rem;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1;
-  margin: 0;
-  outline: none;
-  padding: 1rem 1.2rem;
-  text-align: center;
-  text-decoration: none;
-  transition: box-shadow .1s,-webkit-box-shadow .1s;
-  white-space: nowrap;
-  border: 0;
-  user-select: none;
-  position: absolute;
-  top: 15px;
-  left: 215px;
-width: 85px; 
- 
-  touch-action: manipulation;
-}
-
-.button-3:hover {
-   box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
-}
-
-
-	
-body.dark-mode .button-4 {
-  /* Override button background color */
-  background-color: #646464;
-}
-	
-.button-4 {
-  align-items: center;
-  background-color: #e7e4e4;
-  border-radius: 6px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.24);
-  box-sizing: border-box;
-  color: #121212;
-  cursor: pointer;
-  display: inline-flex;
-  flex: 1 1 auto;
-  font-family: Inter,sans-serif;
-  font-size: 0.82rem;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1;
-  margin: 0;
-  outline: none;
-  padding: 1rem 1.2rem;
-  text-align: center;
-  text-decoration: none;
-  transition: box-shadow .1s,-webkit-box-shadow .1s;
-  white-space: nowrap;
-  border: 0;
-  user-select: none;
-  position: absolute;
-  top: 15px;
-  left: 315px;
-height: 20px;
-width: 85px; 
- 
-  touch-action: manipulation;
-}
-
-.button-4:hover {
-   box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 3px;
-}
-
-
-
-.button-5 {
-  align-items: center;
-height: 20px;
-  background-color: #F9F9F9;
-  border-radius: 6px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  color: #121212;
-  cursor: pointer;
-  display: inline-flex;
-  flex: 1 1 auto;
-  font-family: Inter,sans-serif;
-  font-size: 0.82rem;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1;
-  margin: 0;
-  outline: none;
-  padding: 1rem 1.2rem;
-  text-align: center;
-  text-decoration: none;
-  transition: box-shadow .1s,-webkit-box-shadow .1s;
-  white-space: nowrap;
-  border: 0;
-  user-select: none;
-  position: absolute;
-  top: 15px;
-  left: 415px;
-width: 85px; 
- 
-  touch-action: manipulation;
-}
-
-.button-5:hover {
-   box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
-}
-
-.button-6 {
-  align-items: center;
-  background-color: #F9F9F9;
-  border-radius: 6px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  color: #121212;
-  cursor: pointer;
-  display: inline-flex;
-  flex: 1 1 auto;
-  font-family: Inter,sans-serif;
-  font-size: 0.82rem;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1;
-  margin: 0;
-  outline: none;
-  padding: 1rem 1.2rem;
-  text-align: center;
-  text-decoration: none;
-  transition: box-shadow .1s,-webkit-box-shadow .1s;
-  white-space: nowrap;
-  border: 0;
-  user-select: none;
-  position: absolute;
-  top: 15px;
-  left: 515px;
-height: 20px;
-width: 85px; 
- 
-  touch-action: manipulation;
-}
-
-.button-6:hover {
-   box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
-}
-
-
-.button-9 {
-  align-items: center;
-  background-color: #e0e0de;
-  border-radius: 25px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  color: #121212;
-  cursor: pointer;
-  display: inline-flex;
-  flex: 1 1 auto;
-  font-family: Inter,sans-serif;
-  font-size: 1.82rem;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1;
-  margin: 0;
-  outline: none;
-  padding: 0.1rem;
-  text-align: center;
-  text-decoration: none;
-  transition: box-shadow .1s,-webkit-box-shadow .1s;
-  white-space: nowrap;
-  border: 0;
-  user-select: none;
-  position: absolute;
-  top: 10px;
-  left: 878px;
-  width: 50px; 
- 
-  touch-action: manipulation;
-}
-
-.button-9:hover {
-  box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
-}
-
 
 
 
@@ -920,32 +504,6 @@ fill-opacity: 0.02;
 }
 
 
-           
-svg:nth-of-type(1) {
-  position: absolute;
-  top: 297px;
-  left: -26px;
-  width: 758px;
-  height: 758px;
-}
-
-svg:nth-of-type(2) {
-  position: absolute;
-  top: 367px;
-  left: 58px;
-
-}
-
-
-table {
-   border-collapse: collapse;
-  width: 200px;
-  font-family: Arial;
-  border-radius: 10px;
- ;
- 
-}
-
 
 
 
@@ -954,12 +512,8 @@ table {
 #searchInput1 {
   width: 440px;
 height: 35px;
-Margin-left: 5px;
 }
 
-#searchInput1::placeholder {
-    font-size : 18px; /* Specify the desired color for the placeholder text */
-  }
 
 
 #searchButton1 {
@@ -967,29 +521,8 @@ Margin-left: 5px;
 color: black !important;
 height: 39px;
 cursor: pointer;
+
 }
-
-
-	.name {
-  font-family: Arial, sans-serif !important;
-font-size: 13px;
-position: relative;
-top: 10px;
-  color: black !important;
-cursor: pointer;
-}
-
-.dark-mode .matching-names-container {
-  background-color: grey;
-}
-
-td {
-    font-weight: bold;
-  }
-  th {
-    font-weight: normal;
-  }
-
 
 
 
@@ -999,8 +532,8 @@ td {
       align-items: center;
       justify-content: center;
 position: absolute;
-  top: 976px;
-  left: 590px;
+  top: 650px;
+  left: 650px;
  width: 120px; 
     }
 
@@ -1051,7 +584,47 @@ position: absolute;
       transform: translateX(20px);
     }
 
-	
+
+
+
+.icon2::before {
+  content: "\f118";
+  font-family: "Ionicons"; /* Replace with the appropriate font */
+font-size: 22px;
+}
+
+.icon3::before {
+  content: "\f448";
+  font-family: "Ionicons"; /* Replace with the appropriate font */
+font-size: 22px;
+}
+
+
+
+  #searchInput1::placeholder {
+    font-size : 18px; 
+  }
+
+
+.name {
+font-family: Arial, sans-serif !important;
+font-size: 13px;
+position: relative;
+top: 10px;
+color: black !important;
+cursor: pointer;
+}
+
+
+
+td {
+    font-weight: bold;
+  }
+  th {
+    font-weight: normal;
+  }
+
+
 .icon::before {
   content: "\f21c";
   font-family: "Ionicons"; /* Replace with the appropriate font */
@@ -1059,182 +632,571 @@ font-size: 22px;
 }		
 
 
+table {
+   border-collapse: collapse;
+  width: 200px;
+  font-family: Arial;
+  border-radius: 10px;
+}
+
 .metrics-table {
   background-color: #f2f2f2;
   font-family: Arial, sans-serif;
   font-size: 12px;
+  width: 770px;
+  table-layout: fixed; /* Ensures fixed table layout */
+  border-collapse: collapse; /* Removes extra space between cells */
 }
 
+/* Header Cells */
 .metrics-table th {
   color: #000000;
   padding: 6px 9px;
-font-size: 11px;
+  font-size: 11px;
   text-align: center;
+  overflow: hidden; 
 }
 
+/* Data Cells */
 .metrics-table td {
   padding: 4px 11px;
-text-align: center;
+  text-align: center;
+  word-wrap: break-word; /* Break long words */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* First Column */
+.metrics-table th:nth-child(1),
+.metrics-table td:nth-child(1) {
+  width: 90px; /* Fixed width for the first column */
+}
+
+/* Second Column */
+.metrics-table th:nth-child(2),
+.metrics-table td:nth-child(2) {
+  width: 95px; /* Fixed width for the second column */
+}
+
+/* Second Column */
+.metrics-table th:nth-child(3),
+.metrics-table td:nth-child(3) {
+  width: 20px; /* Fixed width for the second column */
 }
 
 
+/* First Cell in Header Row */
 tr:first-child th:first-child {
   color: #5b5b5b;
-font-weight: bold;
-font-size: 12px;
- 
-}
-
-.header {
-  font-family: system-ui;
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header .logo {
-  display: flex;
-  align-items: center;
-}
-
-.header .logo {
-    position: relative; /* Add this to make the logo a positioning context */
-}
-
-.header .logo img {
-    /* Styles for the logo image inside the header */
-    width: 40px;
-    height: 40px;
-    opacity: 0.84;
-    position: absolute;
-    top: -10px; /* Adjust top and left values as needed to position the logo image */
-    left: -7px;
+  font-weight: bold;
+  font-size: 12px;
+  word-wrap: break-word; /* Break long words */
+  overflow: hidden; /* Hide overflow content */
 }
 
 
-.header .logo-text {
-  margin-left: 40px;
-  font-size: 20px;
-color: #444444;
-  font-weight: 600;
+
+
+
+  
+svg:nth-of-type(1) {
+  width: 700px;
+  height: 700px;
 }
 
-.header .navigation {
-  display: center;
-  align-items: center;
-      word-spacing: 1.3em; /* Adjust the spacing as needed */	
 
+.searchcontainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+	  margin-left: 13px;
+            margin-top: 47px;
+	
 }
 
-.header .button {
-  margin: 0 10px;
-  padding: 0px 20px;
-  color: #444444;
-  text-decoration: none;
-  border-radius: 0px;
-font-size: 18px;
-}
 
-header a {
-      color: #444444;
-      text-decoration: none;
-
+.maxcontainer {
+position: absolute;
     }
 
-.header .header-svg {
-    /* Styles for the new SVG inside the header */
-    position: absolute;
-    top: 27px; /* Adjust top and left values as needed to position the new SVG */
-    left: 95%;
-    width: 30px;
-    height: 28px;
-color: #444444;
+
+.screenshotcontainer {
+   margin-left: 8px;
+  }
+        
+
+.similar-table {
+  position: absolute;
+  left: 391px;
+  transform: translateX(-50%);
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  border-collapse: collapse; /* Removes extra space between cells */
+}
+
+.similar-table th,
+.similar-table td {
+  text-align: center;
+  white-space: normal; /* Allows text to wrap */
+  width: auto;
+
+}
+
+/* Header Cells */
+.similar-table th {
+  color: #000000;
+  padding: 6px 9px;
+  font-size: 11px;
+  overflow: hidden; 
+}
+
+/* Data Cells */
+.similar-table td {
+  padding: 4px 11px;
 }
 
 
-body.dark-mode .header .twitter-link svg {
-  fill: #bcbcbc; /* Change the Twitter icon color to green in dark mode */
+
+
+.button-1 {
+  align-items: center;
+height: 20px;
+  background-color: #F9F9F9;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .1s,-webkit-box-shadow .1s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+width: 85px; 
+ 
+  touch-action: manipulation;
+}
+
+.button-1:hover {
+   box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
+}
+
+.button-2 {
+  align-items: center;
+  background-color: #F9F9F9;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .1s,-webkit-box-shadow .1s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  position: absolute;
+  top: 15px;
+  left: 115px;
+height: 20px;
+width: 85px; 
+ 
+  touch-action: manipulation;
+}
+
+.button-2:hover {
+   box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
+}
+
+.button-3 {
+  align-items: center;
+height: 20px;
+  background-color: #F9F9F9;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .1s,-webkit-box-shadow .1s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  position: absolute;
+  top: 15px;
+  left: 215px;
+width: 85px; 
+ 
+  touch-action: manipulation;
+}
+
+.button-3:hover {
+   box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
+}
+
+	
+.button-4 {
+  align-items: center;
+  background-color: #e7e4e4;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.24);
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .1s,-webkit-box-shadow .1s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  position: absolute;
+  top: 15px;
+  left: 315px;
+height: 20px;
+width: 85px; 
+ 
+  touch-action: manipulation;
+}
+
+.button-4:hover {
+   box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 3px;
 }
 
 
-body.dark-mode header a {
-  color: #bcbcbc; /* Change the Twitter icon color to green in dark mode */
+
+.button-5 {
+  align-items: center;
+height: 20px;
+  background-color: #F9F9F9;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .1s,-webkit-box-shadow .1s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  position: absolute;
+  top: 15px;
+  left: 415px;
+width: 85px; 
+ 
+  touch-action: manipulation;
 }
 
-body.dark-mode .header .button  {
-  color: #bcbcbc; /* Change the Twitter icon color to green in dark mode */
+.button-5:hover {
+   box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
 }
 
+.button-6 {
+  align-items: center;
+  background-color: #F9F9F9;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .1s,-webkit-box-shadow .1s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  position: absolute;
+  top: 15px;
+  left: 515px;
+height: 20px;
+width: 85px; 
+ 
+  touch-action: manipulation;
+}
+
+.button-6:hover {
+   box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
+}
+
+
+  /* DARK MODE */
+
+
+  body.dark-mode,
+  body.dark-mode * {
+    color: #f2f2f2;
+  }
+
+  body.dark-mode {
+    background-color: #0F0F0E;
+  }
+
+  /* Override specific element styles for dark mode */
+  body.dark-mode table {
+    /* Override table background color */
+    background-color: #333333;
+  }
+
+  body.dark-mode tr:first-child th:first-child {
+  color: #5b5b5b;
+  
+}
+
+  body.dark-mode th
+  body.dark-mode td {
+    /* Override table cell text color */
+    color: #f2f2f2;
+  }
+
+ body.dark-mode .metrics-table th {
+  color: #bcbcbc;
+  padding: 9px;
+}
+
+body.dark-mode #searchInput1 {
+    color: #000; /* Specify the desired text color for dark mode */
+background-color : #999;
+  }
+	
+ body.dark-mode	  #searchInput1::placeholder {
+    color: #fff; /* Specify the desired color for the placeholder text */
+  }
+
+ body.dark-mode	  #searchButton1 {
+    color: #fff !important; /* Specify the desired color for the placeholder text */
+background-color : #333333;
+  }
+
+
+
+.dark-mode .matching-names-container {
+  background-color: grey;
+}
+
+
+
+
+
+body.dark-mode button {
+  /* Override button background color */
+  background-color: #333333;
+}
+
+body.dark-mode button,
+body.dark-mode button:focus {
+  /* Override button text color */
+  color: #f2f2f2;
+}
+
+body.dark-mode button:hover {
+  /* Preserve button hover property */
+  color: initial;
+}
+
+body.dark-mode .button-8 {
+  /* Override button background color */
+  background-color: #13293d; /* Dark blue color */
+  color: #f2f2f2; /* Off-white color */
+}
+
+body.dark-mode .button-8:hover,
+body.dark-mode .button-8:focus {
+  /* Override button hover and focus state */
+  background-color: #3a6ea5; /* Darker blue color */
+  color: #f2f2f2; /* Off-white color */
+}
+
+
+
+
+.dark-mode-toggle .toggle-icon::before {
+  font-family: "Ionicons";
+  content: "\f467"; /* Unicode value for the moon icon in Ionicons */
+  font-size: 35px; /* Adjust the value as needed */
+}
+
+body.dark-mode .dark-mode-toggle {
+  background-color: #333333;
+}
+
+
+
+body.dark-mode .dark-mode-toggle .toggle-icon::before {
+  font-family: "Ionicons";
+  content: "\f3b0"; /* Unicode value for the sun icon in Ionicons */
+  font-size: 24px; /* Adjust the value as needed */
+}
+
+
+
+body.dark-mode .toggle-slider {
+  background-color: #2B2C2E; /* Darker background color for dark mode */
+}
+
+body.dark-mode input:checked + .toggle-slider:before {
+  background-color: #ccc; /* Darker background color for dark mode */
+}
+
+
+body.dark-mode .button-10 {
+  border: 0.1px solid #000000; /* Darker background color for dark mode */
+}
+
+
+body.dark-mode svg text.label {
+    /* Override SVG text color */
+    fill: #bcbcbc;
+  }
+
+  body.dark-mode svg text.label {
+    /* Override SVG text color */
+    fill: #bcbcbc;
+  }
+
+	
+body.dark-mode .button-4 {
+  /* Override button background color */
+  background-color: #646464;
+}
 
 </style>
 </defs>
-
-
- <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
-
- <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
-
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
 </head>
+<script type="text/javascript">document.body.style.visibility="hidden";</script><div id="SFctr" data-org="31002" data-mfl="64c215764c0b6076026762a3"><div style="clear:both"></div></div><script type="text/javascript" src="https://cdn.membershipworks.com/mfl.js"></script>
 
 
-	  <script type="text/javascript">document.body.style.visibility="hidden";</script><div id="SFctr" data-org="31002" data-mfl="64c215764c0b6076026762a3"><div style="clear:both"></div></div><script type="text/javascript" src="https://cdn.membershipworks.com/mfl.js"></script>
-
-
-
-   <div id="parent-container">
 <body>
-<br><br>
 
-<input type="text" id="searchInput1" class="search-bar" placeholder="Enter name of midfielder..." />
-<input type="button" id="searchButton1" value="+&nbsp;" />
-<br />
-<div id="resultsTable"></div>
-<div id="similarPlayersTable"></div>
-<div id="matchingNames"></div>
+  <a href="https://datamb.football/proradargk/" target="_self" rel="noopener noreferrer">
+    <button class="button-1" role="button">GK</button></a>
+  <a href="https://datamb.football/proradarcb/" target="_self" rel="noopener noreferrer">
+    <button class="button-2" role="button">CB</button></a>
+  <a href="https://datamb.football/proradarfb/" target="_self" rel="noopener noreferrer">
+    <button class="button-3" role="button">FB</button></a>
+  <a href="https://datamb.football/proradarcm/" target="_self" rel="noopener noreferrer">
+    <button class="button-4" role="button">CM</button></a>
+  <a href="https://datamb.football/proradarfw/" target="_self" rel="noopener noreferrer">
+    <button class="button-5" role="button">FW</button></a>
+  <a href="https://datamb.football/proradarst/" target="_self" rel="noopener noreferrer">
+    <button class="button-6" role="button">ST</button></a>
+    <div class="dark-mode-toggle" onclick="toggleDarkMode()"><div class="toggle-icon"></div></div>
 
-<div class="dark-mode-toggle" onclick="toggleDarkMode()">
-  <div class="toggle-icon"></div>
-</div>
+  <div class="searchcontainer">
+    <input type="text" id="searchInput1" class="search-bar" placeholder="Enter name of midfielder..." />
+    &nbsp;<input type="button" id="searchButton1" value="+&nbsp;" />
+    </div>
+    <div class="screenshotcontainer">    <button onclick="takeScreenshot()" class="button-10"><div class="icon2"></div></button>
 
-
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
-  <g class="radar_label">
-   <text class="label" data-type="Aerial%" data-idx="0" transform="translate(145.99 36.45) rotate(-2)">Key Passes</text>
- </g>
- 
- <g class="radar_label">
-   <text class="label" data-type="Long%" data-idx="6" transform="matrix(0.5, -0.86, 0.86, 0.5, 47.89, 122.88) rotate(7.5)">Fwd Pass%</text>
- </g>
- 
- <g class="radar_label">
-   <text class="label" data-type="Passes" data-idx="5" transform="matrix(-0.38, -0.93, 0.93, -0.38, 58.38, 273.78) rotate (3.87)">Fwd Passes</text>
- </g>
- 
- <g class="radar_label">
-   <text class="label" data-type="Exits" data-idx="4" transform="translate(97.19 329.04) rotate(18.87)">Carrying</text>
- </g>
- 
- <g class="radar_label">
-   <text class="label" data-type="Aerial" data-idx="3" transform="translate(245.36 344) rotate(-28.32)">Def Actions</text>
- </g>
- 
- <g class="radar_label">
-   <text class="label" data-type="Def Actions" data-idx="2" transform="translate(351.56 193.26) rotate(100.11)">Duels%</text>
- </g>
- 
- <g class="radar_label">
-   <text class="label" data-type="Shotstopping" data-idx="1" transform="translate(288.42 58.68) rotate(51.09)">Prog Passes</text>
- </g>
-     
-   </svg>				
+      <div id="matchingNames"></div>
+	<div id="resultsTable"></div>  
+ <br><br>
+  <div class="maxcontainer">
+  <div class="toggle-container">
+    <label class="toggle-label"></label>
+    <label class="toggle-checkbox">
+      <input type="checkbox" id="toggleButton" onclick="toggleFilling()" unchecked>
+      <span class="toggle-slider"></span></label></div></div>
 
 
-<svg width="600" height="600" class="radar"><g transform="translate(280.77,287.77)"><g class="axisWrapper">
-
+  <svg class="radar"><g transform="translate(384.77,306)"><g class="axisWrapper">
+  
+    <g class="radar_label">
+        <text class="label" data-type="Aerial%" data-idx="0" transform="translate(-78.8 -285.33) scale(1.3) rotate(-1.7)">Key Passes</text>
+    </g>
+    <g class="radar_label">
+        <text class="label" data-type="Long%" data-idx="6" transform="matrix(0.65, -1.118, 1.118, 0.65, -274.51, -116.73) rotate(6.5)">Fwd Pass%</text>
+    </g>
+    
+    <g class="radar_label">
+        <text class="label" data-type="Passes" data-idx="5" transform="matrix(-0.494, -1.209, 1.209, -0.494, -252.34, 156.85) rotate(3.87)">Fwd Passes</text>
+    </g>
+    
+    <g class="radar_label">
+        <text class="label" data-type="Exits" data-idx="4" transform="translate(-165.21 264.15) scale(1.3) rotate(20)">Carrying</text>
+    </g>
+    
+    <g class="radar_label">
+        <text class="label" data-type="Aerial" data-idx="3" transform="translate(100.76 293.24) scale(1.3) rotate(-28)">Def Actions</text>
+    </g>
+    
+    <g class="radar_label">
+        <text class="label" data-type="Def Actions" data-idx="2" transform="translate(294 9.19) scale(1.3) rotate(99.11)">Duels%</text>
+    </g>
+    
+    <g class="radar_label">
+        <text class="label" data-type="Shotstopping" data-idx="1" transform="translate(183.25 -237.68) scale(1.3) rotate(52.49)">Prog Passes</text>
+    </g>
+    
+  
+  
 
 <circle class="blackCircle" r="280" style="fill:none; stroke:#D3D3D3; stroke-width:1;"></circle>
 <circle class="gridCircle" r="280" style="fill: rgb(16, 135, 188); fill-opacity: 0.03;"></circle>
@@ -1257,29 +1219,12 @@ body.dark-mode .header .button  {
 
 <line x1="0" y1="0" x2="227.65277226666667" y2="161.769853039" stroke="#D3D3D3" stroke-width="1" transform="translate(-227.65277226666667, -161.769853039)"></line>
 
-
-
-
-
-
-<g class="radarWrapper"></g>
-<g class="radarWrapper2"></g>
-</g>
-
-<div class="toggle-container">
-  <label class="toggle-label"></label>
-  <label class="toggle-checkbox">
-    <input type="checkbox" id="toggleButton" onclick="toggleFilling()" unchecked>
-    <span class="toggle-slider"></span>
-  </label>
+  <g class="radarWrapper"></g>
+  </g></g>    
+  <div id="insertHere"></div>
 </div>
-
-
-
-
 <script>
-	
-
+      
 
   const allData1 = [];
   const allData2 = [];
@@ -1288,7 +1233,6 @@ body.dark-mode .header .button  {
   const allData5 = [];
   const allData6 = [];
     let allDataAsString = '';
-    
     
     const urls6 = [
 
@@ -1325,102 +1269,983 @@ body.dark-mode .header .button  {
     'https://datamb.football/database/OLD/RATOP72122/CM/CM.xlsx',
     
     ];
-    const _0x3cbd5d=_0x5aad;(function(_0x39110b,_0x58062c){const _0x3c5531=_0x5aad,_0x556c41=_0x39110b();while(!![]){try{const _0x3971cb=parseInt(_0x3c5531(0x263))/0x1+-parseInt(_0x3c5531(0x23d))/0x2+parseInt(_0x3c5531(0x231))/0x3*(-parseInt(_0x3c5531(0x25e))/0x4)+parseInt(_0x3c5531(0x23c))/0x5+-parseInt(_0x3c5531(0x269))/0x6+parseInt(_0x3c5531(0x216))/0x7*(parseInt(_0x3c5531(0x1dd))/0x8)+-parseInt(_0x3c5531(0x259))/0x9*(-parseInt(_0x3c5531(0x1f8))/0xa);if(_0x3971cb===_0x58062c)break;else _0x556c41['push'](_0x556c41['shift']());}catch(_0x306867){_0x556c41['push'](_0x556c41['shift']());}}}(_0x582c,0xdc743));const fetchPromises1=urls1[_0x3cbd5d(0x1eb)](_0x2efd34=>fetch(_0x2efd34)[_0x3cbd5d(0x245)](_0x1d96a9=>_0x1d96a9[_0x3cbd5d(0x1b3)]())),fetchPromises2=urls2[_0x3cbd5d(0x1eb)](_0x25909e=>fetch(_0x25909e)[_0x3cbd5d(0x245)](_0x4ab43a=>_0x4ab43a[_0x3cbd5d(0x1b3)]())),fetchPromises3=urls3[_0x3cbd5d(0x1eb)](_0xcb03aa=>fetch(_0xcb03aa)[_0x3cbd5d(0x245)](_0x26093f=>_0x26093f[_0x3cbd5d(0x1b3)]())),fetchPromises4=urls4['map'](_0x8225f8=>fetch(_0x8225f8)[_0x3cbd5d(0x245)](_0x12789f=>_0x12789f['arrayBuffer']())),fetchPromises5=urls5[_0x3cbd5d(0x1eb)](_0x2e3b02=>fetch(_0x2e3b02)[_0x3cbd5d(0x245)](_0x40bb0e=>_0x40bb0e[_0x3cbd5d(0x1b3)]())),fetchPromises6=urls6[_0x3cbd5d(0x1eb)](_0x2dc079=>fetch(_0x2dc079)[_0x3cbd5d(0x245)](_0x3a0964=>_0x3a0964[_0x3cbd5d(0x1b3)]()));function processAndStoreData1(_0x5c26ae){const _0x340c81=_0x3cbd5d;let _0x5ca9c6=0x1;_0x5c26ae[_0x340c81(0x201)](_0x48f2c7=>{const _0x52baf6=_0x340c81,_0x3f430c=XLSX[_0x52baf6(0x1e3)](new Uint8Array(_0x48f2c7),{'type':_0x52baf6(0x228)}),_0x2c337d=_0x3f430c[_0x52baf6(0x21f)][0x0],_0x432a26=_0x3f430c[_0x52baf6(0x1de)][_0x2c337d],_0x6d9136=XLSX[_0x52baf6(0x21a)][_0x52baf6(0x230)](_0x432a26,{'header':0x1}),_0x35c5b5=_0x6d9136[_0x52baf6(0x258)](0x1);_0x35c5b5[_0x52baf6(0x201)](_0x4a9e5b=>{const _0x427244=_0x52baf6;_0x4a9e5b['unshift'](''+_0x5ca9c6++),_0x4a9e5b[0xf]=_0x4a9e5b[0x1]+_0x427244(0x1f4);const _0x1571a1=[_0x4a9e5b[0x0],_0x4a9e5b[0xf],_0x4a9e5b[0x2],_0x4a9e5b[0x3],_0x4a9e5b[0x5],_0x4a9e5b[0x6],_0x4a9e5b[0x7],_0x4a9e5b[0x8],_0x4a9e5b[0x9],_0x4a9e5b[0xa],_0x4a9e5b[0xb],_0x4a9e5b[0x4]];allData1[_0x427244(0x1b5)](_0x1571a1);});});const _0x530675=[0x4,0x5,0x6,0x7,0x8,0x9,0xa],_0x29a2b6=_0x530675[_0x340c81(0x1eb)](_0x2f0d4f=>allData1['map'](_0x414896=>parseFloat(_0x414896[_0x2f0d4f]))),_0x23a55=_0x29a2b6['map'](_0x5bc5b7=>{const _0x55b48b=_0x340c81,_0x1a3379=[..._0x5bc5b7][_0x55b48b(0x236)]((_0x308d3f,_0x601dec)=>_0x308d3f-_0x601dec);return _0x5bc5b7[_0x55b48b(0x1eb)](_0x2b655c=>{const _0x35a519=_0x55b48b,_0x3ba8c5=_0x1a3379[_0x35a519(0x1e0)](_0x2b655c)+0x1;return _0x3ba8c5/_0x1a3379['length'];});});allData1[_0x340c81(0x201)]((_0x2d53e8,_0x4fcc37)=>{_0x530675['forEach']((_0x8431b8,_0x5b95b2)=>{_0x2d53e8[_0x8431b8]=_0x23a55[_0x5b95b2][_0x4fcc37]['toFixed'](0x3);});});}function processAndStoreData2(_0x177afc){const _0x3066ec=_0x3cbd5d;let _0x3fe769=0x1;_0x177afc['forEach'](_0x5c4c8c=>{const _0x130468=_0x5aad,_0x46298f=XLSX[_0x130468(0x1e3)](new Uint8Array(_0x5c4c8c),{'type':_0x130468(0x228)}),_0x49a65c=_0x46298f['SheetNames'][0x0],_0x45b6d9=_0x46298f[_0x130468(0x1de)][_0x49a65c],_0xb125=XLSX['utils'][_0x130468(0x230)](_0x45b6d9,{'header':0x1}),_0x4b9f9b=_0xb125['slice'](0x1);_0x4b9f9b[_0x130468(0x201)](_0x154f90=>{const _0x5a37df=_0x130468;_0x154f90[_0x5a37df(0x1ec)](''+_0x3fe769++),_0x154f90[0xf]=_0x154f90[0x1]+_0x5a37df(0x1f4);const _0x38cdc9=[_0x154f90[0x0],_0x154f90[0xf],_0x154f90[0x2],_0x154f90[0x3],_0x154f90[0x5],_0x154f90[0x6],_0x154f90[0x7],_0x154f90[0x8],_0x154f90[0x9],_0x154f90[0xa],_0x154f90[0xb],_0x154f90[0x4]];allData2[_0x5a37df(0x1b5)](_0x38cdc9);});});const _0x4cc5c4=[0x4,0x5,0x6,0x7,0x8,0x9,0xa],_0xef73f8=_0x4cc5c4[_0x3066ec(0x1eb)](_0x695b11=>allData2[_0x3066ec(0x1eb)](_0x17c3f0=>parseFloat(_0x17c3f0[_0x695b11]))),_0x1342da=_0xef73f8['map'](_0x170486=>{const _0x1da6c4=_0x3066ec,_0x237767=[..._0x170486][_0x1da6c4(0x236)]((_0x4df0db,_0x2ac4bc)=>_0x4df0db-_0x2ac4bc);return _0x170486['map'](_0x5694cb=>{const _0x34f38f=_0x1da6c4,_0x4170da=_0x237767['indexOf'](_0x5694cb)+0x1;return _0x4170da/_0x237767[_0x34f38f(0x237)];});});allData2[_0x3066ec(0x201)]((_0x2f9b33,_0x4e6bc5)=>{const _0x24fbe0=_0x3066ec;_0x4cc5c4[_0x24fbe0(0x201)]((_0x5c0b24,_0xf159bc)=>{const _0x26c2d6=_0x24fbe0;_0x2f9b33[_0x5c0b24]=_0x1342da[_0xf159bc][_0x4e6bc5][_0x26c2d6(0x226)](0x3);});});}function processAndStoreData3(_0x323221){const _0x291a0f=_0x3cbd5d;let _0x658e80=0x1;_0x323221[_0x291a0f(0x201)](_0x202f55=>{const _0x4f132e=_0x291a0f,_0x58c40a=XLSX['read'](new Uint8Array(_0x202f55),{'type':_0x4f132e(0x228)}),_0x4c02d5=_0x58c40a[_0x4f132e(0x21f)][0x0],_0x4ded90=_0x58c40a[_0x4f132e(0x1de)][_0x4c02d5],_0xaee4bf=XLSX['utils']['sheet_to_json'](_0x4ded90,{'header':0x1}),_0x1b7298=_0xaee4bf[_0x4f132e(0x258)](0x1);_0x1b7298[_0x4f132e(0x201)](_0x5d8949=>{const _0x1e4d8e=_0x4f132e;_0x5d8949['unshift'](''+_0x658e80++),_0x5d8949[0xf]=_0x5d8949[0x1]+_0x1e4d8e(0x1f5),_0x5d8949[0x3]=_0x5d8949[0x3]-0x1;const _0x1529ec=[_0x5d8949[0x0],_0x5d8949[0xf],_0x5d8949[0x2],_0x5d8949[0x3],_0x5d8949[0x5],_0x5d8949[0x6],_0x5d8949[0x7],_0x5d8949[0x8],_0x5d8949[0x9],_0x5d8949[0xa],_0x5d8949[0xb],_0x5d8949[0x4]];allData3['push'](_0x1529ec);});});const _0x27d722=[0x4,0x5,0x6,0x7,0x8,0x9,0xa],_0x1bcf6e=_0x27d722[_0x291a0f(0x1eb)](_0x26b5d0=>allData3[_0x291a0f(0x1eb)](_0x21a212=>parseFloat(_0x21a212[_0x26b5d0]))),_0x57acf4=_0x1bcf6e['map'](_0x3ba993=>{const _0x294857=_0x291a0f,_0x37264d=[..._0x3ba993][_0x294857(0x236)]((_0x40d53c,_0x13a920)=>_0x40d53c-_0x13a920);return _0x3ba993[_0x294857(0x1eb)](_0x410ecf=>{const _0x297490=_0x294857,_0x2b3247=_0x37264d[_0x297490(0x1e0)](_0x410ecf)+0x1;return _0x2b3247/_0x37264d[_0x297490(0x237)];});});allData3['forEach']((_0x3ba7bf,_0x20a0aa)=>{_0x27d722['forEach']((_0x4c5ded,_0x259f84)=>{const _0x3c1290=_0x5aad;_0x3ba7bf[_0x4c5ded]=_0x57acf4[_0x259f84][_0x20a0aa][_0x3c1290(0x226)](0x3);});});}function processAndStoreData4(_0x166149){const _0x6f531b=_0x3cbd5d;let _0x2e4225=0x1;_0x166149[_0x6f531b(0x201)](_0x4b1517=>{const _0x4afd61=_0x6f531b,_0xeee84e=XLSX['read'](new Uint8Array(_0x4b1517),{'type':'array'}),_0x59f313=_0xeee84e[_0x4afd61(0x21f)][0x0],_0x2c9e05=_0xeee84e[_0x4afd61(0x1de)][_0x59f313],_0x50e58b=XLSX[_0x4afd61(0x21a)]['sheet_to_json'](_0x2c9e05,{'header':0x1}),_0x33b0de=_0x50e58b[_0x4afd61(0x258)](0x1);_0x33b0de[_0x4afd61(0x201)](_0x7f8375=>{const _0x202333=_0x4afd61;_0x7f8375[_0x202333(0x1ec)](''+_0x2e4225++),_0x7f8375[0xf]=_0x7f8375[0x1]+_0x202333(0x1f5),_0x7f8375[0x3]=_0x7f8375[0x3]-0x1;const _0x297a38=[_0x7f8375[0x0],_0x7f8375[0xf],_0x7f8375[0x2],_0x7f8375[0x3],_0x7f8375[0x5],_0x7f8375[0x6],_0x7f8375[0x7],_0x7f8375[0x8],_0x7f8375[0x9],_0x7f8375[0xa],_0x7f8375[0xb],_0x7f8375[0x4]];allData4[_0x202333(0x1b5)](_0x297a38);});});const _0x343fd4=[0x4,0x5,0x6,0x7,0x8,0x9,0xa],_0x475655=_0x343fd4[_0x6f531b(0x1eb)](_0x160559=>allData4['map'](_0x28b4c7=>parseFloat(_0x28b4c7[_0x160559]))),_0x12c880=_0x475655[_0x6f531b(0x1eb)](_0x31689d=>{const _0x54ffcb=[..._0x31689d]['sort']((_0xe20ad7,_0x4ebaa1)=>_0xe20ad7-_0x4ebaa1);return _0x31689d['map'](_0x35e47c=>{const _0x3399cf=_0x5aad,_0x58e732=_0x54ffcb[_0x3399cf(0x1e0)](_0x35e47c)+0x1;return _0x58e732/_0x54ffcb[_0x3399cf(0x237)];});});allData4[_0x6f531b(0x201)]((_0x9e742c,_0x480748)=>{_0x343fd4['forEach']((_0x359e1e,_0x5a11f5)=>{const _0x33430c=_0x5aad;_0x9e742c[_0x359e1e]=_0x12c880[_0x5a11f5][_0x480748][_0x33430c(0x226)](0x3);});});}function processAndStoreData5(_0xce275){const _0x2bee60=_0x3cbd5d;let _0x2f5d69=0x1;_0xce275[_0x2bee60(0x201)](_0x12d0ed=>{const _0x31c9b2=_0x2bee60,_0x248c38=XLSX['read'](new Uint8Array(_0x12d0ed),{'type':_0x31c9b2(0x228)}),_0x1aa9dc=_0x248c38[_0x31c9b2(0x21f)][0x0],_0x26463c=_0x248c38[_0x31c9b2(0x1de)][_0x1aa9dc],_0x5d9690=XLSX[_0x31c9b2(0x21a)][_0x31c9b2(0x230)](_0x26463c,{'header':0x1}),_0x4b0783=_0x5d9690[_0x31c9b2(0x258)](0x1);_0x4b0783[_0x31c9b2(0x201)](_0x4dbde4=>{const _0x37d892=_0x31c9b2;_0x4dbde4[_0x37d892(0x1ec)](''+_0x2f5d69++),_0x4dbde4[0xf]=_0x4dbde4[0x1]+_0x37d892(0x229),_0x4dbde4[0x3]=_0x4dbde4[0x3]-0x2;const _0xfc3204=[_0x4dbde4[0x0],_0x4dbde4[0xf],_0x4dbde4[0x2],_0x4dbde4[0x3],_0x4dbde4[0x5],_0x4dbde4[0x6],_0x4dbde4[0x7],_0x4dbde4[0x8],_0x4dbde4[0x9],_0x4dbde4[0xa],_0x4dbde4[0xb],_0x4dbde4[0x4]];allData5[_0x37d892(0x1b5)](_0xfc3204);});});const _0x4bc08a=[0x4,0x5,0x6,0x7,0x8,0x9,0xa],_0x270bf7=_0x4bc08a[_0x2bee60(0x1eb)](_0x54f75a=>allData5['map'](_0x412af2=>parseFloat(_0x412af2[_0x54f75a]))),_0xed66bd=_0x270bf7[_0x2bee60(0x1eb)](_0x2dd59d=>{const _0x3d6df4=_0x2bee60,_0x4fac09=[..._0x2dd59d][_0x3d6df4(0x236)]((_0x4da037,_0x163c66)=>_0x4da037-_0x163c66);return _0x2dd59d[_0x3d6df4(0x1eb)](_0xd9c3d4=>{const _0x4879b0=_0x3d6df4,_0x140c75=_0x4fac09['indexOf'](_0xd9c3d4)+0x1;return _0x140c75/_0x4fac09[_0x4879b0(0x237)];});});allData5[_0x2bee60(0x201)]((_0x2a4cf1,_0x4571de)=>{const _0x43aff6=_0x2bee60;_0x4bc08a[_0x43aff6(0x201)]((_0x468627,_0x23ad87)=>{_0x2a4cf1[_0x468627]=_0xed66bd[_0x23ad87][_0x4571de]['toFixed'](0x3);});});}function processAndStoreData6(_0x4259c9){const _0x38080e=_0x3cbd5d;let _0x101407=0x1;_0x4259c9[_0x38080e(0x201)](_0xdc0617=>{const _0x45e404=_0x38080e,_0x29e489=XLSX['read'](new Uint8Array(_0xdc0617),{'type':_0x45e404(0x228)}),_0x2b5451=_0x29e489[_0x45e404(0x21f)][0x0],_0x83a9cf=_0x29e489[_0x45e404(0x1de)][_0x2b5451],_0x45ba72=XLSX['utils'][_0x45e404(0x230)](_0x83a9cf,{'header':0x1}),_0x4fd72a=_0x45ba72[_0x45e404(0x258)](0x1);_0x4fd72a[_0x45e404(0x201)](_0x4531e7=>{const _0x15a9e7=_0x45e404;_0x4531e7[_0x15a9e7(0x1ec)](''+_0x101407++),_0x4531e7[0xf]=_0x4531e7[0x1]+_0x15a9e7(0x233);const _0x5b5738=[_0x4531e7[0x0],_0x4531e7[0xf],_0x4531e7[0x2],_0x4531e7[0x3],_0x4531e7[0x5],_0x4531e7[0x6],_0x4531e7[0x7],_0x4531e7[0x8],_0x4531e7[0x9],_0x4531e7[0xa],_0x4531e7[0xb],_0x4531e7[0x4]];allData6[_0x15a9e7(0x1b5)](_0x5b5738);});});const _0x235edf=[0x4,0x5,0x6,0x7,0x8,0x9,0xa],_0x347d74=_0x235edf[_0x38080e(0x1eb)](_0x38e27c=>allData6['map'](_0x5a1964=>parseFloat(_0x5a1964[_0x38e27c]))),_0x12f58d=_0x347d74['map'](_0x2aa568=>{const _0x5d657e=_0x38080e,_0x46c550=[..._0x2aa568][_0x5d657e(0x236)]((_0x4d4f07,_0x52ca9a)=>_0x4d4f07-_0x52ca9a);return _0x2aa568['map'](_0x4f54d3=>{const _0x32bdd1=_0x5d657e,_0xfa837d=_0x46c550['indexOf'](_0x4f54d3)+0x1;return _0xfa837d/_0x46c550[_0x32bdd1(0x237)];});});allData6[_0x38080e(0x201)]((_0x5984f8,_0x23ee6d)=>{const _0x18dd39=_0x38080e;_0x235edf[_0x18dd39(0x201)]((_0x29bed7,_0x251826)=>{_0x5984f8[_0x29bed7]=_0x12f58d[_0x251826][_0x23ee6d]['toFixed'](0x3);});});}Promise[_0x3cbd5d(0x23a)](fetchPromises1)[_0x3cbd5d(0x245)](_0x4d8616=>{const _0x59db3b=_0x3cbd5d;processAndStoreData1(_0x4d8616),Promise[_0x59db3b(0x23a)](fetchPromises2)[_0x59db3b(0x245)](_0xbc86c3=>{const _0x5f3a9d=_0x59db3b;processAndStoreData2(_0xbc86c3),Promise[_0x5f3a9d(0x23a)](fetchPromises3)[_0x5f3a9d(0x245)](_0x5ea1b9=>{const _0x1735ae=_0x5f3a9d;processAndStoreData3(_0x5ea1b9),Promise['all'](fetchPromises4)[_0x1735ae(0x245)](_0x1c9381=>{const _0x6ba7e1=_0x1735ae;processAndStoreData4(_0x1c9381),Promise[_0x6ba7e1(0x23a)](fetchPromises5)[_0x6ba7e1(0x245)](_0x1eba9b=>{const _0x1364bb=_0x6ba7e1;processAndStoreData5(_0x1eba9b),Promise[_0x1364bb(0x23a)](fetchPromises6)[_0x1364bb(0x245)](_0x2588ab=>{const _0x34ecba=_0x1364bb;processAndStoreData6(_0x2588ab);const _0x3e3d8e=allData1[_0x34ecba(0x268)](allData2)[_0x34ecba(0x268)](allData3)[_0x34ecba(0x268)](allData4)[_0x34ecba(0x268)](allData5)['concat'](allData6);_0x3e3d8e[_0x34ecba(0x201)]((_0x4783ce,_0x8f0641)=>{_0x4783ce[0x0]=''+(_0x8f0641+0x1);}),_0x3e3d8e[_0x34ecba(0x201)](_0x5b4714=>{const _0x3a70cb=_0x34ecba;allDataAsString+=_0x5b4714[_0x3a70cb(0x1ed)](',')+'\x0a';});const _0x71e173=allDataAsString[_0x34ecba(0x24d)]()[_0x34ecba(0x1c1)]('\x0a'),_0x3ef39b=[];for(const _0x2dd7da of _0x71e173){const _0x16bec9=_0x2dd7da[_0x34ecba(0x1c1)](','),_0x1f4343=_0x16bec9[0x1],_0xdb4420=_0x16bec9[0x3],_0x39a545=_0x16bec9[0x2],_0x2767c8=_0x1f4343+','+_0xdb4420+','+_0x39a545;_0x3ef39b[_0x34ecba(0x1b5)](_0x2767c8);}function _0x4e0d81(){const _0x3a83c5=_0x34ecba,_0x35433c=navigator[_0x3a83c5(0x1d6)];return/Android|iPhone/i[_0x3a83c5(0x1bf)](_0x35433c);}const _0x22ad6a=_0x3ef39b,_0x46b39e=document['getElementById'](_0x34ecba(0x1bb)),_0x520ed0=document[_0x34ecba(0x20a)](_0x34ecba(0x225)),_0x5263cd=document[_0x34ecba(0x20a)](_0x34ecba(0x220));function _0x4e0d81(){const _0x5c0b15=_0x34ecba,_0x171091=navigator[_0x5c0b15(0x1d6)];return/Android|iPhone/i[_0x5c0b15(0x1bf)](_0x171091);}function _0x323c1a(){const _0x28eada=_0x34ecba,_0x6b7997=_0x467a99(_0x46b39e[_0x28eada(0x1ea)][_0x28eada(0x1c8)]()),_0x239b92=_0x22ad6a[_0x28eada(0x1ee)](function(_0x1f2fa7){const _0x53d187=_0x28eada,[_0x236f56]=_0x1f2fa7['split'](','),_0x22983e=_0x467a99(_0x236f56[_0x53d187(0x1c8)]());return _0x22983e[_0x53d187(0x251)](_0x6b7997);});_0x520ed0[_0x28eada(0x26a)]='',_0x239b92['forEach'](function(_0x5a23c0){const _0x55a430=_0x28eada,[_0x572b1e,_0x5ea8a0,_0x3342c6]=_0x5a23c0[_0x55a430(0x1c1)](','),_0x4c0c29=document[_0x55a430(0x1fd)](_0x55a430(0x227));_0x4c0c29[_0x55a430(0x1fa)][_0x55a430(0x224)](_0x55a430(0x23f));const _0x5733a9=document[_0x55a430(0x1fd)](_0x55a430(0x1d3));_0x5733a9[_0x55a430(0x20f)]=_0x572b1e,_0x5733a9['classList'][_0x55a430(0x224)]('fullName'),_0x4c0c29[_0x55a430(0x1ce)](_0x5733a9);const _0x497f57=document['createElement'](_0x55a430(0x1d3));_0x497f57[_0x55a430(0x20f)]='\x20('+_0x5ea8a0+',',_0x497f57['classList'][_0x55a430(0x224)](_0x55a430(0x210)),_0x4c0c29[_0x55a430(0x1ce)](_0x497f57);const _0x57d501=document['createElement'](_0x55a430(0x1d3));_0x57d501[_0x55a430(0x20f)]='\x20'+_0x3342c6+')',_0x57d501[_0x55a430(0x1fa)]['add'](_0x55a430(0x1ba)),_0x4c0c29['appendChild'](_0x57d501),_0x4c0c29[_0x55a430(0x20d)](_0x55a430(0x1c9),function(_0x39874a){const _0x256262=_0x55a430,_0x3f54c1=_0x39874a[_0x256262(0x265)][_0x256262(0x240)](_0x256262(0x238));if(_0x3f54c1){const _0x459473=_0x3f54c1[_0x256262(0x1d9)](_0x256262(0x1d7))['textContent'],_0x4ea1e9=_0x3f54c1[_0x256262(0x1d9)](_0x256262(0x1c5))['textContent'][_0x256262(0x24d)](),_0x120c56=_0x3f54c1[_0x256262(0x1d9)](_0x256262(0x22c))[_0x256262(0x20f)][_0x256262(0x24d)]()[_0x256262(0x1c6)](/[^a-zA-Z\s]/g,''),_0x35fb38=_0x459473+','+_0x4ea1e9['substring'](0x1,_0x4ea1e9[_0x256262(0x237)]-0x1)+','+_0x120c56;_0x46b39e[_0x256262(0x1ea)]=_0x35fb38;const _0x22181e=new KeyboardEvent(_0x256262(0x1cc),{'key':'Enter'});_0x46b39e[_0x256262(0x1c7)](_0x22181e);}}),_0x520ed0[_0x55a430(0x1ce)](_0x4c0c29);}),_0x6b7997===''&&_0x239b92[_0x28eada(0x237)]===0x0?_0x520ed0[_0x28eada(0x1ff)]['display']=_0x28eada(0x267):(_0x520ed0[_0x28eada(0x1ff)][_0x28eada(0x20e)]=_0x28eada(0x1f0),_0x520ed0[_0x28eada(0x1ff)][_0x28eada(0x254)]=_0x28eada(0x1f9),_0x520ed0[_0x28eada(0x1ff)]['width']=_0x28eada(0x242),_0x520ed0[_0x28eada(0x1ff)][_0x28eada(0x21e)]='10px',_0x520ed0[_0x28eada(0x1ff)][_0x28eada(0x252)]=_0x28eada(0x262),_0x520ed0[_0x28eada(0x1ff)][_0x28eada(0x1ef)]=_0x28eada(0x215),_0x520ed0[_0x28eada(0x1ff)][_0x28eada(0x217)]=_0x28eada(0x205),_0x4e0d81()?_0x520ed0[_0x28eada(0x1ff)][_0x28eada(0x1d4)]='106px':_0x520ed0[_0x28eada(0x1ff)]['top']=_0x28eada(0x1dc)),_0x6b7997===''&&(_0x520ed0[_0x28eada(0x1ff)][_0x28eada(0x20e)]=_0x28eada(0x267));}_0x46b39e['addEventListener'](_0x34ecba(0x248),_0x323c1a),_0x46b39e[_0x34ecba(0x20d)]('keyup',function(_0x59befb){const _0x456c68=_0x34ecba;if(_0x59befb[_0x456c68(0x1d2)]==='Enter')searchButton1[_0x456c68(0x1c9)]();else _0x59befb[_0x456c68(0x1d2)]===_0x456c68(0x24a)&&_0x323c1a();});const _0x4d4ee3=allDataAsString;let _0x2685b8=_0x4d4ee3[_0x34ecba(0x24d)]()[_0x34ecba(0x1c1)]('\x0a')['map'](_0x2ee535=>_0x2ee535[_0x34ecba(0x1c1)](','));function _0x499ab6(_0x8626ee,_0x41fd27){const _0x22a2e2=_0x34ecba;let _0x2ab6bf=0x0;for(let _0x2a71d7=0x4;_0x2a71d7<=0xa;_0x2a71d7++){const _0x403764=parseFloat(_0x8626ee[_0x2a71d7]),_0x7d4b6=parseFloat(_0x41fd27[_0x2a71d7]);_0x2ab6bf+=Math[_0x22a2e2(0x22b)](_0x403764-_0x7d4b6,0x2);}return Math[_0x22a2e2(0x1b2)](_0x2ab6bf);}const _0x9f6adf=['result-color-blue','result-color-pink','result-color-orange',_0x34ecba(0x24b),_0x34ecba(0x1d8),_0x34ecba(0x1e8),_0x34ecba(0x25c),'result-color-2',_0x34ecba(0x1df),_0x34ecba(0x1db),_0x34ecba(0x206),_0x34ecba(0x22a),'result-color-7','result-color-8',_0x34ecba(0x1d1),'result-color-10',_0x34ecba(0x256),_0x34ecba(0x1cb),_0x34ecba(0x244),'result-color-14',_0x34ecba(0x1cf),_0x34ecba(0x214),'result-color-17',_0x34ecba(0x208),_0x34ecba(0x21b),'result-color-20','result-color-21',_0x34ecba(0x1bd),'result-color-23',_0x34ecba(0x1e4),_0x34ecba(0x22f),_0x34ecba(0x255),'result-color-27',_0x34ecba(0x239),_0x34ecba(0x1e1),_0x34ecba(0x1e7),_0x34ecba(0x202),'result-color-32','result-color-33',_0x34ecba(0x249),_0x34ecba(0x1b7),_0x34ecba(0x223),_0x34ecba(0x257),_0x34ecba(0x1be),_0x34ecba(0x25d),_0x34ecba(0x1f3),_0x34ecba(0x25b),'result-color-42',_0x34ecba(0x22e),_0x34ecba(0x261),_0x34ecba(0x22d),_0x34ecba(0x212),_0x34ecba(0x207),_0x34ecba(0x21d)];let _0x37954f=[];function _0x467a99(_0x3a12ba){const _0x3f6783=_0x34ecba;return _0x3a12ba['normalize'](_0x3f6783(0x253))['replace'](/[\u0300-\u036f\s]/g,'')[_0x3f6783(0x1c6)](/Ø/g,'O')[_0x3f6783(0x1c6)](/ø/g,'o');}function _0xd51b0e(_0x3c8aab){const _0x179ddc=_0x34ecba,_0x5c7e5a=_0x3c8aab[_0x179ddc(0x1c1)](',')[_0x179ddc(0x1eb)](_0x161283=>_0x161283['trim']()),_0x4bb001=_0x5c7e5a[0x0];let _0x2f0bec,_0x40ca5a;_0x5c7e5a[_0x179ddc(0x237)]>0x1&&(_0x2f0bec=_0x5c7e5a[0x1][_0x179ddc(0x24d)](),_0x5c7e5a[_0x179ddc(0x237)]>0x2&&(_0x40ca5a=_0x5c7e5a[0x2][_0x179ddc(0x24d)]()));const _0xaea51a=_0x2685b8['filter'](_0x2ab26d=>{const _0x1c08ad=_0x179ddc,_0x33afce=_0x467a99(_0x2ab26d[0x1][_0x1c08ad(0x1c8)]()),_0x5d4ec1=_0x467a99(_0x2ab26d[0x2][_0x1c08ad(0x1c8)]()),_0x64d087=_0x2ab26d[0x3]['trim']()[_0x1c08ad(0x1c8)](),_0x59385a=_0x33afce[_0x1c08ad(0x251)](_0x467a99(_0x4bb001[_0x1c08ad(0x1c8)]())),_0xd7b9af=!_0x2f0bec||_0x64d087===_0x467a99(_0x2f0bec['toLowerCase']()),_0x2c0909=!_0x40ca5a||_0x5d4ec1===_0x467a99(_0x40ca5a['toLowerCase']());return _0x59385a&&(_0xd7b9af||_0x2c0909);});return _0xaea51a;}function _0x41f4b3(_0xb4d0e1,_0x2c1031,_0x6683e4){const _0xfa104b=_0x34ecba,_0x5caf97=document[_0xfa104b(0x20a)](_0xfa104b(0x20b)),_0x53a26b=['','Percentiles','',_0xfa104b(0x1c2),_0xfa104b(0x211),_0xfa104b(0x24f),_0xfa104b(0x1fe),_0xfa104b(0x25f),_0xfa104b(0x250),'Key\x20passes',_0xfa104b(0x260),_0xfa104b(0x221),''],_0x21f547=_0x5caf97[_0xfa104b(0x1d9)]('th')!==null,_0x52d3bb=_0x21f547?_0x5caf97[_0xfa104b(0x1d9)](_0xfa104b(0x1f6)):document[_0xfa104b(0x1fd)]('table');_0x52d3bb[_0xfa104b(0x1fa)][_0xfa104b(0x224)](_0xfa104b(0x1b6));if(!_0x21f547){const _0x3b89a8=document[_0xfa104b(0x1fd)]('tr');for(let _0x46d5d3=0x1;_0x46d5d3<_0x53a26b[_0xfa104b(0x237)];_0x46d5d3++){const _0x29e0b3=document['createElement']('th');_0x29e0b3[_0xfa104b(0x20f)]=_0x53a26b[_0x46d5d3],_0x3b89a8[_0xfa104b(0x1ce)](_0x29e0b3);}const _0x434c5e=document[_0xfa104b(0x1fd)]('th');_0x434c5e[_0xfa104b(0x20f)]='',_0x3b89a8['appendChild'](_0x434c5e),_0x52d3bb[_0xfa104b(0x1ce)](_0x3b89a8);}const _0x5e6899=_0x2685b8[_0x2c1031],_0xb9e862=document[_0xfa104b(0x1fd)]('tr');for(let _0x5235bc=0x1;_0x5235bc<_0x5e6899['length'];_0x5235bc++){const _0xfe17f4=document[_0xfa104b(0x1fd)]('td');if(_0x5235bc>=0x4&&_0x5235bc<=0xa){const _0x46669b=parseFloat(_0x5e6899[_0x5235bc])*0x64;_0xfe17f4[_0xfa104b(0x20f)]=_0x46669b[_0xfa104b(0x226)](0x1);}else _0xfe17f4['textContent']=_0x5e6899[_0x5235bc];_0xfe17f4['classList'][_0xfa104b(0x224)](_0x6683e4),_0xb9e862[_0xfa104b(0x1ce)](_0xfe17f4);}const _0x3cc26e=document[_0xfa104b(0x1fd)]('td'),_0x3a071e=document[_0xfa104b(0x1fd)](_0xfa104b(0x1e9));_0x3a071e['textContent']='x',_0x3a071e[_0xfa104b(0x20d)](_0xfa104b(0x1c9),function(){const _0xaa4323=_0xfa104b;_0xb9e862[_0xaa4323(0x232)]();const _0x2a3acb=document[_0xaa4323(0x266)](_0xaa4323(0x204)+_0x6683e4),_0x100331=document[_0xaa4323(0x266)](_0xaa4323(0x235)+_0x6683e4),_0x10f1f7=document[_0xaa4323(0x266)](_0xaa4323(0x247)+_0x6683e4);_0x2a3acb[_0xaa4323(0x201)](_0x9cce52=>_0x9cce52[_0xaa4323(0x232)]()),_0x100331[_0xaa4323(0x201)](_0x34474b=>_0x34474b[_0xaa4323(0x232)]()),_0x10f1f7[_0xaa4323(0x201)](_0x5a7888=>_0x5a7888[_0xaa4323(0x232)]());}),_0x3cc26e[_0xfa104b(0x1ce)](_0x3a071e),_0xb9e862[_0xfa104b(0x1ce)](_0x3cc26e),_0x52d3bb[_0xfa104b(0x1ce)](_0xb9e862);!_0x21f547&&_0x5caf97[_0xfa104b(0x1ce)](_0x52d3bb);const _0x1bfbd5=_0x2685b8[_0x2c1031]['join'](',\x20'),_0x5c03f7=0x118,_0x3827f5=[0x0,0x0],_0x2abfcd=[0x0,0x2*Math['PI']/0x7,0x4*Math['PI']/0x7,0x6*Math['PI']/0x7,0x8*Math['PI']/0x7,0xa*Math['PI']/0x7,0xc*Math['PI']/0x7];function _0x4daa49(_0x28a65c,_0x531ff6){let _0x352c21=_0x2abfcd[_0x28a65c-0x1];_0x352c21+=0x2*Math['PI']/0x7*0.2;const _0x22054f=0x118*_0x531ff6*Math['cos'](_0x352c21),_0x509247=0x118*_0x531ff6*Math['sin'](_0x352c21);return{'x':_0x22054f,'y':_0x509247};}const _0x133178=document[_0xfa104b(0x1d9)](_0xfa104b(0x1fb)),_0x2a0696=_0x133178['appendChild'](document[_0xfa104b(0x1f7)](_0xfa104b(0x25a),'g'));_0x2a0696[_0xfa104b(0x1d0)](_0xfa104b(0x222),_0xfa104b(0x264)),_0x2a0696[_0xfa104b(0x26a)]='';const _0x1d56a5=[],_0x3c0eea=_0x1bfbd5[_0xfa104b(0x1c1)](',');for(let _0x11cda9=0x4;_0x11cda9<0xb;_0x11cda9++){_0x1d56a5[_0xfa104b(0x1b5)]({'axis':_0x11cda9-0x3,'value':parseFloat(_0x3c0eea[_0x11cda9])});}const _0x4a43d8=_0x1d56a5['map'](({axis:_0x501bab,value:_0x2ff0d0})=>{const {x:_0x34545d,y:_0xb7f081}=_0x4daa49(_0x501bab,_0x2ff0d0);return _0x34545d+','+_0xb7f081;})[_0xfa104b(0x1ed)]('\x20'),_0x23a2a4=document[_0xfa104b(0x1f7)](_0xfa104b(0x25a),_0xfa104b(0x1da));_0x23a2a4[_0xfa104b(0x1d0)]('class','radarLines\x20'+_0x6683e4),_0x23a2a4[_0xfa104b(0x1d0)](_0xfa104b(0x1bc),_0x4a43d8+'\x20'+_0x4a43d8['split']('\x20')[0x0]),_0x23a2a4['setAttribute'](_0xfa104b(0x1cd),'3'),_0x23a2a4[_0xfa104b(0x1d0)](_0xfa104b(0x1f2),'none'),_0x2a0696[_0xfa104b(0x1ce)](_0x23a2a4);const _0x287613=document[_0xfa104b(0x1f7)](_0xfa104b(0x25a),_0xfa104b(0x1c4));_0x287613['setAttribute']('class',_0xfa104b(0x1ca)+_0x6683e4),_0x287613['setAttribute'](_0xfa104b(0x1bc),_0x4a43d8),_0x287613[_0xfa104b(0x1ff)]['fillOpacity']=_0xfa104b(0x23e),_0x2a0696['appendChild'](_0x287613),_0x1d56a5[_0xfa104b(0x201)](({axis:_0x2797e4,value:_0x17ea3d})=>{const _0x8d3801=_0xfa104b,{x:_0x546361,y:_0x1e8f3a}=_0x4daa49(_0x2797e4,_0x17ea3d),_0x1696c1=document[_0x8d3801(0x1f7)]('http://www.w3.org/2000/svg',_0x8d3801(0x21c));_0x1696c1['setAttribute'](_0x8d3801(0x1c0),_0x8d3801(0x1f1)+_0x6683e4),_0x1696c1[_0x8d3801(0x1ff)][_0x8d3801(0x218)]='0.86',_0x1696c1[_0x8d3801(0x1d0)]('r',_0x8d3801(0x1fc)),_0x1696c1[_0x8d3801(0x1d0)]('cx',_0x546361),_0x1696c1[_0x8d3801(0x1d0)]('cy',_0x1e8f3a),_0x2a0696[_0x8d3801(0x1ce)](_0x1696c1);});}const _0x2205fb=new Set();function _0x4395dc(){const _0x11d9cf=_0x34ecba,_0x166b44=document['getElementById'](_0x11d9cf(0x1bb)),_0x1c40f0=document[_0x11d9cf(0x20a)](_0x11d9cf(0x24c)),_0x24e681=document[_0x11d9cf(0x20a)](_0x11d9cf(0x20b)),_0x2a8376=document[_0x11d9cf(0x1fd)]('ul');_0x2a8376[_0x11d9cf(0x1ff)][_0x11d9cf(0x1e5)]=_0x11d9cf(0x213),_0x2a8376[_0x11d9cf(0x1ff)][_0x11d9cf(0x1e2)]='none',_0x2a8376['style'][_0x11d9cf(0x241)]=_0x11d9cf(0x1c3),_0x24e681['appendChild'](_0x2a8376);let _0x523ca4=0x0;_0x1c40f0['addEventListener'](_0x11d9cf(0x1c9),function(){const _0x1347c9=_0x11d9cf,_0x34e9c8=_0x166b44['value'],_0x5043a2=_0xd51b0e(_0x34e9c8),_0x5b6c2f=document[_0x1347c9(0x266)](_0x1347c9(0x1b9));_0x5b6c2f[_0x1347c9(0x201)](_0x1903d8=>{const _0x45d5c3=_0x1347c9;_0x1903d8[_0x45d5c3(0x1ff)][_0x45d5c3(0x1f2)]='';});if(_0x5043a2){const _0x30689f=parseInt(_0x5043a2[0x0]),_0xe310d1=_0x5043a2[0x1]+'\x20('+_0x5043a2[0x2]+',\x20'+_0x5043a2[0x3]+_0x1347c9(0x24e)+_0x5043a2[0xb]+_0x1347c9(0x23b),_0x3f67f7=_0x9f6adf[_0x523ca4%_0x9f6adf[_0x1347c9(0x237)]];_0x41f4b3(_0xe310d1,_0x30689f-0x1,_0x3f67f7),_0x523ca4++;}});}_0x4395dc();const _0x400412=document[_0x34ecba(0x1fd)](_0x34ecba(0x227));_0x400412['id']=_0x34ecba(0x203),_0x400412[_0x34ecba(0x1ff)]['position']='absolute',_0x400412[_0x34ecba(0x1ff)][_0x34ecba(0x1d4)]=_0x34ecba(0x246),_0x400412[_0x34ecba(0x1ff)]['left']=_0x34ecba(0x1b4),document[_0x34ecba(0x26b)][_0x34ecba(0x1ce)](_0x400412);let _0x384a7d=0x0;searchButton1[_0x34ecba(0x20d)]('click',function(){const _0x16f804=_0x34ecba,_0x396eba=_0x46b39e['value'],_0x3334b1=_0xd51b0e(_0x396eba);if(_0x3334b1[_0x16f804(0x237)]>0x0){const _0x7605b8=_0x3334b1[0x0],_0x5dcdf5=parseInt(_0x7605b8[0x0])-0x1,_0x4fb85c=[];for(let _0x1dab7a=0x0;_0x1dab7a<_0x2685b8[_0x16f804(0x237)];_0x1dab7a++){if(_0x1dab7a!==_0x5dcdf5){const _0x5dbb15=_0x499ab6(_0x7605b8,_0x2685b8[_0x1dab7a]);_0x4fb85c[_0x16f804(0x1b5)]({'index':_0x1dab7a,'difference':_0x5dbb15});}}_0x4fb85c['sort']((_0x3a914f,_0x20c9df)=>_0x3a914f[_0x16f804(0x219)]-_0x20c9df[_0x16f804(0x219)]);const _0x2403ff=_0x4fb85c[_0x16f804(0x258)](0x0,0x5);for(let _0x4753e3=0x0;_0x4753e3<0x1;_0x4753e3++){const _0xd3c3c9=_0x2403ff[_0x4753e3][_0x16f804(0x1d5)],_0x289fe7=_0x2685b8[_0xd3c3c9][0x1],_0x4afae5=_0x2685b8[_0xd3c3c9][0x3],_0x43e4de=_0x2685b8[_0xd3c3c9][0x2],_0xc93c74=document[_0x16f804(0x1fd)](_0x16f804(0x1f6));_0xc93c74[_0x16f804(0x1fa)]['add'](_0x16f804(0x1b6));const _0x5f4274=document[_0x16f804(0x1fd)]('tr'),_0x548537=document[_0x16f804(0x1fd)]('th');_0x548537[_0x16f804(0x1d0)](_0x16f804(0x200),'5'),_0x548537['textContent']=_0x16f804(0x234)+_0x3334b1[0x0][0x1],_0x548537['classList'][_0x16f804(0x224)](_0x9f6adf[_0x384a7d%_0x9f6adf[_0x16f804(0x237)]]),_0x5f4274[_0x16f804(0x1ce)](_0x548537),_0xc93c74['appendChild'](_0x5f4274);const _0x25f1a0=document[_0x16f804(0x1fd)]('tr');for(let _0x536a19=0x0;_0x536a19<_0x2403ff[_0x16f804(0x237)];_0x536a19++){const _0x4f9cfe=_0x2403ff[_0x536a19][_0x16f804(0x1d5)],_0x5803ae=_0x2685b8[_0x4f9cfe][0x1],_0x3accd6=_0x2685b8[_0x4f9cfe][0x3],_0x23a84f=_0x2685b8[_0x4f9cfe][0x2],_0x10a018=document['createElement']('td');_0x10a018['textContent']=''+_0x5803ae,_0x10a018[_0x16f804(0x1ff)][_0x16f804(0x1b8)]='10.8px',_0x10a018[_0x16f804(0x1ff)][_0x16f804(0x20c)]=_0x16f804(0x243),_0x10a018['addEventListener']('click',function(){const _0x58878d=_0x16f804;_0x46b39e[_0x58878d(0x1ea)]=_0x5803ae,searchButton1['click']();}),_0x25f1a0[_0x16f804(0x1ce)](_0x10a018);}_0x400412['children'][_0x16f804(0x237)]>0x0&&_0x400412['removeChild'](_0x400412['firstChild']),_0xc93c74[_0x16f804(0x1ce)](_0x25f1a0),_0x400412[_0x16f804(0x1ce)](_0xc93c74),_0x384a7d++;}}_0x46b39e[_0x16f804(0x1ea)]='',_0x323c1a();});});});});});});})[_0x3cbd5d(0x1e6)](_0x87aeda=>{const _0x38cb82=_0x3cbd5d;console['error'](_0x38cb82(0x209),_0x87aeda);});function _0x5aad(_0x31535e,_0x5d65ac){const _0x582c0e=_0x582c();return _0x5aad=function(_0x5aadba,_0x1306a7){_0x5aadba=_0x5aadba-0x1b2;let _0x264573=_0x582c0e[_0x5aadba];return _0x264573;},_0x5aad(_0x31535e,_0x5d65ac);}function _0x582c(){const _0x36c93e=['classList','.radar','8.4','createElement','Progressive\x20carries','style','colspan','forEach','result-color-31','similarPlayersContainer','.radarPolygon.','9999','result-color-5','result-color-47','result-color-18','Error\x20fetching\x20or\x20processing\x20data:','getElementById','resultsTable','cursor','addEventListener','display','textContent','age','Duel%','result-color-46','Arial,\x20sans-serif','result-color-16','12px','8309MFVQiK','zIndex','fillOpacity','difference','utils','result-color-19','circle','result-color-48','padding','SheetNames','searchButton','Minutes\x20played','transform','result-color-36','add','matchingNames','toFixed','div','array','\x2021/22','result-color-6','pow','.team','result-color-45','result-color-43','result-color-25','sheet_to_json','3632523iroKrl','remove','\x2024/25','Similar\x20data\x20to\x20','.radarLines.','sort','length','.name','result-color-28','all','\x20min','308190DEuCnZ','2548608JCiFzw','0.2','name','closest','paddingLeft','430px','pointer','result-color-13','then','998px','.radarCircle.','input','result-color-34','Backspace','result-color-green','searchButton1','trim',')\x20-\x20','Defensive\x20actions','Forward\x20pass%','includes','position','NFD','backgroundColor','result-color-26','result-color-11','result-color-37','slice','1627902RmnVkL','http://www.w3.org/2000/svg','result-color-41','result-color-1','result-color-39','4pKBbJH','Forward\x20passes','Progressive\x20passes','result-color-44','absolute','1130073YFtYCQ','translate(280.77,287.77)','target','querySelectorAll','none','concat','4966080JaCLrc','innerHTML','body','sqrt','arrayBuffer','178px','push','metrics-table','result-color-35','fontSize','.radarPolygon','team','searchInput1','points','result-color-22','result-color-38','test','class','split','Age','9px','polygon','.age','replace','dispatchEvent','toLowerCase','click','radarPolygon\x20','result-color-12','keyup','stroke-width','appendChild','result-color-15','setAttribute','result-color-9','key','span','top','index','userAgent','.fullName','result-color-bleu','querySelector','polyline','result-color-4','102px','11848HZZGdf','Sheets','result-color-3','indexOf','result-color-29','listStyleType','read','result-color-24','fontFamily','catch','result-color-30','result-color-rose','button','value','map','unshift','join','filter','left','block','radarCircle\x20','fill','result-color-40','\x2023/24','\x2022/23','table','createElementNS','70nBCZZt','#9c9b9b'];_0x582c=function(){return _0x36c93e;};return _0x582c();}
-  </script>
-  <button onclick="takeScreenshot()" class="button-10"><div class="icon2"></div></button>
+const fetchPromises1 = urls1.map(url => fetch(url).then(response => response.arrayBuffer()));
+const fetchPromises2 = urls2.map(url => fetch(url).then(response => response.arrayBuffer()));
+const fetchPromises3 = urls3.map(url => fetch(url).then(response => response.arrayBuffer()));
+    const fetchPromises4 = urls4.map(url => fetch(url).then(response => response.arrayBuffer()));
+    const fetchPromises5 = urls5.map(url => fetch(url).then(response => response.arrayBuffer()));
+    const fetchPromises6 = urls6.map(url => fetch(url).then(response => response.arrayBuffer()));
 
-
-  <script>
-    (function(_0x146107,_0x364a33){const _0x531fa0=_0x53be,_0x2497f0=_0x146107();while(!![]){try{const _0x31aa8e=-parseInt(_0x531fa0(0x17e))/0x1*(parseInt(_0x531fa0(0x164))/0x2)+parseInt(_0x531fa0(0x170))/0x3*(-parseInt(_0x531fa0(0x171))/0x4)+-parseInt(_0x531fa0(0x178))/0x5+parseInt(_0x531fa0(0x163))/0x6+parseInt(_0x531fa0(0x168))/0x7*(parseInt(_0x531fa0(0x165))/0x8)+parseInt(_0x531fa0(0x173))/0x9+-parseInt(_0x531fa0(0x175))/0xa;if(_0x31aa8e===_0x364a33)break;else _0x2497f0['push'](_0x2497f0['shift']());}catch(_0x10fe93){_0x2497f0['push'](_0x2497f0['shift']());}}}(_0x50ec,0xef1fd));function _0x53be(_0x59ac4f,_0x2df0b3){const _0x50ec1d=_0x50ec();return _0x53be=function(_0x53be38,_0x3cda44){_0x53be38=_0x53be38-0x160;let _0x5c51ce=_0x50ec1d[_0x53be38];return _0x5c51ce;},_0x53be(_0x59ac4f,_0x2df0b3);}function takeScreenshot(){const _0x27fbdc=_0x53be,_0x45bde4=/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i['test'](navigator[_0x27fbdc(0x174)]);let _0xbc8579,_0x181361,_0x1c66a4,_0x47a2eb,_0x1d1e4d,_0x723503,_0x176dc8;_0x45bde4?(_0xbc8579=0x0,_0x181361=0x0,_0x1c66a4=-0.0147,_0x47a2eb=0.095,_0x1d1e4d=0.238,_0x723503=0x3a2,_0x176dc8=0x3cf):(_0xbc8579=0x0,_0x181361=0x0,_0x1c66a4=-0.0087,_0x47a2eb=0.08,_0x1d1e4d=0.4,_0x723503=0x4b0,_0x176dc8=0x3cf),domtoimage[_0x27fbdc(0x17f)](document[_0x27fbdc(0x17b)](_0x27fbdc(0x17a)),{'width':_0x723503,'height':_0x176dc8,'style':{'transform':_0x27fbdc(0x177)}})[_0x27fbdc(0x17c)](_0x46c3fe=>{const _0x13be9c=_0x27fbdc,_0x149a68=new Image();_0x149a68['onload']=()=>{const _0x3607ce=_0x53be,_0x262df5=_0x149a68[_0x3607ce(0x16d)]*_0x1c66a4,_0x1e47c0=_0x149a68['height']*_0x47a2eb,_0x179e34=_0x149a68[_0x3607ce(0x16d)]-_0x262df5-_0x149a68[_0x3607ce(0x16d)]*_0x1d1e4d,_0x1d8b11=_0x149a68[_0x3607ce(0x167)]-_0x1e47c0,_0x582b70=document['createElement'](_0x3607ce(0x16a));_0x582b70[_0x3607ce(0x16d)]=_0x179e34,_0x582b70[_0x3607ce(0x167)]=_0x1d8b11;const _0x12a0c7=_0x582b70['getContext']('2d'),_0xfb44de=localStorage[_0x3607ce(0x17d)](_0x3607ce(0x160)),_0x2dd5ab=_0xfb44de===_0x3607ce(0x179)||window['matchMedia'](_0x3607ce(0x172))['matches'];_0x2dd5ab?_0x12a0c7[_0x3607ce(0x166)]=_0x3607ce(0x161):_0x12a0c7[_0x3607ce(0x166)]=_0x3607ce(0x16b),_0x12a0c7[_0x3607ce(0x16f)](0x0,0x0,_0x582b70[_0x3607ce(0x16d)],_0x582b70[_0x3607ce(0x167)]),_0x12a0c7[_0x3607ce(0x176)](_0x149a68,_0x262df5,_0x1e47c0,_0x179e34,_0x1d8b11,0x0,0x0,_0x179e34,_0x1d8b11),_0x582b70['toBlob'](_0x141996=>{const _0x27b5db=_0x3607ce,_0x1411aa=document[_0x27b5db(0x162)]('a');_0x1411aa['href']=URL[_0x27b5db(0x169)](_0x141996),_0x1411aa['download']=_0x27b5db(0x16e),_0x1411aa['click']();},_0x3607ce(0x16c));},_0x149a68['src']=URL[_0x13be9c(0x169)](_0x46c3fe);});}function _0x50ec(){const _0x4179c3=['drawImage','none','4031375uNnHhP','true','parent-container','getElementById','then','getItem','529RBskRT','toBlob','darkMode','#000000','createElement','11141376WOiyqs','4414wnfKhx','8lFBuBA','fillStyle','height','7644749HTjOla','createObjectURL','canvas','#ffffff','image/png','width','screenshot.png','fillRect','315447quDFuk','4OsADTu','(prefers-color-scheme:\x20dark)','7936974zszQpS','userAgent','7725090xzDwXX'];_0x50ec=function(){return _0x4179c3;};return _0x50ec();}
+    function processAndStoreData1(dataArray) {
+        // Unique ID counter
+        let uniqueIdCounter = 1;
     
-    </script>
-
- <script>
-
-    // Function to toggle dark mode
-    function toggleDarkMode() {
-      const body = document.querySelector("body");
-      body.classList.toggle("dark-mode");
-
-      // Store the user's preference in local storage
-      const isDarkMode = body.classList.contains("dark-mode");
-      localStorage.setItem("darkMode", isDarkMode);
+        dataArray.forEach(data => {
+            const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+            const sheetName = workbook.SheetNames[0];
+            const sheet = workbook.Sheets[sheetName];
+            const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+    
+            // Exclude header row
+            const dataWithoutHeader = jsonData.slice(1);
+    
+            // Perform transformations and add unique ID
+            dataWithoutHeader.forEach(row => {
+                // Generate unique ID and shift columns
+                row.unshift(`${uniqueIdCounter++}`);
+    
+                // Shift columns as needed
+           
+                row[15] = `${row[1]} 23/24`;
+                // Reorder columns
+                const reorderedRow = [
+                row[0],
+                row[15],
+                row[2],
+                row[3],
+                row[5],
+                row[6],
+                row[7],
+                row[8],
+                row[9],
+                row[10],
+                row[11],
+                row[4]
+                ];
+    
+                allData1.push(reorderedRow);
+            });
+        });
+    
+        // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+        const columnsToConvert = [4, 5, 6, 7, 8, 9, 10];
+        const columnValues = columnsToConvert.map(col => allData1.map(row => parseFloat(row[col])));
+    
+        // Calculate percentiles
+        const percentiles = columnValues.map(values => {
+            const sorted = [...values].sort((a, b) => a - b);
+            return values.map(value => {
+                const rank = sorted.indexOf(value) + 1;
+                return (rank / sorted.length);
+            });
+        });
+    
+        // Replace original values with percentiles
+        allData1.forEach((row, rowIndex) => {
+            columnsToConvert.forEach((col, colIndex) => {
+                row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+            });
+        });
     }
 
-    // Check if user has a stored preference for dark mode
-    const storedDarkMode = localStorage.getItem("darkMode");
+    function processAndStoreData2(dataArray) {
+        // Unique ID counter
+        let uniqueIdCounter = 1;
+    
+        dataArray.forEach(data => {
+            const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+            const sheetName = workbook.SheetNames[0];
+            const sheet = workbook.Sheets[sheetName];
+            const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+    
+            // Exclude header row
+            const dataWithoutHeader = jsonData.slice(1);
+    
+            // Perform transformations and add unique ID
+            dataWithoutHeader.forEach(row => {
+                // Generate unique ID and shift columns
+                row.unshift(`${uniqueIdCounter++}`);
+    
+                // Shift columns as needed
 
-    if (storedDarkMode === "true") {
-      const body = document.querySelector("body");
-      body.classList.add("dark-mode");
+                row[15] = `${row[1]} 23/24`;
+   
+    
+                // Reorder columns
+                const reorderedRow = [
+                row[0],
+                row[15],
+                row[2],
+                row[3],
+                row[5],
+                row[6],
+                row[7],
+                row[8],
+                row[9],
+                row[10],
+                row[11],
+                row[4]
+                ];
+                allData2.push(reorderedRow);
+            });
+        });
+    
+        // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+        const columnsToConvert = [4, 5, 6, 7, 8, 9, 10];
+        const columnValues = columnsToConvert.map(col => allData2.map(row => parseFloat(row[col])));
+    
+        // Calculate percentiles
+        const percentiles = columnValues.map(values => {
+            const sorted = [...values].sort((a, b) => a - b);
+            return values.map(value => {
+                const rank = sorted.indexOf(value) + 1;
+                return (rank / sorted.length);
+            });
+        });
+    
+        // Replace original values with percentiles
+        allData2.forEach((row, rowIndex) => {
+            columnsToConvert.forEach((col, colIndex) => {
+                row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+            });
+        });
     }
 
-                
-    function toggleFilling() {
-      const radarPolygons = document.querySelectorAll('.radarPolygon');
-      radarPolygons.forEach(polygon => {
-        polygon.style.fill = polygon.style.fill ? '' : 'none'; // Toggle the filling
+    function processAndStoreData3(dataArray) {
+      // Unique ID counter
+      let uniqueIdCounter = 1;
+  
+      dataArray.forEach(data => {
+          const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+          const sheetName = workbook.SheetNames[0];
+          const sheet = workbook.Sheets[sheetName];
+          const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+  
+          // Exclude header row
+          const dataWithoutHeader = jsonData.slice(1);
+  
+          // Perform transformations and add unique ID
+          dataWithoutHeader.forEach(row => {
+              // Generate unique ID and shift columns
+              row.unshift(`${uniqueIdCounter++}`);
+  
+              // Shift columns as needed
+    
+              row[15] = `${row[1]} 22/23`;
+              row[3] = row[3] - 1;
+
+              // Reorder columns
+              const reorderedRow = [
+              row[0],
+              row[15],
+              row[2],
+              row[3],
+              row[5],
+              row[6],
+              row[7],
+              row[8],
+              row[9],
+              row[10],
+              row[11],
+              row[4]
+              ];
+  
+              allData3.push(reorderedRow);
+          });
       });
+  
+      // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+      const columnsToConvert = [4, 5, 6, 7, 8, 9, 10];
+      const columnValues = columnsToConvert.map(col => allData3.map(row => parseFloat(row[col])));
+  
+      // Calculate percentiles
+      const percentiles = columnValues.map(values => {
+          const sorted = [...values].sort((a, b) => a - b);
+          return values.map(value => {
+              const rank = sorted.indexOf(value) + 1;
+              return (rank / sorted.length);
+          });
+      });
+  
+      // Replace original values with percentiles
+      allData3.forEach((row, rowIndex) => {
+          columnsToConvert.forEach((col, colIndex) => {
+              row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+          });
+      });
+  }
+  function processAndStoreData4(dataArray) {
+    // Unique ID counter
+    let uniqueIdCounter = 1;
+
+    dataArray.forEach(data => {
+        const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+        const sheetName = workbook.SheetNames[0];
+        const sheet = workbook.Sheets[sheetName];
+        const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+
+        // Exclude header row
+        const dataWithoutHeader = jsonData.slice(1);
+
+        // Perform transformations and add unique ID
+        dataWithoutHeader.forEach(row => {
+            // Generate unique ID and shift columns
+            row.unshift(`${uniqueIdCounter++}`);
+
+            // Shift columns as needed
+
+            row[15] = `${row[1]} 22/23`;
+            row[3] = row[3] - 1;
+
+            // Reorder columns
+            const reorderedRow = [
+            row[0],
+            row[15],
+            row[2],
+            row[3],
+            row[5],
+            row[6],
+            row[7],
+            row[8],
+            row[9],
+            row[10],
+            row[11],
+            row[4]
+            ];
+
+            allData4.push(reorderedRow);
+        });
+    });
+
+    // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+    const columnsToConvert = [4, 5, 6, 7, 8, 9, 10];
+    const columnValues = columnsToConvert.map(col => allData4.map(row => parseFloat(row[col])));
+
+    // Calculate percentiles
+    const percentiles = columnValues.map(values => {
+        const sorted = [...values].sort((a, b) => a - b);
+        return values.map(value => {
+            const rank = sorted.indexOf(value) + 1;
+            return (rank / sorted.length);
+        });
+    });
+
+    // Replace original values with percentiles
+    allData4.forEach((row, rowIndex) => {
+        columnsToConvert.forEach((col, colIndex) => {
+            row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+        });
+    });
+}
+function processAndStoreData5(dataArray) {
+  // Unique ID counter
+  let uniqueIdCounter = 1;
+
+  dataArray.forEach(data => {
+      const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+      const sheetName = workbook.SheetNames[0];
+      const sheet = workbook.Sheets[sheetName];
+      const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+
+      // Exclude header row
+      const dataWithoutHeader = jsonData.slice(1);
+
+      // Perform transformations and add unique ID
+      dataWithoutHeader.forEach(row => {
+          // Generate unique ID and shift columns
+          row.unshift(`${uniqueIdCounter++}`);
+
+          // Shift columns as needed
+    
+          row[15] = `${row[1]} 21/22`;
+          row[3] = row[3] - 2;
+
+
+          // Reorder columns
+          const reorderedRow = [
+          row[0],
+          row[15],
+          row[2],
+          row[3],
+          row[5],
+          row[6],
+          row[7],
+          row[8],
+          row[9],
+          row[10],
+          row[11],
+          row[4]
+          ];
+
+          allData5.push(reorderedRow);
+      });
+
+      
+  });
+
+  
+
+  // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+  const columnsToConvert = [4, 5, 6, 7, 8, 9, 10];
+  const columnValues = columnsToConvert.map(col => allData5.map(row => parseFloat(row[col])));
+
+  // Calculate percentiles
+  const percentiles = columnValues.map(values => {
+      const sorted = [...values].sort((a, b) => a - b);
+      return values.map(value => {
+          const rank = sorted.indexOf(value) + 1;
+          return (rank / sorted.length);
+      });
+  });
+
+  // Replace original values with percentiles
+  allData5.forEach((row, rowIndex) => {
+      columnsToConvert.forEach((col, colIndex) => {
+          row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+      });
+  });
+}
+
+
+function processAndStoreData6(dataArray) {
+  // Unique ID counter
+  let uniqueIdCounter = 1;
+
+  dataArray.forEach(data => {
+      const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+      const sheetName = workbook.SheetNames[0];
+      const sheet = workbook.Sheets[sheetName];
+      const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+
+      // Exclude header row
+      const dataWithoutHeader = jsonData.slice(1);
+
+      // Perform transformations and add unique ID
+      dataWithoutHeader.forEach(row => {
+          // Generate unique ID and shift columns
+          row.unshift(`${uniqueIdCounter++}`);
+
+          row[15] = `${row[1]} 24/25`;
+
+          // Reorder columns
+          const reorderedRow = [
+          row[0],
+          row[15],
+          row[2],
+          row[3],
+          row[5],
+          row[6],
+          row[7],
+          row[8],
+          row[9],
+          row[10],
+          row[11],
+          row[4]
+          ];
+
+          allData6.push(reorderedRow);
+      });
+
+      
+  });
+
+  
+
+  // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+  const columnsToConvert = [4, 5, 6, 7, 8, 9, 10];
+  const columnValues = columnsToConvert.map(col => allData6.map(row => parseFloat(row[col])));
+
+  // Calculate percentiles
+  const percentiles = columnValues.map(values => {
+      const sorted = [...values].sort((a, b) => a - b);
+      return values.map(value => {
+          const rank = sorted.indexOf(value) + 1;
+          return (rank / sorted.length);
+      });
+  });
+
+  // Replace original values with percentiles
+  allData6.forEach((row, rowIndex) => {
+      columnsToConvert.forEach((col, colIndex) => {
+          row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+      });
+  });
+}
+    
+    Promise.all(fetchPromises1)
+        .then(responses => {
+            processAndStoreData1(responses);
+    
+        
+            // Fetch and process the remaining files
+            Promise.all(fetchPromises2)
+                .then(responses2 => {
+                    processAndStoreData2(responses2);
+    
+                    Promise.all(fetchPromises3)
+                    .then(responses3 => {
+                        processAndStoreData3(responses3);
+                        Promise.all(fetchPromises4)
+                        .then(responses4 => {
+                            processAndStoreData4(responses4);
+                            Promise.all(fetchPromises5)
+                            .then(responses5 => {
+                                processAndStoreData5(responses5);
+                                Promise.all(fetchPromises6)
+                                .then(responses6 => {
+                                    processAndStoreData6(responses6);
+
+                    // Concatenate intermediate data with new data
+                    const finalData = allData1.concat(allData2).concat(allData3).concat(allData4).concat(allData5).concat(allData6);
+    
+                    // Reset and assign new unique IDs
+                    finalData.forEach((row, index) => {
+                        row[0] = `${index + 1}`;
+                    });
+                    
+                    finalData.forEach(row => {
+                        allDataAsString += row.join(',') + '\n';
+                    });
+    
+    
+                    const inputLines = allDataAsString.trim().split('\n');
+    const outputLines = [];
+
+// Process each line
+for (const line of inputLines) {
+    // Split the line by comma
+  const parts = line.split(',');
+
+  // Extract the desired fields
+  const name = parts[1];
+  const age = parts[3];
+  const club = parts[2];
+
+  // Create the formatted string
+  const outputLine = `${name},${age},${club}`;
+
+  // Add the formatted string to the output array
+  outputLines.push(outputLine);
+}
+
+
+function isMobileDevice() {
+  const userAgent = navigator.userAgent;
+  return /Android|iPhone/i.test(userAgent);
+}
+
+
+    const names = outputLines;
+const searchInput = document.getElementById("searchInput1");
+ const matchingNamesContainer = document.getElementById("matchingNames");
+const searchButton = document.getElementById("searchButton");
+
+
+
+
+function isMobileDevice() {
+  const userAgent = navigator.userAgent;
+  return /Android|iPhone/i.test(userAgent);
+}
+
+function updateMatchingNames() {
+  const searchQuery = removeSpecialChars(searchInput.value.toLowerCase());
+  const matchingNames = names.filter(function(name) {
+    const [fullName] = name.split(",");
+    const normalizedName = removeSpecialChars(fullName.toLowerCase());
+    return normalizedName.includes(searchQuery);
+  });
+
+  matchingNamesContainer.innerHTML = "";
+
+  matchingNames.forEach(function(name) {
+    const [fullName, team, age] = name.split(",");
+
+    const nameElement = document.createElement("div");
+    nameElement.classList.add("name");
+
+    const fullNameElement = document.createElement("span");
+    fullNameElement.textContent = fullName;
+    fullNameElement.classList.add("fullName");
+    nameElement.appendChild(fullNameElement);
+
+    const ageElement = document.createElement("span");
+    ageElement.textContent = " (" + team + ",";
+    ageElement.classList.add("age");
+    nameElement.appendChild(ageElement);
+
+    const teamElement = document.createElement("span");
+    teamElement.textContent = " " + age + ")";
+    teamElement.classList.add("team");
+    nameElement.appendChild(teamElement);
+
+    nameElement.addEventListener("click", function(event) {
+      const clickedElement = event.target.closest(".name");
+      if (clickedElement) {
+        const fullName = clickedElement.querySelector(".fullName").textContent;
+        const age = clickedElement.querySelector(".age").textContent.trim();
+        const team = clickedElement.querySelector(".team").textContent.trim().replace(/[^a-zA-Z\s]/g, ''); // Remove non-alphanumeric characters
+        const searchQuery = fullName + "," + age.substring(1, age.length - 1) + "," + team;
+    
+        searchInput.value = searchQuery; // Set the full query as the search input value
+        const enterKeyEvent = new KeyboardEvent("keyup", { key: "Enter" });
+        searchInput.dispatchEvent(enterKeyEvent); // Dispatch enter key event
+      }
+    });
+
+    matchingNamesContainer.appendChild(nameElement);
+  });
+
+  if (searchQuery === "" && matchingNames.length === 0) {
+    matchingNamesContainer.style.display = "none";
+  } else {
+    matchingNamesContainer.style.display = "block";
+
+    matchingNamesContainer.style.backgroundColor = "#9c9b9b";
+    matchingNamesContainer.style.width = "430px";
+    matchingNamesContainer.style.padding = "10px";
+    matchingNamesContainer.style.position = "relative";
+    matchingNamesContainer.style.left = "5.5px";
+    matchingNamesContainer.style.zIndex = "9999"; // Set a high z-index value
+
+
+  
+
+  }
+
+
+  if (searchQuery === "") {
+    matchingNamesContainer.style.display = "none";
+  }
+}
+
+searchInput.addEventListener("input", updateMatchingNames);
+searchInput.addEventListener("keyup", function(event) {
+  if (event.key === "Enter") {
+    searchButton1.click(); // Trigger the search button click event
+  } else if (event.key === "Backspace") {
+    updateMatchingNames();
+  }
+});
+	  
+const csvData = allDataAsString;
+let dataArray = csvData.trim().split('\n').map(line => line.split(','));
+
+
+
+            function calculateEuclideanDifference(data1, data2) {
+              let difference = 0;
+              for (let i = 4; i <= 10; i++) {
+                const metric1 = parseFloat(data1[i]);
+                const metric2 = parseFloat(data2[i]);
+                difference += Math.pow(metric1 - metric2, 2);
+              }
+              return Math.sqrt(difference);
+            }
+            
+            
+            const colorClasses = ['result-color-blue', 'result-color-pink', 'result-color-orange', 'result-color-green', 'result-color-bleu', 'result-color-rose', 'result-color-1', 'result-color-2', 'result-color-3', 'result-color-4', 'result-color-5', 'result-color-6', 'result-color-7', 'result-color-8', 'result-color-9', 'result-color-10', 'result-color-11', 'result-color-12', 'result-color-13', 'result-color-14', 'result-color-15', 'result-color-16', 'result-color-17', 'result-color-18', 'result-color-19', 'result-color-20', 'result-color-21', 'result-color-22', 'result-color-23', 'result-color-24', 'result-color-25', 'result-color-26', 'result-color-27', 'result-color-28', 'result-color-29', 'result-color-30', 'result-color-31', 'result-color-32', 'result-color-33', 'result-color-34', 'result-color-35', 'result-color-36', 'result-color-37', 'result-color-38', 'result-color-39', 'result-color-40', 'result-color-41', 'result-color-42', 'result-color-43', 'result-color-44', 'result-color-45', 'result-color-46', 'result-color-47', 'result-color-48'];
+            
+            let searchResults = []; // Declare the search results variable
+            
+            function removeSpecialChars(str) {
+              return str.normalize('NFD').replace(/[\u0300-\u036f\s]/g, '') 
+              .replace(/Ø/g, 'O')
+              .replace(/ø/g, 'o');
+            }
+            
+            function search(query) {
+              const queryParts = query.split(',').map(part => part.trim()); // Split the query by commas and trim whitespace
+              const name = queryParts[0]; // Extract the name part
+              let age, team;
+              
+              // Extract age and team if they exist
+              if (queryParts.length > 1) {
+                age = queryParts[1].trim(); // Trim any leading or trailing spaces
+                if (queryParts.length > 2) {
+                  team = queryParts[2].trim(); // Trim any leading or trailing spaces
+                }
+              }
+            
+            
+              const results = dataArray.filter(data => {
+                const normalizedName = removeSpecialChars(data[1].toLowerCase());
+                const normalizedTeam = removeSpecialChars(data[2].toLowerCase());
+                const normalizedAge = data[3].trim().toLowerCase(); // Trim any leading or trailing spaces
+            
+                // Check if the name matches
+                const nameMatches = normalizedName.includes(removeSpecialChars(name.toLowerCase()));
+            
+                // Check if the age matches (or if age is not provided)
+                const ageMatches = !age || normalizedAge === removeSpecialChars(age.toLowerCase());
+            
+                // Check if the team matches (or if team is not provided)
+                const teamMatches = !team || normalizedTeam === removeSpecialChars(team.toLowerCase());
+            
+                // Return true if name matches and either age or team matches
+                return nameMatches && (ageMatches || teamMatches);
+              });
+            
+              return results;
+            }
+            
+            function createTable(teamName, teamIndex, color) {
+                const resultsTable = document.getElementById('resultsTable');
+                const headerNames = [
+                '',
+                'Percentiles',
+                '',
+                'Age',
+                'Duel%',
+                'Def. actions',
+                'Prog. carries',
+                'Forward passes',
+                'Forward pass%',
+                'Key passes',
+                'Prog. passes',
+                'Minutes played',
+              ];
+            
+            
+              // Check if table headers exist
+              const headersExist = resultsTable.querySelector('th') !== null;
+            
+              const table = headersExist ? resultsTable.querySelector('table') : document.createElement('table');
+              table.classList.add('metrics-table');
+            
+              if (!headersExist) {
+                // Create the table header
+                const headerRow = document.createElement('tr');
+               
+            for (let i = 1; i < headerNames.length; i++) {
+              const th = document.createElement('th');
+              th.textContent = headerNames[i];
+              headerRow.appendChild(th);
+            }
+            // Add a separate table header for the "x" column
+            const xHeader = document.createElement('th');
+            xHeader.textContent = '';
+            headerRow.appendChild(xHeader);
+                table.appendChild(headerRow);
+              }
+            
+            
+            
+            const teamData = dataArray[teamIndex];
+            const dataRow = document.createElement('tr');
+            for (let i = 1; i < teamData.length; i++) {
+              const td = document.createElement('td');
+              if (i >= 4 && i <= 10) {
+                const value = parseFloat(teamData[i]) * 100;
+                td.textContent = value.toFixed(1);
+              } else {
+                td.textContent = teamData[i];
+              }
+              td.classList.add(color);
+              dataRow.appendChild(td);
+            }
+            
+            // Add a separate table cell for the "x" column
+            const xCell = document.createElement('td');
+            const xButton = document.createElement('button');
+            xButton.textContent = 'x';
+            xButton.addEventListener('click', function () {
+              dataRow.remove(); // Remove the corresponding row from the table
+              const radarPolygons = document.querySelectorAll(`.radarPolygon.${color}`);
+              const radarLines = document.querySelectorAll(`.radarLines.${color}`);
+              const radarCircles = document.querySelectorAll(`.radarCircle.${color}`);
+            
+              radarPolygons.forEach((polygon) => polygon.remove()); // Remove radar polygons with the specified color
+              radarLines.forEach((line) => line.remove()); // Remove radar lines with the specified color
+              radarCircles.forEach((circle) => circle.remove()); // Remove radar circles with the specified color
+            });
+            
+            xCell.appendChild(xButton);
+            dataRow.appendChild(xCell);
+            
+            table.appendChild(dataRow);
+            
+              if (!headersExist) {
+                resultsTable.appendChild(table);
+              }
+            
+            
+              const combResults = dataArray[teamIndex].join(', ');
+            
+              const outerRadius = 280;
+              const center = [0, 0];
+              const angles = [
+                0,
+                (2 * Math.PI) / 7,
+                (4 * Math.PI) / 7,
+                (6 * Math.PI) / 7,
+                (8 * Math.PI) / 7,
+                (10 * Math.PI) / 7,
+                (12 * Math.PI) / 7
+              ];
+            
+              function axisValueToCartesian(axis, value) {
+                let angle = angles[axis - 1];
+                angle += (2 * Math.PI / 7) * 0.2;
+                const x = 280 * value * Math.cos(angle);
+                const y = 280 * value * Math.sin(angle);
+                return { x, y };
+              }
+            
+              const svg = document.querySelector('.radar');
+              const radarWrapper = svg.appendChild(
+                document.createElementNS('http://www.w3.org/2000/svg', 'g')
+              );
+              radarWrapper.setAttribute('transform', 'translate(384.77,306)');
+              radarWrapper.innerHTML = '';
+            
+              const data = [];
+              const rowCols = combResults.split(',');
+              for (let i = 4; i < 11; i++) {
+                data.push({ axis: i - 3, value: parseFloat(rowCols[i]) });
+              }
+            
+              const points = data
+                .map(({ axis, value }) => {
+                  const { x, y } = axisValueToCartesian(axis, value);
+                  return `${x},${y}`;
+                })
+                .join(' ');
+            
+              const polyline = document.createElementNS(
+                'http://www.w3.org/2000/svg',
+                'polyline'
+              );
+              polyline.setAttribute('class', `radarLines ${color}`);
+              polyline.setAttribute('points', `${points} ${points.split(' ')[0]}`);
+              polyline.setAttribute('stroke-width', '3');
+              polyline.setAttribute('fill', 'none');
+              radarWrapper.appendChild(polyline);
+            
+              const polygon = document.createElementNS(
+                'http://www.w3.org/2000/svg',
+                'polygon'
+              );
+              polygon.setAttribute('class', `radarPolygon ${color}`);
+              polygon.setAttribute('points', points);
+              polygon.style.fillOpacity = '0.2';
+              radarWrapper.appendChild(polygon);
+            
+              data.forEach(({ axis, value }) => {
+                const { x, y } = axisValueToCartesian(axis, value);
+                const circle = document.createElementNS(
+                  'http://www.w3.org/2000/svg',
+                  'circle'
+                );
+                circle.setAttribute('class', `radarCircle ${color}`);
+                circle.style.fillOpacity = '0.86';
+                circle.setAttribute('r', '8.4');
+                circle.setAttribute('cx', x);
+                circle.setAttribute('cy', y);
+                radarWrapper.appendChild(circle);
+              });
+            }
+            
+            
+
+            
+            
+              const teamNames = new Set();
+            
+            
+            function createTableForTeam1() {
+              const searchInput = document.getElementById('searchInput1');
+              const searchButton = document.getElementById('searchButton1');
+              const resultsTable = document.getElementById('resultsTable');
+              const teamNamesList = document.createElement('ul');
+              teamNamesList.style.fontFamily = 'Arial, sans-serif';
+              teamNamesList.style.listStyleType = 'none';
+              teamNamesList.style.paddingLeft = '9px';
+              resultsTable.appendChild(teamNamesList);
+              let searchCounter = 0;
+            
+              searchButton.addEventListener('click', function () {
+                const searchQuery = searchInput.value;
+                const results = search(searchQuery);
+            
+                // Reset the toggle state before performing a new search
+                const radarPolygons = document.querySelectorAll('.radarPolygon');
+                radarPolygons.forEach(polygon => {
+                  polygon.style.fill = '';
+                });
+            
+                if (results) {
+                  const teamId = parseInt(results[0]);
+                  const teamName =
+                    results[1] + ' (' + results[2] + ', ' + results[3] + ') - ' + results[11] + ' min';
+                  const color = colorClasses[searchCounter % colorClasses.length];
+            
+                  createTable(teamName, teamId - 1, color);
+            
+                  searchCounter++;
+                }
+              });
+            }
+            
+            createTableForTeam1();
+            
+            
+            
+            const similarPlayersContainer = document.createElement("div");
+            similarPlayersContainer.id = "similarPlayersContainer";
+            const insertHere = document.getElementById("insertHere");
+            insertHere.appendChild(similarPlayersContainer);
+            
+            let colorIndex = 0; // Initialize color index
+            
+            searchButton1.addEventListener("click", function() {
+              const searchQuery = searchInput.value;
+              const searchedPlayer = search(searchQuery);
+            
+              if (searchedPlayer.length > 0) {
+                const searchedPlayerData = searchedPlayer[0];
+                const searchedPlayerIndex = parseInt(searchedPlayerData[0]) - 1;
+            
+                // Calculate Euclidean difference with all matching players and find the most similar players
+                const similarPlayers = [];
+                for (let i = 0; i < dataArray.length; i++) {
+                  if (i !== searchedPlayerIndex) {
+                    const difference = calculateEuclideanDifference(searchedPlayerData, dataArray[i]);
+                    similarPlayers.push({ index: i, difference: difference });
+                  }
+                }
+            
+                similarPlayers.sort((a, b) => a.difference - b.difference);
+            
+                // Get the three most similar players
+                const mostSimilarPlayers = similarPlayers.slice(0, 5);
+            
+                for (let i = 0; i < 1; i++) {
+                  const playerIndex = mostSimilarPlayers[i].index;
+                  const playerName = dataArray[playerIndex][1];
+                  const playerAge = dataArray[playerIndex][3];
+                  const playerTeam = dataArray[playerIndex][2];
+            
+                  const similarPlayerTable = document.createElement("table");
+                  similarPlayerTable.classList.add("similar-table");
+            
+                  const headerRow = document.createElement("tr");
+                  const headerCell = document.createElement("th");
+                  headerCell.setAttribute("colspan", "5");
+                  headerCell.textContent = `Similar data to ${searchedPlayer[0][1]}`;
+                  headerCell.classList.add(colorClasses[colorIndex % colorClasses.length]);
+                  headerRow.appendChild(headerCell);
+                  similarPlayerTable.appendChild(headerRow);
+            
+                  const similarPlayerRow = document.createElement("tr");
+            
+                  for (let i = 0; i < mostSimilarPlayers.length; i++) {
+                    const playerIndex = mostSimilarPlayers[i].index;
+                    const playerName = dataArray[playerIndex][1];
+                    const playerAge = dataArray[playerIndex][3];
+                    const playerTeam = dataArray[playerIndex][2];
+            
+                    const playerCell = document.createElement("td");
+                    playerCell.textContent = `${playerName}`;
+                    playerCell.style.fontSize = "10.8px"; // Set the desired font size
+                    playerCell.style.cursor = "pointer"; // Set cursor to pointer
+            
+                    // Add click event listener to the player name cell
+                    playerCell.addEventListener("click", function() {
+                      searchInput.value = playerName; // Set search input value to the clicked player name
+                      // Trigger the search button click event to perform the search
+                      searchButton1.click();
+                    });
+            
+                    similarPlayerRow.appendChild(playerCell);
+                  }
+            
+                  if (similarPlayersContainer.children.length > 0) {
+                    // Remove the previous table if it exists
+                    similarPlayersContainer.removeChild(similarPlayersContainer.firstChild);
+                  }
+            
+                  similarPlayerTable.appendChild(similarPlayerRow);
+                  similarPlayersContainer.appendChild(similarPlayerTable);
+            
+                  colorIndex++; // Increment color index for the next search
+            
+                }
+            
+              }
+            
+              searchInput.value = '';
+              updateMatchingNames();
+                      
+            
+            });}) })})})})})
+            .catch(error => {
+                console.error('Error fetching or processing data:', error);
+            });
+</script>
+	  
+<script>async function takeScreenshot() {
+  const body = document.querySelector('body');
+  const isDarkMode = body.classList.contains('dark-mode');
+  const backgroundColor = isDarkMode ? '#0F0F0E' : '#ffffff'; // Black for dark mode, white for light mode
+  
+  try {
+    const element = document.querySelector('.screenshotcontainer'); // Capture the screenshotcontainer using the class name
+    if (!element) {
+      throw new Error('screenshotcontainer element not found');
     }
 
-  </script>
+    const canvas = await html2canvas(element, {
+	width: 794,
+    height: element.offsetHeight -66, 
+    y: -10,
+    x: - 10,  
+      useCORS: true,
+      backgroundColor: backgroundColor, // Set the background color based on mode
+      scale: window.devicePixelRatio,
+      logging: false, // Disable logging for production
+      foreignObjectRendering: false,
+    });
+
+    canvas.toBlob(blob => {
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'screenshot.png';
+      link.click();
+    }, 'image/png');
+  } catch (error) {
+    console.error('Error in takeScreenshot:', error);
+    // Handle errors appropriately (e.g., display to user or log)
+  }
+}
 
 
 
-  <a href="https://datamb.football/proradargk/" target="_self" rel="noopener noreferrer">
-    <button class="button-1" role="button">GK</button></a>
-  
-  <a href="https://datamb.football/proradarcb/" target="_self" rel="noopener noreferrer">
-    <button class="button-2" role="button">CB</button></a>
-  
-  <a href="https://datamb.football/proradarfb/" target="_self" rel="noopener noreferrer">
-    <button class="button-3" role="button">FB</button></a>
-  
-  <a href="https://datamb.football/proradarcm/" target="_self" rel="noopener noreferrer">
-    <button class="button-4" role="button">CM</button></a>
-  
-  <a href="https://datamb.football/proradarfw/" target="_self" rel="noopener noreferrer">
-    <button class="button-5" role="button">FW</button></a>
-  
-  <a href="https://datamb.football/proradarst/" target="_self" rel="noopener noreferrer">
-    <button class="button-6" role="button">ST</button></a>
+  // Function to toggle dark mode
+  function toggleDarkMode() {
+    const body = document.querySelector("body");
+    body.classList.toggle("dark-mode");
 
-</div>
+    // Store the user's preference in local storage
+    const isDarkMode = body.classList.contains("dark-mode");
+    localStorage.setItem("darkMode", isDarkMode);
+  }
 
-	<br>
-	<br>
-	<br><br>
-	<br>
-	<br><br>
-	<br>
-	<br><br>
-	<br>
-	<br>
-		<br><br>
-	<br>
-	<br><br>
-	<br>
-	<br><br>
-	<br>
-	<br>
-		<br><br><br>
-	<br>
-	<br><br>
-	<br>
-	<br><br>
-	<br>
-	<br><br>
-	<br>
-	<br>
-		<br><br>
-	<br>
-	<br><br>
-	<br>
-	<br><br>
-	<br>
-	<br>
-		<br><br>
+  // Check if user has a stored preference for dark mode
+  const storedDarkMode = localStorage.getItem("darkMode");
 
-	
+  if (storedDarkMode === "true") {
+    const body = document.querySelector("body");
+    body.classList.add("dark-mode");
+  }
+
+              
+  function toggleFilling() {
+    const radarPolygons = document.querySelectorAll('.radarPolygon');
+    radarPolygons.forEach(polygon => {
+      polygon.style.fill = polygon.style.fill ? '' : 'none'; // Toggle the filling
+    });
+  }
+
+
+
+
+</script>
+<br>
+<br>
+<br><br><br><br><br><br>
+<br>
+
+
 </body>
 </html>
