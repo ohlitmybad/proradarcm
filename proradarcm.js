@@ -1,1 +1,1832 @@
-const allData1=[],allData2=[],allData3=[],allData4=[],allData5=[],allData6=[],allData7=[],allData8=[];let allDataAsString='';const urls1=['https://datamb.football/database/CURRENT/RATOP72526/CM/CM.xlsx'],urls2=['https://datamb.football/database/CURRENT/RAPRO2526/CM/CM.xlsx','https://datamb.football/database/CURRENT/RAPRO2025/CM/CM.xlsx'],urls3=['https://datamb.football/database/OLD/RATOP72425/CM/CM.xlsx'],urls4=['https://datamb.football/database/OLD/RAPRO2425/CM/CM.xlsx','https://datamb.football/database/OLD/RAPRO2024/CM/CM.xlsx'],urls5=['https://datamb.football/database/OLD/RATOP72324/CM/CM.xlsx'],urls6=['https://datamb.football/database/OLD/RAPRO2324/CM/CM.xlsx','https://datamb.football/database/OLD/RAPRO2023/CM/CM.xlsx'],urls7=['https://datamb.football/database/OLD/RATOP72223/CM/CM.xlsx'],urls8=['https://datamb.football/database/OLD/RAPRO2223/CM/CM.xlsx'],fetchPromises1=urls1['map'](_0x26c91c=>fetch(_0x26c91c)['then'](_0x4c5ed7=>_0x4c5ed7['arrayBuffer']())),fetchPromises2=urls2['map'](_0x36901e=>fetch(_0x36901e)['then'](_0x2f8c0c=>_0x2f8c0c['arrayBuffer']())),fetchPromises3=urls3['map'](_0x364990=>fetch(_0x364990)['then'](_0x511765=>_0x511765['arrayBuffer']())),fetchPromises4=urls4['map'](_0x36e328=>fetch(_0x36e328)['then'](_0x53ebe4=>_0x53ebe4['arrayBuffer']())),fetchPromises5=urls5['map'](_0x489405=>fetch(_0x489405)['then'](_0x34870f=>_0x34870f['arrayBuffer']())),fetchPromises6=urls6['map'](_0x2d345c=>fetch(_0x2d345c)['then'](_0x3522b7=>_0x3522b7['arrayBuffer']())),fetchPromises7=urls7['map'](_0x4a0515=>fetch(_0x4a0515)['then'](_0x52ebc8=>_0x52ebc8['arrayBuffer']())),fetchPromises8=urls8['map'](_0x37642a=>fetch(_0x37642a)['then'](_0x45ea5b=>_0x45ea5b['arrayBuffer']()));function processAndStoreData1(_0x44a6c4){let _0x5120b3=0x1;_0x44a6c4['forEach']((_0x49f93d,_0x5dde7a)=>{const _0x12810c=XLSX['read'](new Uint8Array(_0x49f93d),{'type':'array'}),_0x5d4c9f=_0x12810c['SheetNames'][0x0],_0x4dfd27=_0x12810c['Sheets'][_0x5d4c9f],_0x3414c3=XLSX['utils']['sheet_to_json'](_0x4dfd27,{'header':0x1}),_0x30fc0f=urls1[_0x5dde7a];let _0x39693a='25/26';const _0x5eeb55=_0x30fc0f['match'](/PRO20(\d{2})/);_0x5eeb55&&(_0x39693a='20'+_0x5eeb55[0x1]);const _0x2935ea=_0x3414c3['slice'](0x1);_0x2935ea['forEach'](_0x2ad901=>{_0x2ad901['unshift'](''+_0x5120b3++),_0x2ad901[0xf]=_0x2ad901[0x1]+'\x20'+_0x39693a;const _0x4bf950=[_0x2ad901[0x0],_0x2ad901[0xf],_0x2ad901[0x2],_0x2ad901[0x3],_0x2ad901[0x9],_0x2ad901[0x5],_0x2ad901[0x6],_0x2ad901[0xa],_0x2ad901[0x7],_0x2ad901[0x8],_0x2ad901[0xb],_0x2ad901[0x4]];allData1['push'](_0x4bf950);});});const _0x1ac508=[0x4,0x5,0x6,0x7,0x8,0x9,0xa],_0x28d013=_0x1ac508['map'](_0x567185=>allData1['map'](_0x3f91b7=>parseFloat(_0x3f91b7[_0x567185]))),_0x5b42c5=_0x28d013['map'](_0x479f12=>{const _0x327b45=[..._0x479f12]['sort']((_0xe78bc1,_0x4699c0)=>_0xe78bc1-_0x4699c0);return _0x479f12['map'](_0x3f4008=>{const _0x1ee9af=_0x327b45['indexOf'](_0x3f4008)+0x1;return _0x1ee9af/_0x327b45['length'];});});allData1['forEach']((_0x15c5fe,_0x10a988)=>{_0x1ac508['forEach']((_0x53eef1,_0x19b209)=>{_0x15c5fe[_0x53eef1]=_0x5b42c5[_0x19b209][_0x10a988]['toFixed'](0x3);});});}function processAndStoreData2(_0x59517a){let _0x31dbd3=0x1;_0x59517a['forEach']((_0x1458d1,_0x5f5551)=>{const _0x3b2f80=XLSX['read'](new Uint8Array(_0x1458d1),{'type':'array'}),_0x3bf34b=_0x3b2f80['SheetNames'][0x0],_0x30e3b3=_0x3b2f80['Sheets'][_0x3bf34b],_0x854a07=XLSX['utils']['sheet_to_json'](_0x30e3b3,{'header':0x1}),_0x5b6ac0=urls2[_0x5f5551];let _0x28347c='25/26';const _0x5e505d=_0x5b6ac0['match'](/PRO20(\d{2})/);_0x5e505d&&(_0x28347c='20'+_0x5e505d[0x1]);const _0x674dfe=_0x854a07['slice'](0x1);_0x674dfe['forEach'](_0x4b8ecb=>{_0x4b8ecb['unshift'](''+_0x31dbd3++),_0x4b8ecb[0xf]=_0x4b8ecb[0x1]+'\x20'+_0x28347c;const _0x2fc62f=[_0x4b8ecb[0x0],_0x4b8ecb[0xf],_0x4b8ecb[0x2],_0x4b8ecb[0x3],_0x4b8ecb[0x9],_0x4b8ecb[0x5],_0x4b8ecb[0x6],_0x4b8ecb[0xa],_0x4b8ecb[0x7],_0x4b8ecb[0x8],_0x4b8ecb[0xb],_0x4b8ecb[0x4]];allData2['push'](_0x2fc62f);});});const _0x4f72a0=[0x4,0x5,0x6,0x7,0x8,0x9,0xa],_0x19fd76=_0x4f72a0['map'](_0x1c90f5=>allData2['map'](_0x176cd1=>parseFloat(_0x176cd1[_0x1c90f5]))),_0x390706=_0x19fd76['map'](_0x23158a=>{const _0x19cbc3=[..._0x23158a]['sort']((_0x288910,_0x18db6c)=>_0x288910-_0x18db6c);return _0x23158a['map'](_0x55b7c1=>{const _0x31eb52=_0x19cbc3['indexOf'](_0x55b7c1)+0x1;return _0x31eb52/_0x19cbc3['length'];});});allData2['forEach']((_0x185030,_0x208368)=>{_0x4f72a0['forEach']((_0x23e317,_0x2ef999)=>{_0x185030[_0x23e317]=_0x390706[_0x2ef999][_0x208368]['toFixed'](0x3);});});}function processAndStoreData3(_0x5a3183){let _0x416e54=0x1;_0x5a3183['forEach']((_0x50435e,_0x5494b9)=>{const _0x3eb013=XLSX['read'](new Uint8Array(_0x50435e),{'type':'array'}),_0x1c47bf=_0x3eb013['SheetNames'][0x0],_0x455d07=_0x3eb013['Sheets'][_0x1c47bf],_0x5504f2=XLSX['utils']['sheet_to_json'](_0x455d07,{'header':0x1}),_0x478683=urls3[_0x5494b9];let _0x5d4e28='24/25';const _0x563df0=_0x478683['match'](/PRO20(\d{2})/);_0x563df0&&(_0x5d4e28='20'+_0x563df0[0x1]);const _0x3362a7=_0x5504f2['slice'](0x1);_0x3362a7['forEach'](_0x43586c=>{_0x43586c['unshift'](''+_0x416e54++),_0x43586c[0xf]=_0x43586c[0x1]+'\x20'+_0x5d4e28;const _0x55a77b=[_0x43586c[0x0],_0x43586c[0xf],_0x43586c[0x2],_0x43586c[0x3],_0x43586c[0x9],_0x43586c[0x5],_0x43586c[0x6],_0x43586c[0xa],_0x43586c[0x7],_0x43586c[0x8],_0x43586c[0xb],_0x43586c[0x4]];allData3['push'](_0x55a77b);});});const _0xa219bc=[0x4,0x5,0x6,0x7,0x8,0x9,0xa],_0x17c646=_0xa219bc['map'](_0x53af1f=>allData3['map'](_0x2c77c1=>parseFloat(_0x2c77c1[_0x53af1f]))),_0x31c215=_0x17c646['map'](_0x5050e5=>{const _0xd1d042=[..._0x5050e5]['sort']((_0x1dc845,_0x4d4bae)=>_0x1dc845-_0x4d4bae);return _0x5050e5['map'](_0x539af4=>{const _0x34befd=_0xd1d042['indexOf'](_0x539af4)+0x1;return _0x34befd/_0xd1d042['length'];});});allData3['forEach']((_0x1ad3ba,_0xc1cc40)=>{_0xa219bc['forEach']((_0xc622ad,_0x153089)=>{_0x1ad3ba[_0xc622ad]=_0x31c215[_0x153089][_0xc1cc40]['toFixed'](0x3);});});}function processAndStoreData4(_0x28dcee){let _0x3a256f=0x1;_0x28dcee['forEach']((_0x10f04b,_0x1fc265)=>{const _0x52d67b=XLSX['read'](new Uint8Array(_0x10f04b),{'type':'array'}),_0x2b40d2=_0x52d67b['SheetNames'][0x0],_0x1e1ea5=_0x52d67b['Sheets'][_0x2b40d2],_0x5652ec=XLSX['utils']['sheet_to_json'](_0x1e1ea5,{'header':0x1}),_0x43f684=urls4[_0x1fc265];let _0x2f2a0e='24/25';const _0x355550=_0x43f684['match'](/PRO20(\d{2})/);_0x355550&&(_0x2f2a0e='20'+_0x355550[0x1]);const _0x514cd9=_0x5652ec['slice'](0x1);_0x514cd9['forEach'](_0x13dba7=>{_0x13dba7['unshift'](''+_0x3a256f++),_0x13dba7[0xf]=_0x13dba7[0x1]+'\x20'+_0x2f2a0e;const _0x2b1edd=[_0x13dba7[0x0],_0x13dba7[0xf],_0x13dba7[0x2],_0x13dba7[0x3],_0x13dba7[0x9],_0x13dba7[0x5],_0x13dba7[0x6],_0x13dba7[0xa],_0x13dba7[0x7],_0x13dba7[0x8],_0x13dba7[0xb],_0x13dba7[0x4]];allData4['push'](_0x2b1edd);});});const _0x414a09=[0x4,0x5,0x6,0x7,0x8,0x9,0xa],_0x33cc86=_0x414a09['map'](_0x3ae697=>allData4['map'](_0x35c6d1=>parseFloat(_0x35c6d1[_0x3ae697]))),_0x6696a5=_0x33cc86['map'](_0x5ad850=>{const _0x137a8f=[..._0x5ad850]['sort']((_0x126405,_0x2bd2f3)=>_0x126405-_0x2bd2f3);return _0x5ad850['map'](_0x59f4ab=>{const _0x467591=_0x137a8f['indexOf'](_0x59f4ab)+0x1;return _0x467591/_0x137a8f['length'];});});allData4['forEach']((_0x503389,_0x43edbc)=>{_0x414a09['forEach']((_0x40893b,_0x120649)=>{_0x503389[_0x40893b]=_0x6696a5[_0x120649][_0x43edbc]['toFixed'](0x3);});});}function processAndStoreData5(_0x4e5217){let _0x9a16a7=0x1;_0x4e5217['forEach']((_0x4f3d7a,_0x2121ee)=>{const _0x23fd16=XLSX['read'](new Uint8Array(_0x4f3d7a),{'type':'array'}),_0x477214=_0x23fd16['SheetNames'][0x0],_0x33d55f=_0x23fd16['Sheets'][_0x477214],_0x11c51b=XLSX['utils']['sheet_to_json'](_0x33d55f,{'header':0x1}),_0x5d935a=urls5[_0x2121ee];let _0x57ae67='23/24';const _0x4a59f3=_0x5d935a['match'](/PRO20(\d{2})/);_0x4a59f3&&(_0x57ae67='20'+_0x4a59f3[0x1]);const _0x548028=_0x11c51b['slice'](0x1);_0x548028['forEach'](_0x3c75c=>{_0x3c75c['unshift'](''+_0x9a16a7++),_0x3c75c[0xf]=_0x3c75c[0x1]+'\x20'+_0x57ae67;const _0x22a8f5=[_0x3c75c[0x0],_0x3c75c[0xf],_0x3c75c[0x2],_0x3c75c[0x3],_0x3c75c[0x9],_0x3c75c[0x5],_0x3c75c[0x6],_0x3c75c[0xa],_0x3c75c[0x7],_0x3c75c[0x8],_0x3c75c[0xb],_0x3c75c[0x4]];allData5['push'](_0x22a8f5);});});const _0x3265d7=[0x4,0x5,0x6,0x7,0x8,0x9,0xa],_0x730b5b=_0x3265d7['map'](_0xd45a6a=>allData5['map'](_0x1d93ae=>parseFloat(_0x1d93ae[_0xd45a6a]))),_0x2d26f5=_0x730b5b['map'](_0x3b6c52=>{const _0x31a0f4=[..._0x3b6c52]['sort']((_0x1c9a93,_0x517509)=>_0x1c9a93-_0x517509);return _0x3b6c52['map'](_0x1d1eeb=>{const _0x55c598=_0x31a0f4['indexOf'](_0x1d1eeb)+0x1;return _0x55c598/_0x31a0f4['length'];});});allData5['forEach']((_0x29a883,_0x1c2c59)=>{_0x3265d7['forEach']((_0x41f708,_0x189625)=>{_0x29a883[_0x41f708]=_0x2d26f5[_0x189625][_0x1c2c59]['toFixed'](0x3);});});}function processAndStoreData6(_0x10059c){let _0x239476=0x1;_0x10059c['forEach']((_0x518e1c,_0x2bc427)=>{const _0xa1dbbb=XLSX['read'](new Uint8Array(_0x518e1c),{'type':'array'}),_0x52cf4b=_0xa1dbbb['SheetNames'][0x0],_0x5039e3=_0xa1dbbb['Sheets'][_0x52cf4b],_0x572934=XLSX['utils']['sheet_to_json'](_0x5039e3,{'header':0x1}),_0x1654c0=urls6[_0x2bc427];let _0x269fac='23/24';const _0x303e27=_0x1654c0['match'](/PRO20(\d{2})/);_0x303e27&&(_0x269fac='20'+_0x303e27[0x1]);const _0x2255f4=_0x572934['slice'](0x1);_0x2255f4['forEach'](_0x5517a1=>{_0x5517a1['unshift'](''+_0x239476++),_0x5517a1[0xf]=_0x5517a1[0x1]+'\x20'+_0x269fac;const _0x2f0ae3=[_0x5517a1[0x0],_0x5517a1[0xf],_0x5517a1[0x2],_0x5517a1[0x3],_0x5517a1[0x9],_0x5517a1[0x5],_0x5517a1[0x6],_0x5517a1[0xa],_0x5517a1[0x7],_0x5517a1[0x8],_0x5517a1[0xb],_0x5517a1[0x4]];allData6['push'](_0x2f0ae3);});});const _0x17c762=[0x4,0x5,0x6,0x7,0x8,0x9,0xa],_0xb1144e=_0x17c762['map'](_0x31a877=>allData6['map'](_0x434e64=>parseFloat(_0x434e64[_0x31a877]))),_0x54965a=_0xb1144e['map'](_0x300878=>{const _0x26ae15=[..._0x300878]['sort']((_0x5862c1,_0xb0ab4f)=>_0x5862c1-_0xb0ab4f);return _0x300878['map'](_0x28b5b4=>{const _0x219d95=_0x26ae15['indexOf'](_0x28b5b4)+0x1;return _0x219d95/_0x26ae15['length'];});});allData6['forEach']((_0x3b7ad0,_0x3babed)=>{_0x17c762['forEach']((_0x5ee200,_0x3c8ebf)=>{_0x3b7ad0[_0x5ee200]=_0x54965a[_0x3c8ebf][_0x3babed]['toFixed'](0x3);});});}function processAndStoreData7(_0x5da595){let _0x44df4f=0x1;_0x5da595['forEach']((_0x3588d9,_0x9db37b)=>{const _0x3e7a09=XLSX['read'](new Uint8Array(_0x3588d9),{'type':'array'}),_0x6be750=_0x3e7a09['SheetNames'][0x0],_0x4acece=_0x3e7a09['Sheets'][_0x6be750],_0xe8941=XLSX['utils']['sheet_to_json'](_0x4acece,{'header':0x1}),_0x4b286a=urls7[_0x9db37b];let _0x12ea5f='22/23';const _0x26fa56=_0x4b286a['match'](/PRO20(\d{2})/);_0x26fa56&&(_0x12ea5f='20'+_0x26fa56[0x1]);const _0x19ad10=_0xe8941['slice'](0x1);_0x19ad10['forEach'](_0x13f752=>{_0x13f752['unshift'](''+_0x44df4f++),_0x13f752[0xf]=_0x13f752[0x1]+'\x20'+_0x12ea5f;const _0x5820a5=[_0x13f752[0x0],_0x13f752[0xf],_0x13f752[0x2],_0x13f752[0x3],_0x13f752[0x9],_0x13f752[0x5],_0x13f752[0x6],_0x13f752[0xa],_0x13f752[0x7],_0x13f752[0x8],_0x13f752[0xb],_0x13f752[0x4]];allData7['push'](_0x5820a5);});});const _0x56b6a8=[0x4,0x5,0x6,0x7,0x8,0x9,0xa],_0x3dd92f=_0x56b6a8['map'](_0x26c06e=>allData7['map'](_0x54895a=>parseFloat(_0x54895a[_0x26c06e]))),_0x20e2c3=_0x3dd92f['map'](_0x2424dd=>{const _0x2c84d1=[..._0x2424dd]['sort']((_0x237ccb,_0x4b3de5)=>_0x237ccb-_0x4b3de5);return _0x2424dd['map'](_0x3e6965=>{const _0x186309=_0x2c84d1['indexOf'](_0x3e6965)+0x1;return _0x186309/_0x2c84d1['length'];});});allData7['forEach']((_0x1932f2,_0x5cec40)=>{_0x56b6a8['forEach']((_0x2427f6,_0x4a109f)=>{_0x1932f2[_0x2427f6]=_0x20e2c3[_0x4a109f][_0x5cec40]['toFixed'](0x3);});});}function processAndStoreData8(_0x386c35){let _0x56256a=0x1;_0x386c35['forEach']((_0xad2207,_0x5dd73d)=>{const _0x55ebda=XLSX['read'](new Uint8Array(_0xad2207),{'type':'array'}),_0x39d3a0=_0x55ebda['SheetNames'][0x0],_0x1a64d0=_0x55ebda['Sheets'][_0x39d3a0],_0x48718c=XLSX['utils']['sheet_to_json'](_0x1a64d0,{'header':0x1}),_0x194dac=urls8[_0x5dd73d];let _0x1e7424='22/23';const _0x428445=_0x194dac['match'](/PRO20(\d{2})/);_0x428445&&(_0x1e7424='20'+_0x428445[0x1]);const _0x4eb68=_0x48718c['slice'](0x1);_0x4eb68['forEach'](_0x4b4ba9=>{_0x4b4ba9['unshift'](''+_0x56256a++),_0x4b4ba9[0xf]=_0x4b4ba9[0x1]+'\x20'+_0x1e7424;const _0x23eab5=[_0x4b4ba9[0x0],_0x4b4ba9[0xf],_0x4b4ba9[0x2],_0x4b4ba9[0x3],_0x4b4ba9[0x9],_0x4b4ba9[0x5],_0x4b4ba9[0x6],_0x4b4ba9[0xa],_0x4b4ba9[0x7],_0x4b4ba9[0x8],_0x4b4ba9[0xb],_0x4b4ba9[0x4]];allData8['push'](_0x23eab5);});});const _0x2871fd=[0x4,0x5,0x6,0x7,0x8,0x9,0xa],_0x58c2ea=_0x2871fd['map'](_0x2c0da0=>allData8['map'](_0x210dbc=>parseFloat(_0x210dbc[_0x2c0da0]))),_0x4deec3=_0x58c2ea['map'](_0xddf217=>{const _0x38cccc=[..._0xddf217]['sort']((_0x35afc9,_0x284011)=>_0x35afc9-_0x284011);return _0xddf217['map'](_0x44c6da=>{const _0x21e3d4=_0x38cccc['indexOf'](_0x44c6da)+0x1;return _0x21e3d4/_0x38cccc['length'];});});allData8['forEach']((_0x2792ad,_0x29c9db)=>{_0x2871fd['forEach']((_0x496234,_0x278072)=>{_0x2792ad[_0x496234]=_0x4deec3[_0x278072][_0x29c9db]['toFixed'](0x3);});});}Promise['all'](fetchPromises1)['then'](_0x9a267b=>{processAndStoreData1(_0x9a267b),Promise['all'](fetchPromises2)['then'](_0x249bc2=>{processAndStoreData2(_0x249bc2),Promise['all'](fetchPromises3)['then'](_0x51a528=>{processAndStoreData3(_0x51a528),Promise['all'](fetchPromises4)['then'](_0x57270e=>{processAndStoreData4(_0x57270e),Promise['all'](fetchPromises5)['then'](_0x1fb904=>{processAndStoreData5(_0x1fb904),Promise['all'](fetchPromises6)['then'](_0x40562d=>{processAndStoreData6(_0x40562d),Promise['all'](fetchPromises7)['then'](_0x1a5d8d=>{processAndStoreData7(_0x1a5d8d),Promise['all'](fetchPromises8)['then'](_0x41c7d3=>{processAndStoreData8(_0x41c7d3);const _0xb239ee=allData1['concat'](allData2)['concat'](allData3)['concat'](allData4)['concat'](allData5)['concat'](allData6)['concat'](allData7)['concat'](allData8);_0xb239ee['forEach']((_0x2f2af0,_0x540140)=>{_0x2f2af0[0x0]=''+(_0x540140+0x1);}),_0xb239ee['forEach'](_0x50b16a=>{allDataAsString+=_0x50b16a['join'](',')+'\x0a';});const _0x16f609=allDataAsString['trim']()['split']('\x0a'),_0x3985ae=[];for(const _0x4624bf of _0x16f609){const _0x1db05a=_0x4624bf['split'](','),_0x15cd32=_0x1db05a[0x1],_0x26c015=_0x1db05a[0x3],_0x4eff05=_0x1db05a[0x2],_0x445f89=_0x15cd32+','+_0x26c015+','+_0x4eff05;_0x3985ae['push'](_0x445f89);}const _0x37b7a0=_0x3985ae,_0x12d770=document['getElementById']('searchInput1');_0x12d770['setAttribute']('autocomplete','off');const _0x1861d1=document['getElementById']('matchingNames'),_0x29dac5=document['getElementById']('searchButton1');function _0x32352f(){const _0x44d1ef=navigator['userAgent'];return/Android|iPhone/i['test'](_0x44d1ef);}let _0x10cab8=-0x1,_0x358998=[];function _0x2ffcc0(){const _0x54f26f=_0x12d770['value']['trim']();if(_0x54f26f===''){_0x1861d1['style']['display']='none',_0x10cab8=-0x1,_0x358998=[];return;}const _0x193cf5=_0x413a05(_0x54f26f),_0x5232be=new Set();_0x193cf5['forEach'](_0x5f0c82=>{const _0x13efac=_0x37b7a0['filter'](_0xd9ea9c=>{const [_0x12cba4,_0xadcb7c,_0x56922d]=_0xd9ea9c['split'](',');return _0x39c518(_0x5f0c82,_0x12cba4)||_0x39c518(_0x5f0c82,_0xadcb7c);});_0x13efac['forEach'](_0x454baa=>_0x5232be['add'](_0x454baa));});const _0x167a61=Array['from'](_0x5232be);_0x358998=_0x167a61,_0x1861d1['innerHTML']='';if(_0x167a61['length']===0x0){_0x1861d1['style']['display']='none',_0x10cab8=-0x1;return;}_0x167a61['forEach']((_0x26cbe8,_0x32e5c6)=>{const [_0x379371,_0x3b8732,_0x5b1d29]=_0x26cbe8['split'](','),_0x4d4b87=document['createElement']('div');_0x4d4b87['classList']['add']('name'),_0x4d4b87['setAttribute']('data-index',_0x32e5c6),_0x4d4b87['innerHTML']='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22fullName\x22>'+_0x379371+'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22age\x22>\x20('+_0x5b1d29+',\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22team\x22>'+_0x3b8732+')</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20',_0x4d4b87['addEventListener']('mousedown',_0x3760db=>{_0x3760db['preventDefault'](),_0x3760db['stopPropagation'](),_0x12d770['value']=_0x379371+','+_0x3b8732+','+_0x5b1d29,searchButton1['click']();}),_0x4d4b87['addEventListener']('touchstart',_0x4c803d=>{_0x4c803d['preventDefault'](),_0x4c803d['stopPropagation'](),_0x12d770['value']=_0x379371+','+_0x3b8732+','+_0x5b1d29,searchButton1['click']();},{'passive':![]}),_0x1861d1['appendChild'](_0x4d4b87);});const _0x55bbbb=_0x12d770['offsetWidth'];_0x1861d1['style']['display']='block',_0x1861d1['style']['padding']='8px',_0x1861d1['style']['position']='relative',_0x1861d1['style']['zIndex']='9999',_0x1861d1['style']['width']=_0x55bbbb+'px',_0x1861d1['style']['maxHeight']='267px',_0x1861d1['style']['overflowY']='auto',_0x1861d1['style']['border']='1px\x20solid\x20#e0e0e0',_0x10cab8=-0x1,_0x5bec8c();}function _0x5bec8c(){const _0xf30c53=_0x1861d1['querySelectorAll']('.name');_0xf30c53['forEach']((_0x6cf8d0,_0x52ccb0)=>{_0x6cf8d0['style']['backgroundColor']='',_0x6cf8d0['style']['color']='';});if(_0x10cab8>=0x0&&_0x10cab8<_0xf30c53['length']){const _0x13b323=_0xf30c53[_0x10cab8];_0x13b323['style']['backgroundColor']='var(--hover-color)',_0x13b323['style']['color']='var(--text-color)',_0x13b323['scrollIntoView']({'block':'nearest'});}}_0x12d770['addEventListener']('input',_0x2ffcc0),_0x12d770['addEventListener']('keyup',function(_0x51baba){if(_0x51baba['key']==='Enter'){if(_0x10cab8>=0x0&&_0x358998['length']>_0x10cab8){const _0x48628b=_0x358998[_0x10cab8],[_0x13cf2d,_0x20375a,_0x28d3b1]=_0x48628b['split'](',');_0x12d770['value']=_0x13cf2d+','+_0x20375a+','+_0x28d3b1;}searchButton1['click']();}else{if(_0x51baba['key']==='ArrowDown')_0x51baba['preventDefault'](),_0x358998['length']>0x0&&(_0x10cab8=Math['min'](_0x10cab8+0x1,_0x358998['length']-0x1),_0x5bec8c());else{if(_0x51baba['key']==='ArrowUp')_0x51baba['preventDefault'](),_0x358998['length']>0x0&&(_0x10cab8=Math['max'](_0x10cab8-0x1,0x0),_0x5bec8c());else _0x51baba['key']==='Backspace'&&_0x2ffcc0();}}}),_0x12d770['addEventListener']('keydown',function(_0x34c10d){(_0x34c10d['key']==='ArrowDown'||_0x34c10d['key']==='ArrowUp')&&_0x358998['length']>0x0&&_0x34c10d['preventDefault']();});const _0x36b16c=allDataAsString;let _0x34befb=_0x36b16c['trim']()['split']('\x0a')['map'](_0x41bfb8=>_0x41bfb8['split'](','));function _0x3cab0e(_0x4011e7,_0x1a31ca){let _0x29800f=0x0;for(let _0x2d6210=0x4;_0x2d6210<=0xa;_0x2d6210++){const _0x2f575e=parseFloat(_0x4011e7[_0x2d6210]),_0x46b4a1=parseFloat(_0x1a31ca[_0x2d6210]);_0x29800f+=Math['pow'](_0x2f575e-_0x46b4a1,0x2);}return Math['sqrt'](_0x29800f);}const _0x38c02f=['result-color-1','result-color-2','result-color-3','result-color-4','result-color-5','result-color-6','result-color-7','result-color-8','result-color-9','result-color-10','result-color-11','result-color-12','result-color-13','result-color-14','result-color-15','result-color-16','result-color-17','result-color-18','result-color-19','result-color-20','result-color-21','result-color-22','result-color-23','result-color-24','result-color-25','result-color-26','result-color-27','result-color-28','result-color-29','result-color-30','result-color-31','result-color-32','result-color-33','result-color-34','result-color-35','result-color-36','result-color-37'];let _0x4f90a6=[];function _0x30cc9f(_0x149371){return _0x149371['normalize']('NFD')['replace'](/[\u0300-\u036f\s]/g,'')['replace'](/Ø/g,'O')['replace'](/ø/g,'o')['replace'](/ı/g,'i')['replace'](/ł/g,'l')['replace'](/Ł/g,'L')['replace'](/[^\w]/g,'');}function _0x413a05(_0xff78ef){const _0x2deb18=[],_0x40ec75=_0xff78ef['trim']()['split'](/\s+/)['filter'](_0x1e364b=>_0x1e364b['length']>0x0&&!/^\d+$/['test'](_0x1e364b)&&!/^\d+\/\d+$/['test'](_0x1e364b));_0x2deb18['push'](_0xff78ef);if(_0x40ec75['length']>=0x2){const _0x3d0dde=_0x40ec75[0x0]['charAt'](0x0)['toUpperCase'](),_0x855862=_0x40ec75['slice'](0x1)['join']('\x20');_0x2deb18['push'](_0x3d0dde+'.\x20'+_0x855862),_0x2deb18['push'](_0x3d0dde+'\x20'+_0x855862),_0x2deb18['push'](_0x3d0dde+'.'+_0x855862);}return _0x2deb18;}function _0x4d9e22(_0xd503a,_0xb14d7d){const _0x52d231=_0xd503a['replace'](/\./g,'');if(_0x52d231['length']===0x1)return _0x52d231['toLowerCase']()===_0xb14d7d['charAt'](0x0)['toLowerCase']();return![];}function _0x39c518(_0x1e267b,_0x1980c3){const _0x30af20=_0x30cc9f(_0x1e267b['toLowerCase']()),_0xaa907f=_0x30cc9f(_0x1980c3['toLowerCase']());if(_0xaa907f['includes'](_0x30af20))return!![];const _0xef5146=_0x1e267b['replace'](/[^\w\s]/g,'')['split'](/\s+/)['filter'](_0x12ea56=>_0x12ea56['length']>0x0),_0x52220c=_0x1980c3['replace'](/[^\w\s]/g,'')['split'](/\s+/)['filter'](_0x1840dd=>_0x1840dd['length']>0x0);if(_0xef5146['length']>=0x2&&_0x52220c['length']>=0x2){const _0x24cd00=_0x4d9e22(_0xef5146[0x0],_0x52220c[0x0])||_0xef5146[0x0]['toLowerCase']()===_0x52220c[0x0]['toLowerCase']();if(_0x24cd00){const _0x11a226=_0xef5146['slice'](0x1),_0x635842=_0x52220c['slice'](0x1),_0x564d02=_0x30cc9f(_0x11a226['join']('\x20')['toLowerCase']()),_0x4f1137=_0x30cc9f(_0x635842['join']('\x20')['toLowerCase']());return _0x4f1137['includes'](_0x564d02);}}return![];}function _0x1075d8(_0x28d79e){const _0x488ea3=_0x28d79e['split'](',')['map'](_0x3d9320=>_0x3d9320['trim']()),_0x19a7fe=_0x488ea3[0x0];let _0x5dac98,_0x486073;_0x488ea3['length']>0x1&&(_0x5dac98=_0x488ea3[0x1]['trim'](),_0x488ea3['length']>0x2&&(_0x486073=_0x488ea3[0x2]['trim']()));const _0x1b69d5=_0x413a05(_0x19a7fe),_0x2038dc=new Set();return _0x1b69d5['forEach'](_0x4d3d55=>{const _0x4e72cd=_0x34befb['filter'](_0x59a39d=>{const _0x5c881d=_0x30cc9f(_0x59a39d[0x2]['toLowerCase']()),_0x2234af=_0x59a39d[0x3]['trim']()['toLowerCase'](),_0x129ec1=_0x39c518(_0x4d3d55,_0x59a39d[0x1]),_0x51f5a4=!_0x5dac98||_0x2234af===_0x30cc9f(_0x5dac98['toLowerCase']()),_0x14a982=!_0x486073||_0x5c881d['includes'](_0x30cc9f(_0x486073['toLowerCase']()));return _0x129ec1&&_0x51f5a4&&_0x14a982;});_0x4e72cd['forEach'](_0x4fc3d8=>_0x2038dc['add'](_0x4fc3d8));}),Array['from'](_0x2038dc);}function _0x387cee(_0x258431,_0x39030c,_0x2bc17d){const _0x4df125=document['getElementById']('resultsTable');_0x4df125['style']['display']='block';const _0x12f714=['<span\x20data-i18n=\x22table.percentiles\x22>Percentiles</span>','<span\x20data-i18n=\x22table.duel\x22>Duel%</span>','<span\x20data-i18n=\x22table.possWon\x22>Poss\x20won</span>','<span\x20data-i18n=\x22table.progCarries\x22>Prog\x20carries</span>','<span\x20data-i18n=\x22table.fwdPasses\x22>Fwd\x20passes</span>','<span\x20data-i18n=\x22table.fwdPassPct\x22>Fwd\x20pass%</span>','<span\x20data-i18n=\x22table.keyPasses\x22>Key\x20passes</span>','<span\x20data-i18n=\x22table.progPasses\x22>Prog\x20passes</span>','<span\x20data-i18n=\x22table.minutes\x22>Minutes</span>'],_0x5d869c=_0x4df125['querySelector']('th')!==null,_0x3c2fd3=_0x5d869c?_0x4df125['querySelector']('table'):document['createElement']('table');_0x3c2fd3['classList']['add']('metrics-table');if(!_0x5d869c){const _0x491bc4=document['createElement']('tr');for(let _0x2bb5ea=0x0;_0x2bb5ea<_0x12f714['length'];_0x2bb5ea++){const _0x4e3dd0=document['createElement']('th');_0x4e3dd0['innerHTML']=_0x12f714[_0x2bb5ea],_0x2bb5ea===0x0&&(_0x4e3dd0['style']['width']='31%',_0x4e3dd0['style']['textAlign']='left'),_0x491bc4['appendChild'](_0x4e3dd0);}const _0x6aa4a9=document['createElement']('th');_0x6aa4a9['textContent']='',_0x6aa4a9['style']['width']='4%',_0x491bc4['appendChild'](_0x6aa4a9),_0x3c2fd3['appendChild'](_0x491bc4);}const _0x2350ab=_0x34befb[_0x39030c],_0x1c5a4c=document['createElement']('tr'),_0x54aede=document['createElement']('td');_0x54aede['classList']['add'](_0x2bc17d),_0x54aede['style']['textAlign']='left',_0x54aede['style']['whiteSpace']='normal',_0x54aede['style']['overflow']='visible',_0x54aede['style']['textOverflow']='clip',_0x54aede['style']['minHeight']='36px',_0x54aede['style']['lineHeight']='1.1';const _0x1aea8a=_0x2350ab[0x1],_0x3c326e=_0x1aea8a['match'](/^(.*?)(\s+)(\d{2}\/\d{2}|\d{4})$/);let _0x328929;_0x3c326e?_0x328929=_0x3c326e[0x1]+'<span\x20style=\x22font-size:10px;\x20display:inline-block;\x20vertical-align:baseline;\x22>&nbsp;'+_0x3c326e[0x3]+'</span>':_0x328929=_0x1aea8a;_0x54aede['innerHTML']='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22font-size:13px;\x20white-space:nowrap;\x22>'+_0x328929+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22font-size:10px;\x20color:#777;\x20margin-top:0px;\x20font-weight:normal;\x22>'+_0x2350ab[0x2]+',\x20'+_0x2350ab[0x3]+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20',_0x1c5a4c['appendChild'](_0x54aede);for(let _0x93ce1d=0x4;_0x93ce1d<=0xa;_0x93ce1d++){const _0x1da38b=document['createElement']('td'),_0x31fa0b=parseFloat(_0x2350ab[_0x93ce1d])*0x64;_0x1da38b['textContent']=_0x31fa0b['toFixed'](0x1),_0x1da38b['style']['fontWeight']='500',_0x1da38b['classList']['add'](_0x2bc17d),_0x1c5a4c['appendChild'](_0x1da38b);}const _0x47855a=document['createElement']('td');_0x47855a['textContent']=_0x2350ab[0xb],_0x47855a['style']['fontSize']='12px',_0x47855a['style']['color']='#777',_0x47855a['style']['textAlign']='center',_0x47855a['classList']['add'](_0x2bc17d),_0x1c5a4c['appendChild'](_0x47855a);const _0xc24f1c=document['createElement']('td'),_0x4caf33=document['createElement']('div');_0x4caf33['style']['position']='relative',_0x4caf33['style']['width']='100%',_0x4caf33['style']['height']='100%',_0x4caf33['style']['display']='flex',_0x4caf33['style']['alignItems']='center';const _0x5ed1fd=document['createElement']('button');_0x5ed1fd['textContent']='x',_0x5ed1fd['style']['backgroundColor']='transparent',_0x5ed1fd['style']['border']='none',_0x5ed1fd['style']['color']='#999',_0x5ed1fd['style']['fontSize']='14px',_0x5ed1fd['style']['cursor']='pointer',_0x5ed1fd['style']['width']='4px',_0x5ed1fd['style']['height']='24px',_0x5ed1fd['style']['borderRadius']='50%',_0x5ed1fd['style']['display']='flex',_0x5ed1fd['style']['alignItems']='center',_0x5ed1fd['style']['justifyContent']='center',_0x5ed1fd['style']['transition']='all\x200.2s',_0x5ed1fd['style']['position']='relative',_0x5ed1fd['style']['zIndex']='1';const _0x38dfd8=document['createElement']('div');_0x38dfd8['style']['position']='absolute',_0x38dfd8['style']['top']='-15px',_0x38dfd8['style']['left']='-15px',_0x38dfd8['style']['width']='44px',_0x38dfd8['style']['height']='44px',_0x38dfd8['style']['cursor']='pointer',_0x38dfd8['style']['zIndex']='0';const _0x378d50=function(){_0x1c5a4c['remove']();const _0x22b772=document['querySelectorAll']('.radarPolygon.'+_0x2bc17d),_0x2e5889=document['querySelectorAll']('.radarLines.'+_0x2bc17d),_0xfbe51e=document['querySelectorAll']('.radarCircle.'+_0x2bc17d);_0x22b772['forEach'](_0xcea2d1=>_0xcea2d1['remove']()),_0x2e5889['forEach'](_0x214c9c=>_0x214c9c['remove']()),_0xfbe51e['forEach'](_0x4637df=>_0x4637df['remove']());const _0x5319c1=document['querySelectorAll']('.metrics-table\x20tr:not(:first-child)');if(_0x5319c1['length']>0x0){const _0x51f450=_0x5319c1[_0x5319c1['length']-0x1],_0x1fbb09=_0x51f450['firstChild'],_0x4b0334=_0x1fbb09['querySelector']('div:first-child');let _0xc31160='';if(_0x4b0334){_0xc31160=_0x4b0334['textContent']['trim']();const _0x47a34a=_0x4b0334['querySelector']('span');if(_0x47a34a){const _0x241cc6=_0xc31160['replace'](_0x47a34a['textContent'],'')['trim'](),_0x580752=_0x47a34a['textContent']['trim']();_0xc31160=_0x241cc6+'\x20'+_0x580752;}}const _0x5e9f8b=_0x34befb['find'](_0x3419d9=>_0x3419d9[0x1]===_0xc31160);_0x5e9f8b&&_0x429704(_0x5e9f8b);}else{const _0x116aa9=document['getElementById']('resultsTable');_0x116aa9&&(_0x116aa9['style']['display']='none');const _0x1538b5=document['getElementById']('similarPlayersContainer');_0x1538b5&&(_0x1538b5['innerHTML']='');}adjustFirstColumnWidth();};_0x5ed1fd['addEventListener']('click',_0x378d50),_0x38dfd8['addEventListener']('click',_0x378d50),_0x4caf33['appendChild'](_0x38dfd8),_0x4caf33['appendChild'](_0x5ed1fd),_0xc24f1c['appendChild'](_0x4caf33),_0x1c5a4c['appendChild'](_0xc24f1c),_0x3c2fd3['appendChild'](_0x1c5a4c);!_0x5d869c&&_0x4df125['appendChild'](_0x3c2fd3);adjustFirstColumnWidth();const _0x5b3372=_0x34befb[_0x39030c]['join'](',\x20'),_0x36dd56=214.2,_0xca999a=[0x0,0x0],_0x33aae8=[0x0,0x2*Math['PI']/0x7,0x4*Math['PI']/0x7,0x6*Math['PI']/0x7,0x8*Math['PI']/0x7,0xa*Math['PI']/0x7,0xc*Math['PI']/0x7];function _0x1192a9(_0x16586,_0xaf56d4){let _0x28cc5c=_0x33aae8[_0x16586-0x1];_0x28cc5c+=0x2*Math['PI']/0x7*0.2;const _0x1339e8=214.2*_0xaf56d4*Math['cos'](_0x28cc5c),_0x26c9e8=214.2*_0xaf56d4*Math['sin'](_0x28cc5c);return{'x':_0x1339e8,'y':_0x26c9e8};}const _0x1e0775=document['querySelector']('.radar'),_0x442cb7=_0x1e0775['appendChild'](document['createElementNS']('http://www.w3.org/2000/svg','g'));_0x442cb7['innerHTML']='';const _0x54ec6c=[],_0x21b74b=_0x5b3372['split'](',');for(let _0x2f3846=0x4;_0x2f3846<0xb;_0x2f3846++){_0x54ec6c['push']({'axis':_0x2f3846-0x3,'value':parseFloat(_0x21b74b[_0x2f3846])});}const _0x35e732=_0x54ec6c['map'](({axis:_0x167a94,value:_0x1efd36})=>{const {x:_0x161884,y:_0x16b6f5}=_0x1192a9(_0x167a94,_0x1efd36);return _0x161884+','+_0x16b6f5;})['join']('\x20'),_0x930001=document['createElementNS']('http://www.w3.org/2000/svg','polyline');_0x930001['setAttribute']('class','radarLines\x20'+_0x2bc17d),_0x930001['setAttribute']('points',_0x35e732+'\x20'+_0x35e732['split']('\x20')[0x0]),_0x930001['setAttribute']('stroke-width','3'),_0x930001['setAttribute']('fill','none'),_0x442cb7['appendChild'](_0x930001);const _0x559afe=document['createElementNS']('http://www.w3.org/2000/svg','polygon');_0x559afe['setAttribute']('class','radarPolygon\x20'+_0x2bc17d),_0x559afe['setAttribute']('points',_0x35e732),_0x559afe['style']['fillOpacity']='0.2',_0x442cb7['appendChild'](_0x559afe),_0x54ec6c['forEach'](({axis:_0x2d158b,value:_0x59d56d})=>{const {x:_0xfae3a2,y:_0x3652a6}=_0x1192a9(_0x2d158b,_0x59d56d),_0x5fda77=document['createElementNS']('http://www.w3.org/2000/svg','circle');_0x5fda77['setAttribute']('class','radarCircle\x20'+_0x2bc17d),_0x5fda77['style']['fillOpacity']='0.86',_0x5fda77['setAttribute']('r','7.6'),_0x5fda77['setAttribute']('cx',_0xfae3a2),_0x5fda77['setAttribute']('cy',_0x3652a6),_0x442cb7['appendChild'](_0x5fda77);});}const _0x12c841=new Set();function _0x309286(){const _0x17ffc8=document['getElementById']('searchInput1'),_0x1d0008=document['getElementById']('searchButton1'),_0xa49099=document['getElementById']('resultsTable'),_0x135e31=document['createElement']('ul');_0x135e31['style']['fontFamily']='Arial,\x20sans-serif',_0x135e31['style']['listStyleType']='none',_0x135e31['style']['paddingLeft']='9px',_0xa49099['appendChild'](_0x135e31);let _0x56e7e1=0x0;_0x1d0008['addEventListener']('click',function(){const _0x4bd28a=_0x17ffc8['value'],_0x4866fe=_0x1075d8(_0x4bd28a),_0x2d0fcc=document['querySelectorAll']('.radarPolygon');_0x2d0fcc['forEach'](_0x2c18fd=>{_0x2c18fd['style']['fill']='';});if(_0x4866fe){const _0x326768=parseInt(_0x4866fe[0x0]),_0x905c54=_0x4866fe[0x1]+'\x20('+_0x4866fe[0x2]+',\x20'+_0x4866fe[0x3]+')\x20-\x20'+_0x4866fe[0xb]+'\x20min',_0x3bec9e=_0x38c02f[_0x56e7e1%_0x38c02f['length']];_0x387cee(_0x905c54,_0x326768-0x1,_0x3bec9e),_0x56e7e1++;}});}_0x309286();const _0x2d97c5=document['createElement']('div');_0x2d97c5['id']='similarPlayersContainer';const _0x584e01=document['getElementById']('insertHere');_0x584e01['appendChild'](_0x2d97c5);let _0x3ef031=0x0;searchButton1['addEventListener']('click',function(){const _0x1f12b1=_0x12d770['value'],_0x406ab5=_0x1075d8(_0x1f12b1);if(_0x406ab5['length']>0x0){const _0x223b59=_0x406ab5[0x0];_0x429704(_0x223b59),_0x3ef031++;}_0x12d770['value']='',_0x2ffcc0();});function _0x429704(_0x255ca5){const _0x3602fd=parseInt(_0x255ca5[0x0])-0x1,_0x3a4378=[],_0x2abd39=document['querySelectorAll']('.metrics-table\x20tr:not(:first-child)');let _0x233de1='';if(_0x2abd39['length']>0x0){const _0x45f902=_0x2abd39[_0x2abd39['length']-0x1],_0x4d097b=_0x45f902['querySelector']('td:first-child'),_0x364d6c=Array['from'](_0x4d097b['classList']);_0x233de1=_0x364d6c['find'](_0x4bd563=>_0x4bd563['startsWith']('result-color-'));}const _0x3b35ae=_0x2d97c5['querySelector']('.custom-select'),_0x5b5731=_0x3b35ae?_0x3b35ae['value']:'all',_0x17fbc8=_0x3b35ae?_0x2d97c5['querySelectorAll']('.custom-select')[0x1]['value']:'all',_0x2b8786=_0x3b35ae?_0x2d97c5['querySelectorAll']('.custom-select')[0x2]['value']:'all';_0x2d97c5['innerHTML']='';const _0xb491ec=document['createElement']('table');_0xb491ec['classList']['add']('similar-table');const _0x77596=document['createElement']('tr'),_0x1be239=document['createElement']('th');_0x1be239['setAttribute']('colspan','5');const _0x420178=document['createElement']('div');_0x420178['style']['position']='relative',_0x420178['style']['display']='flex',_0x420178['style']['flexDirection']='column',_0x420178['style']['gap']='8px';const _0x424362=document['createElement']('span');_0x424362['classList']['add']('similar-text'),_0x424362['innerHTML']='<span\x20data-i18n=\x22similar.to\x22>Similar\x20data\x20to</span><span>\x20'+_0x255ca5[0x1]+'</span>',_0x424362['classList']['add'](_0x233de1||_0x38c02f[_0x3ef031%_0x38c02f['length']]);const _0x530c70=document['createElement']('div');_0x530c70['style']['display']='flex',_0x530c70['style']['gap']='8px',_0x530c70['style']['justifyContent']='center';const _0x11da39=document['createElement']('div');_0x11da39['className']='custom-select-container';const _0x3f1520=document['createElement']('div');_0x3f1520['className']='custom-select-trigger';const _0x4fef3f=document['createElement']('span');_0x4fef3f['textContent']='All\x20Leagues',_0x4fef3f['setAttribute']('data-i18n','league_all'),_0x3f1520['appendChild'](_0x4fef3f);const _0x120968=document['createElement']('div');_0x120968['className']='custom-select-options',_0x120968['style']['display']='none';const _0x5851fa=[{'value':'all','text':'All\x20Leagues'},{'value':'top7','text':'Top\x207\x20Leagues'},{'value':'outside','text':'Outside\x20Top\x207'}],_0x11c30a=document['createElement']('select');_0x11c30a['classList']['add']('select-league'),_0x11c30a['style']['display']='none',_0x5851fa['forEach']((_0x557e5f,_0x54fec3)=>{const _0xac70ba=document['createElement']('div');_0xac70ba['className']='custom-select-option';if(_0x54fec3===0x0)_0xac70ba['classList']['add']('selected');_0xac70ba['setAttribute']('data-value',_0x557e5f['value']);const _0x5cb89a=document['createElement']('span');_0x5cb89a['textContent']=_0x557e5f['text'],_0x5cb89a['setAttribute']('data-i18n','league_'+_0x557e5f['value']),_0xac70ba['appendChild'](_0x5cb89a);const _0xaaaf7d=document['createElement']('option');_0xaaaf7d['value']=_0x557e5f['value'],_0xaaaf7d['textContent']=_0x557e5f['text'],_0xaaaf7d['setAttribute']('data-i18n','league_'+_0x557e5f['value']);if(_0x54fec3===0x0)_0xaaaf7d['selected']=!![];_0x11c30a['appendChild'](_0xaaaf7d),_0xac70ba['addEventListener']('click',function(){_0x120968['querySelectorAll']('.custom-select-option')['forEach'](_0x2322c2=>_0x2322c2['classList']['remove']('selected')),_0xac70ba['classList']['add']('selected'),_0x4fef3f['textContent']=_0x557e5f['text'],_0x4fef3f['setAttribute']('data-i18n','league_'+_0x557e5f['value']),translateElement(_0x4fef3f,window['translations']),_0x11c30a['value']=_0x557e5f['value'];const _0xca70a9=new Event('change');_0x11c30a['dispatchEvent'](_0xca70a9),_0x3f1520['classList']['remove']('open'),_0x120968['style']['display']='none';}),_0x120968['appendChild'](_0xac70ba);}),_0x3f1520['addEventListener']('click',function(_0x2f3086){_0x2f3086['stopPropagation'](),document['querySelectorAll']('.custom-select-trigger.open')['forEach'](_0x2a24c2=>{_0x2a24c2!==_0x3f1520&&(_0x2a24c2['classList']['remove']('open'),_0x2a24c2['nextElementSibling']['style']['display']='none');});const _0x2efb59=_0x3f1520['classList']['contains']('open');_0x3f1520['classList']['toggle']('open'),_0x120968['style']['display']=_0x2efb59?'none':'block';}),_0x11da39['appendChild'](_0x3f1520),_0x11da39['appendChild'](_0x120968),_0x11da39['appendChild'](_0x11c30a);const _0x13fe33=document['createElement']('div');_0x13fe33['className']='custom-select-container';const _0x58b016=document['createElement']('div');_0x58b016['className']='custom-select-trigger';const _0x4386cc=document['createElement']('span');_0x4386cc['textContent']='All\x20Seasons',_0x4386cc['setAttribute']('data-i18n','season_all'),_0x58b016['appendChild'](_0x4386cc);const _0x5dcfaa=document['createElement']('div');_0x5dcfaa['className']='custom-select-options',_0x5dcfaa['style']['display']='none';const _0x49f158=[{'value':'all','text':'All\x20Seasons'},{'value':'current','text':'Current\x20Season'}],_0x390c42=document['createElement']('select');_0x390c42['classList']['add']('select-league'),_0x390c42['style']['display']='none',_0x49f158['forEach']((_0x4b888b,_0x3436b1)=>{const _0x2f695a=document['createElement']('div');_0x2f695a['className']='custom-select-option';if(_0x3436b1===0x0)_0x2f695a['classList']['add']('selected');_0x2f695a['setAttribute']('data-value',_0x4b888b['value']);const _0x377443=document['createElement']('span');_0x377443['textContent']=_0x4b888b['text'],_0x377443['setAttribute']('data-i18n','season_'+_0x4b888b['value']),_0x2f695a['appendChild'](_0x377443);const _0x1f432f=document['createElement']('option');_0x1f432f['value']=_0x4b888b['value'],_0x1f432f['textContent']=_0x4b888b['text'],_0x1f432f['setAttribute']('data-i18n','season_'+_0x4b888b['value']);if(_0x3436b1===0x0)_0x1f432f['selected']=!![];_0x390c42['appendChild'](_0x1f432f),_0x2f695a['addEventListener']('click',function(){_0x5dcfaa['querySelectorAll']('.custom-select-option')['forEach'](_0x319e2a=>_0x319e2a['classList']['remove']('selected')),_0x2f695a['classList']['add']('selected'),_0x4386cc['textContent']=_0x4b888b['text'],_0x4386cc['setAttribute']('data-i18n','season_'+_0x4b888b['value']),translateElement(_0x4386cc,window['translations']),_0x390c42['value']=_0x4b888b['value'];const _0x38f00d=new Event('change');_0x390c42['dispatchEvent'](_0x38f00d),_0x58b016['classList']['remove']('open'),_0x5dcfaa['style']['display']='none';}),_0x5dcfaa['appendChild'](_0x2f695a);}),_0x58b016['addEventListener']('click',function(_0x2cafce){_0x2cafce['stopPropagation'](),document['querySelectorAll']('.custom-select-trigger.open')['forEach'](_0x328471=>{_0x328471!==_0x58b016&&(_0x328471['classList']['remove']('open'),_0x328471['nextElementSibling']['style']['display']='none');});const _0x8feb23=_0x58b016['classList']['contains']('open');_0x58b016['classList']['toggle']('open'),_0x5dcfaa['style']['display']=_0x8feb23?'none':'block';}),_0x13fe33['appendChild'](_0x58b016),_0x13fe33['appendChild'](_0x5dcfaa),_0x13fe33['appendChild'](_0x390c42);const _0x32e20d=document['createElement']('div');_0x32e20d['className']='custom-select-container';const _0x5c67c8=document['createElement']('div');_0x5c67c8['className']='custom-select-trigger';const _0x5a18d9=document['createElement']('span');_0x5a18d9['textContent']='All\x20Ages',_0x5a18d9['setAttribute']('data-i18n','age_all'),_0x5c67c8['appendChild'](_0x5a18d9);const _0x5c9c81=document['createElement']('div');_0x5c9c81['className']='custom-select-options',_0x5c9c81['style']['display']='none';const _0x33a805=[{'value':'all','text':'All\x20Ages'},{'value':'u30','text':'Under\x2030'},{'value':'u25','text':'Under\x2025'},{'value':'u23','text':'Under\x2023'},{'value':'u21','text':'Under\x2021'}],_0x3fc356=document['createElement']('select');_0x3fc356['classList']['add']('select-league'),_0x3fc356['style']['display']='none',_0x33a805['forEach']((_0x9ce632,_0x512bdc)=>{const _0x2e3556=document['createElement']('div');_0x2e3556['className']='custom-select-option';if(_0x512bdc===0x0)_0x2e3556['classList']['add']('selected');_0x2e3556['setAttribute']('data-value',_0x9ce632['value']);const _0x3dd783=document['createElement']('span');_0x3dd783['textContent']=_0x9ce632['text'],_0x3dd783['setAttribute']('data-i18n','age_'+_0x9ce632['value']),_0x2e3556['appendChild'](_0x3dd783);const _0x3e5be9=document['createElement']('option');_0x3e5be9['value']=_0x9ce632['value'],_0x3e5be9['textContent']=_0x9ce632['text'],_0x3e5be9['setAttribute']('data-i18n','age_'+_0x9ce632['value']);if(_0x512bdc===0x0)_0x3e5be9['selected']=!![];_0x3fc356['appendChild'](_0x3e5be9),_0x2e3556['addEventListener']('click',function(){_0x5c9c81['querySelectorAll']('.custom-select-option')['forEach'](_0x21b9ce=>_0x21b9ce['classList']['remove']('selected')),_0x2e3556['classList']['add']('selected'),_0x5a18d9['textContent']=_0x9ce632['text'],_0x5a18d9['setAttribute']('data-i18n','age_'+_0x9ce632['value']),translateElement(_0x5a18d9,window['translations']),_0x3fc356['value']=_0x9ce632['value'];const _0x4c8c20=new Event('change');_0x3fc356['dispatchEvent'](_0x4c8c20),_0x5c67c8['classList']['remove']('open'),_0x5c9c81['style']['display']='none';}),_0x5c9c81['appendChild'](_0x2e3556);}),_0x5c67c8['addEventListener']('click',function(_0x59fbca){_0x59fbca['stopPropagation'](),document['querySelectorAll']('.custom-select-trigger.open')['forEach'](_0x30d58f=>{_0x30d58f!==_0x5c67c8&&(_0x30d58f['classList']['remove']('open'),_0x30d58f['nextElementSibling']['style']['display']='none');});const _0x4af4f9=_0x5c67c8['classList']['contains']('open');_0x5c67c8['classList']['toggle']('open'),_0x5c9c81['style']['display']=_0x4af4f9?'none':'block';}),_0x32e20d['appendChild'](_0x5c67c8),_0x32e20d['appendChild'](_0x5c9c81),_0x32e20d['appendChild'](_0x3fc356),_0x530c70['appendChild'](_0x11da39),_0x530c70['appendChild'](_0x13fe33),_0x530c70['appendChild'](_0x32e20d),document['addEventListener']('click',function(){document['querySelectorAll']('.custom-select-trigger.open')['forEach'](_0xf672ca=>{_0xf672ca['classList']['remove']('open'),_0xf672ca['nextElementSibling']['style']['display']='none';});}),_0x420178['appendChild'](_0x424362),_0x420178['appendChild'](_0x530c70),_0x1be239['appendChild'](_0x420178),_0x77596['appendChild'](_0x1be239),_0xb491ec['appendChild'](_0x77596),_0x11c30a['addEventListener']('change',function(){const _0x194005=this['value'],_0x2a2bde=_0x390c42['value'],_0x11be72=_0x3fc356['value'];_0x2c6fd8(_0x255ca5,_0x194005,_0x2a2bde,_0x11be72,_0xb491ec);}),_0x390c42['addEventListener']('change',function(){const _0xff9027=_0x11c30a['value'],_0x221709=this['value'],_0x1bb6d0=_0x3fc356['value'];_0x2c6fd8(_0x255ca5,_0xff9027,_0x221709,_0x1bb6d0,_0xb491ec);}),_0x3fc356['addEventListener']('change',function(){const _0x4183b4=_0x11c30a['value'],_0x5488b0=_0x390c42['value'],_0x555379=this['value'];_0x2c6fd8(_0x255ca5,_0x4183b4,_0x5488b0,_0x555379,_0xb491ec);}),_0x2c6fd8(_0x255ca5,_0x5b5731,_0x17fbc8,_0x2b8786,_0xb491ec),_0x2d97c5['appendChild'](_0xb491ec);}let _0xa4a5b8={'top7':new Set(),'outside':new Set()};function _0xf3b1df(){try{_0xa4a5b8['top7']['clear'](),_0xa4a5b8['outside']['clear']();const _0x256b00=[]['concat'](Array['isArray'](allData1)?allData1:[],Array['isArray'](allData3)?allData3:[],Array['isArray'](allData5)?allData5:[],Array['isArray'](allData7)?allData7:[]),_0x24f355=[]['concat'](Array['isArray'](allData2)?allData2:[],Array['isArray'](allData4)?allData4:[],Array['isArray'](allData6)?allData6:[],Array['isArray'](allData8)?allData8:[]);_0x256b00['forEach'](_0x3c3e2f=>{_0x3c3e2f&&_0x3c3e2f[0x1]&&_0x3c3e2f[0x2]&&_0xa4a5b8['top7']['add'](_0x3c3e2f[0x1]+'|'+_0x3c3e2f[0x2]);}),_0x24f355['forEach'](_0x4b7614=>{_0x4b7614&&_0x4b7614[0x1]&&_0x4b7614[0x2]&&_0xa4a5b8['outside']['add'](_0x4b7614[0x1]+'|'+_0x4b7614[0x2]);});}catch(_0x39d146){}}function _0x2c6fd8(_0x3e027c,_0x1c6670,_0x38cd9d,_0x5e6c16,_0x2d0650){while(_0x2d0650['rows']['length']>0x1){_0x2d0650['deleteRow'](0x1);}const _0x58aa65=parseInt(_0x3e027c[0x0])-0x1,_0x3b561c=[];_0x34befb['forEach']((_0x5a8975,_0x20b25f)=>{if(_0x20b25f===_0x58aa65)return;const _0xedf05e=_0x5a8975[0x1],_0x4f43ed=_0x5a8975[0x2],_0x3c9d09=parseInt(_0x5a8975[0x3]),_0x4803f5=_0x5a8975[0x1]['split']('\x20')['pop']();if(!_0x27031a(_0xedf05e,_0x4f43ed,_0x3c9d09,_0x4803f5,_0x1c6670,_0x38cd9d,_0x5e6c16))return;const _0x1589b2=_0x3cab0e(_0x3e027c,_0x5a8975);_0x3b561c['push']({'index':_0x20b25f,'difference':_0x1589b2});});const _0x344e39=_0x3b561c['sort']((_0x16abb2,_0x4c1ad9)=>_0x16abb2['difference']-_0x4c1ad9['difference'])['slice'](0x0,0x5),_0x49f901=document['createElement']('tr');_0x49f901['innerHTML']=_0x344e39['map'](({index:_0x175b9d})=>{const _0x48ef10=_0x34befb[_0x175b9d],_0x54c8a1=_0x48ef10[0x1],_0x78199=_0x48ef10[0x2],_0x3294ac=_0x48ef10[0x3];return'<td\x20style=\x22font-size:\x2010.8px;\x20cursor:\x20pointer;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>'+_0x54c8a1+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22font-size:\x209px;\x20color:\x20#777;\x22>'+_0x78199+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>';})['join'](''),_0x49f901['querySelectorAll']('td')['forEach']((_0x2624f9,_0x4e5b08)=>{_0x2624f9['addEventListener']('click',()=>{const _0x26f92a=_0x34befb[_0x344e39[_0x4e5b08]['index']],_0x892a5f=_0x26f92a[0x1],_0x4187ac=_0x26f92a[0x2],_0xb3a200=_0x26f92a[0x3];document['getElementById']('searchInput1')['value']=_0x892a5f+','+_0xb3a200+','+_0x4187ac,document['getElementById']('searchButton1')['click']();});});;_0x2d0650['appendChild'](_0x49f901);}function _0x27031a(_0x40a291,_0x32793e,_0x28c684,_0x5da33f,_0x16db62,_0x27e2ce,_0x3672b6){try{if(_0x16db62!=='all'&&_0x40a291&&_0x32793e){const _0x11238e=_0x40a291+'|'+_0x32793e,_0x5a40f7=_0xa4a5b8['top7']['has'](_0x11238e),_0x3f920f=_0xa4a5b8['outside']['has'](_0x11238e);if(_0x16db62==='top7'&&!_0x5a40f7)return![];if(_0x16db62==='outside'&&!_0x3f920f)return![];}if(_0x27e2ce==='current'&&_0x40a291&&!_0x40a291['includes']('25/26')&&!_0x40a291['includes']('2025'))return![];if(_0x28c684&&!isNaN(_0x28c684))switch(_0x3672b6){case'u30':if(_0x28c684>=0x1e)return![];break;case'u25':if(_0x28c684>=0x19)return![];break;case'u23':if(_0x28c684>=0x17)return![];break;case'u21':if(_0x28c684>=0x15)return![];break;}return!![];}catch(_0x1b4e69){return!![];}}Promise['all']([fetchPromises1,fetchPromises2,fetchPromises3,fetchPromises4,fetchPromises5,fetchPromises6,fetchPromises7,fetchPromises8])['then'](()=>{_0xf3b1df();});});});});});});});});})['catch'](_0x124d4b=>{console['error']('Error\x20fetching\x20or\x20processing\x20data:',_0x124d4b);});
+const allData1 = [];
+  const allData2 = [];
+  const allData3 = [];
+  const allData4 = [];
+  const allData5 = [];
+  const allData6 = [];
+  const allData7 = [];
+  const allData8 = [];
+
+
+
+    let allDataAsString = '';
+    
+    
+
+        
+        const urls1 = [
+        'https://datamb.football/database/CURRENT/RATOP72526/CM/CM.xlsx',
+    
+    ];
+    
+    const urls2 = [
+        'https://datamb.football/database/CURRENT/RAPRO2526/CM/CM.xlsx',
+    'https://datamb.football/database/CURRENT/RAPRO2026/CM/CM.xlsx',
+    ];
+    
+    const urls3 = [
+    'https://datamb.football/database/OLD/RATOP72425/CM/CM.xlsx',
+
+    
+    
+    ];
+    
+    const urls4 = [
+    'https://datamb.football/database/OLD/RAPRO2425/CM/CM.xlsx',
+    'https://datamb.football/database/OLD/RAPRO2025/CM/CM.xlsx',
+
+    
+    ];
+    
+    const urls5 = [
+
+    'https://datamb.football/database/OLD/RATOP72324/CM/CM.xlsx',
+
+    
+    ];
+
+    const urls6 = [
+
+    'https://datamb.football/database/OLD/RAPRO2324/CM/CM.xlsx',
+    'https://datamb.football/database/OLD/RAPRO2024/CM/CM.xlsx',
+    
+        ]
+
+    const urls7 = [
+        'https://datamb.football/database/OLD/RATOP72223/CM/CM.xlsx',
+    ] 
+
+    const urls8 = [
+        'https://datamb.football/database/OLD/RAPRO2223/CM/CM.xlsx',
+    'https://datamb.football/database/OLD/RAPRO2023/CM/CM.xlsx',
+    ]
+
+            const fetchPromises1 = urls1.map(url => fetch(url).then(response => response.arrayBuffer()));
+            const fetchPromises2 = urls2.map(url => fetch(url).then(response => response.arrayBuffer()));
+            const fetchPromises3 = urls3.map(url => fetch(url).then(response => response.arrayBuffer()));
+                const fetchPromises4 = urls4.map(url => fetch(url).then(response => response.arrayBuffer()));
+                const fetchPromises5 = urls5.map(url => fetch(url).then(response => response.arrayBuffer()));
+                const fetchPromises6 = urls6.map(url => fetch(url).then(response => response.arrayBuffer()));
+const fetchPromises7 = urls7.map(url => fetch(url).then(response => response.arrayBuffer()));
+const fetchPromises8 = urls8.map(url => fetch(url).then(response => response.arrayBuffer()));
+            
+                function processAndStoreData1(dataArray) {
+                    // Unique ID counter
+                    let uniqueIdCounter = 1;
+                
+                                     dataArray.forEach((data, urlIndex) => {
+                        const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+                        const sheetName = workbook.SheetNames[0];
+                        const sheet = workbook.Sheets[sheetName];
+                        const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+                
+                  const currentUrl = urls1[urlIndex];
+                  let seasonSuffix = '25/26'; // Default
+                  const proMatch = currentUrl.match(/PRO20(\d{2})/);
+                  if (proMatch) {
+                      seasonSuffix = '20' + proMatch[1];
+                  }
+                        // Exclude header row
+                        const dataWithoutHeader = jsonData.slice(1);
+                
+                        // Perform transformations and add unique ID
+                        dataWithoutHeader.forEach(row => {
+                            // Generate unique ID and shift columns
+                            row.unshift(`${uniqueIdCounter++}`);
+                
+                            // Shift columns as needed
+                                  row[15] = `${row[1]} ${seasonSuffix}`;
+                                  const reorderedRow = [
+                  row[0],
+                  row[15],
+                  row[2],
+                  row[3],
+                  row[9],
+                  row[5],
+                  row[6],
+                  row[10],
+                  row[7],
+                  row[8],
+                  row[11],
+                  row[4]
+              ];
+                      
+                      
+                            allData1.push(reorderedRow);
+                        });
+                    });
+                
+                    // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+                    const columnsToConvert = [4, 5, 6, 7, 8, 9, 10];
+                    const columnValues = columnsToConvert.map(col => allData1.map(row => parseFloat(row[col])));
+                
+                    // Calculate percentiles
+                    const percentiles = columnValues.map(values => {
+                        const sorted = [...values].sort((a, b) => a - b);
+                        return values.map(value => {
+                            const rank = sorted.indexOf(value) + 1;
+                            return (rank / sorted.length);
+                        });
+                    });
+                
+                    // Replace original values with percentiles
+                    allData1.forEach((row, rowIndex) => {
+                        columnsToConvert.forEach((col, colIndex) => {
+                            row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+                        });
+                    });
+                }
+            
+                function processAndStoreData2(dataArray) {
+                    // Unique ID counter
+                    let uniqueIdCounter = 1;
+                
+                                     dataArray.forEach((data, urlIndex) => {
+                        const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+                        const sheetName = workbook.SheetNames[0];
+                        const sheet = workbook.Sheets[sheetName];
+                        const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+                
+                        const currentUrl = urls2[urlIndex];
+                        let seasonSuffix = '25/26'; // Default
+                        const proMatch = currentUrl.match(/PRO20(\d{2})/);
+                        if (proMatch) {
+                            seasonSuffix = '20' + proMatch[1];
+                        }
+
+                        // Exclude header row
+                        const dataWithoutHeader = jsonData.slice(1);
+                
+                        // Perform transformations and add unique ID
+                        dataWithoutHeader.forEach(row => {
+                            // Generate unique ID and shift columns
+                            row.unshift(`${uniqueIdCounter++}`);
+                
+                            // Shift columns as needed
+                                  row[15] = `${row[1]} ${seasonSuffix}`;
+                
+                                  const reorderedRow = [
+                  row[0],
+                  row[15],
+                  row[2],
+                  row[3],
+                  row[9],
+                  row[5],
+                  row[6],
+                  row[10],
+                  row[7],
+                  row[8],
+                  row[11],
+                  row[4]
+              ];
+                      
+                
+                            allData2.push(reorderedRow);
+                        });
+                    });
+                
+                    // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+                    const columnsToConvert = [4, 5, 6, 7, 8, 9, 10];
+                    const columnValues = columnsToConvert.map(col => allData2.map(row => parseFloat(row[col])));
+                
+                    // Calculate percentiles
+                    const percentiles = columnValues.map(values => {
+                        const sorted = [...values].sort((a, b) => a - b);
+                        return values.map(value => {
+                            const rank = sorted.indexOf(value) + 1;
+                            return (rank / sorted.length);
+                        });
+                    });
+                
+                    // Replace original values with percentiles
+                    allData2.forEach((row, rowIndex) => {
+                        columnsToConvert.forEach((col, colIndex) => {
+                            row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+                        });
+                    });
+                }
+            
+                function processAndStoreData3(dataArray) {
+                  // Unique ID counter
+                  let uniqueIdCounter = 1;
+              
+                                   dataArray.forEach((data, urlIndex) => {
+                      const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+                      const sheetName = workbook.SheetNames[0];
+                      const sheet = workbook.Sheets[sheetName];
+                      const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+              
+                      const currentUrl = urls3[urlIndex];
+                      let seasonSuffix = '24/25'; // Default
+                      const proMatch = currentUrl.match(/PRO20(\d{2})/);
+                      if (proMatch) {
+                          seasonSuffix = '20' + proMatch[1];
+                      }
+
+                      const dataWithoutHeader = jsonData.slice(1);
+              
+                      // Perform transformations and add unique ID
+                      dataWithoutHeader.forEach(row => {
+                          // Generate unique ID and shift columns
+                          row.unshift(`${uniqueIdCounter++}`);
+              
+                          // Shift columns as needed
+                              row[15] = `${row[1]} ${seasonSuffix}`;
+            
+                              const reorderedRow = [
+                  row[0],
+                  row[15],
+                  row[2],
+                  row[3],
+                  row[9],
+                  row[5],
+                  row[6],
+                  row[10],
+                  row[7],
+                  row[8],
+                  row[11],
+                  row[4]
+              ];
+              
+                          allData3.push(reorderedRow);
+                      });
+                  });
+              
+                  // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+                  const columnsToConvert = [4, 5, 6, 7, 8, 9, 10];
+                  const columnValues = columnsToConvert.map(col => allData3.map(row => parseFloat(row[col])));
+              
+                  // Calculate percentiles
+                  const percentiles = columnValues.map(values => {
+                      const sorted = [...values].sort((a, b) => a - b);
+                      return values.map(value => {
+                          const rank = sorted.indexOf(value) + 1;
+                          return (rank / sorted.length);
+                      });
+                  });
+              
+                  // Replace original values with percentiles
+                  allData3.forEach((row, rowIndex) => {
+                      columnsToConvert.forEach((col, colIndex) => {
+                          row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+                      });
+                  });
+              }
+              function processAndStoreData4(dataArray) {
+                // Unique ID counter
+                let uniqueIdCounter = 1;
+            
+                                 dataArray.forEach((data, urlIndex) => {
+                    const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+                    const sheetName = workbook.SheetNames[0];
+                    const sheet = workbook.Sheets[sheetName];
+                    const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+            
+                    const currentUrl = urls4[urlIndex];
+                    let seasonSuffix = '24/25'; // Default
+                    const proMatch = currentUrl.match(/PRO20(\d{2})/);
+                    if (proMatch) {
+                        seasonSuffix = '20' + proMatch[1];
+                    }
+                     const dataWithoutHeader = jsonData.slice(1);
+            
+                    // Perform transformations and add unique ID
+                    dataWithoutHeader.forEach(row => {
+                        // Generate unique ID and shift columns
+                        row.unshift(`${uniqueIdCounter++}`);
+            
+                        // Shift columns as needed
+                          row[15] = `${row[1]} ${seasonSuffix}`;
+            
+                          const reorderedRow = [
+                  row[0],
+                  row[15],
+                  row[2],
+                  row[3],
+                  row[9],
+                  row[5],
+                  row[6],
+                  row[10],
+                  row[7],
+                  row[8],
+                  row[11],
+                  row[4]
+              ];
+            
+                        allData4.push(reorderedRow);
+                    });
+                });
+            
+                // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+                const columnsToConvert = [4, 5, 6, 7, 8, 9, 10];
+                const columnValues = columnsToConvert.map(col => allData4.map(row => parseFloat(row[col])));
+            
+                // Calculate percentiles
+                const percentiles = columnValues.map(values => {
+                    const sorted = [...values].sort((a, b) => a - b);
+                    return values.map(value => {
+                        const rank = sorted.indexOf(value) + 1;
+                        return (rank / sorted.length);
+                    });
+                });
+            
+                // Replace original values with percentiles
+                allData4.forEach((row, rowIndex) => {
+                    columnsToConvert.forEach((col, colIndex) => {
+                        row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+                    });
+                });
+            }
+            function processAndStoreData5(dataArray) {
+              // Unique ID counter
+              let uniqueIdCounter = 1;
+            
+                               dataArray.forEach((data, urlIndex) => {
+                  const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+                  const sheetName = workbook.SheetNames[0];
+                  const sheet = workbook.Sheets[sheetName];
+                  const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+            
+                  const currentUrl = urls5[urlIndex];
+                  let seasonSuffix = '23/24'; // Default
+                  const proMatch = currentUrl.match(/PRO20(\d{2})/);
+                  if (proMatch) {
+                      seasonSuffix = '20' + proMatch[1];
+                  }
+                  const dataWithoutHeader = jsonData.slice(1);
+            
+                  // Perform transformations and add unique ID
+                  dataWithoutHeader.forEach(row => {
+                      // Generate unique ID and shift columns
+                      row.unshift(`${uniqueIdCounter++}`);
+            
+                      // Shift columns as needed
+                      row[15] = `${row[1]} ${seasonSuffix}`;
+                     
+            
+                      const reorderedRow = [
+                  row[0],
+                  row[15],
+                  row[2],
+                  row[3],
+                  row[9],
+                  row[5],
+                  row[6],
+                  row[10],
+                  row[7],
+                  row[8],
+                  row[11],
+                  row[4]
+              ];
+              
+                      allData5.push(reorderedRow);
+                  });
+              });
+            
+              
+            
+              // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+              const columnsToConvert = [4, 5, 6, 7, 8, 9, 10];
+              const columnValues = columnsToConvert.map(col => allData5.map(row => parseFloat(row[col])));
+            
+              // Calculate percentiles
+              const percentiles = columnValues.map(values => {
+                  const sorted = [...values].sort((a, b) => a - b);
+                  return values.map(value => {
+                      const rank = sorted.indexOf(value) + 1;
+                      return (rank / sorted.length);
+                  });
+              });
+            
+              // Replace original values with percentiles
+              allData5.forEach((row, rowIndex) => {
+                  columnsToConvert.forEach((col, colIndex) => {
+                      row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+                  });
+              });
+            }
+            
+            
+            function processAndStoreData6(dataArray) {
+              // Unique ID counter
+              let uniqueIdCounter = 1;
+            
+                               dataArray.forEach((data, urlIndex) => {
+                  const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+                  const sheetName = workbook.SheetNames[0];
+                  const sheet = workbook.Sheets[sheetName];
+                  const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+            
+                  const currentUrl = urls6[urlIndex];
+                  let seasonSuffix = '23/24'; // Default
+                  const proMatch = currentUrl.match(/PRO20(\d{2})/);
+                  if (proMatch) {
+                      seasonSuffix = '20' + proMatch[1];
+                  }
+                  
+                  const dataWithoutHeader = jsonData.slice(1);
+            
+                  // Perform transformations and add unique ID
+                  dataWithoutHeader.forEach(row => {
+                      // Generate unique ID and shift columns
+                      row.unshift(`${uniqueIdCounter++}`);
+            
+                      // Shift columns as needed
+                      row[15] = `${row[1]} ${seasonSuffix}`;
+                     
+                      const reorderedRow = [
+                  row[0],
+                  row[15],
+                  row[2],
+                  row[3],
+                  row[9],
+                  row[5],
+                  row[6],
+                  row[10],
+                  row[7],
+                  row[8],
+                  row[11],
+                  row[4]
+              ];
+            
+            
+                      allData6.push(reorderedRow);
+                  });
+              });
+            
+              
+              
+            
+              // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+              const columnsToConvert = [4, 5, 6, 7, 8, 9, 10];
+              const columnValues = columnsToConvert.map(col => allData6.map(row => parseFloat(row[col])));
+            
+              // Calculate percentiles
+              const percentiles = columnValues.map(values => {
+                  const sorted = [...values].sort((a, b) => a - b);
+                  return values.map(value => {
+                      const rank = sorted.indexOf(value) + 1;
+                      return (rank / sorted.length);
+                  });
+              });
+            
+              // Replace original values with percentiles
+              allData6.forEach((row, rowIndex) => {
+                  columnsToConvert.forEach((col, colIndex) => {
+                      row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+                  });
+              });
+            }
+            
+            function processAndStoreData7(dataArray) {
+              // Unique ID counter
+              let uniqueIdCounter = 1;
+            
+                               dataArray.forEach((data, urlIndex) => {
+                  const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+                  const sheetName = workbook.SheetNames[0];
+                  const sheet = workbook.Sheets[sheetName];
+                  const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+            
+                  const currentUrl = urls7[urlIndex];
+                  let seasonSuffix = '22/23'; // Default
+                  const proMatch = currentUrl.match(/PRO20(\d{2})/);
+                  if (proMatch) {
+                      seasonSuffix = '20' + proMatch[1];
+                  }
+                  
+                  const dataWithoutHeader = jsonData.slice(1);
+            
+                  // Perform transformations and add unique ID
+                  dataWithoutHeader.forEach(row => {
+                      // Generate unique ID and shift columns
+                      row.unshift(`${uniqueIdCounter++}`);
+            
+                      // Shift columns as needed
+                      row[15] = `${row[1]} ${seasonSuffix}`;
+                     
+                      const reorderedRow = [
+                  row[0],
+                  row[15],
+                  row[2],
+                  row[3],
+                  row[9],
+                  row[5],
+                  row[6],
+                  row[10],
+                  row[7],
+                  row[8],
+                  row[11],
+                  row[4]
+              ];
+            
+            
+                      allData7.push(reorderedRow);
+                  });
+              });
+            
+              
+              
+            
+              // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+              const columnsToConvert = [4, 5, 6, 7, 8, 9, 10];
+              const columnValues = columnsToConvert.map(col => allData7.map(row => parseFloat(row[col])));
+            
+              // Calculate percentiles
+              const percentiles = columnValues.map(values => {
+                  const sorted = [...values].sort((a, b) => a - b);
+                  return values.map(value => {
+                      const rank = sorted.indexOf(value) + 1;
+                      return (rank / sorted.length);
+                  });
+              });
+            
+              // Replace original values with percentiles
+              allData7.forEach((row, rowIndex) => {
+                  columnsToConvert.forEach((col, colIndex) => {
+                      row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+                  });
+              });
+            }
+
+            function processAndStoreData8(dataArray) {
+              // Unique ID counter
+              let uniqueIdCounter = 1;
+            
+                               dataArray.forEach((data, urlIndex) => {
+                  const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+                  const sheetName = workbook.SheetNames[0];
+                  const sheet = workbook.Sheets[sheetName];
+                  const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+            
+                  const currentUrl = urls8[urlIndex];
+                  let seasonSuffix = '22/23'; // Default
+                  const proMatch = currentUrl.match(/PRO20(\d{2})/);
+                  if (proMatch) {
+                      seasonSuffix = '20' + proMatch[1];
+                  }
+                  
+                  const dataWithoutHeader = jsonData.slice(1);
+            
+                  // Perform transformations and add unique ID
+                  dataWithoutHeader.forEach(row => {
+                      // Generate unique ID and shift columns
+                      row.unshift(`${uniqueIdCounter++}`);
+            
+                      // Shift columns as needed
+                      row[15] = `${row[1]} ${seasonSuffix}`;
+                     
+                      const reorderedRow = [
+                  row[0],
+                  row[15],
+                  row[2],
+                  row[3],
+                  row[9],
+                  row[5],
+                  row[6],
+                  row[10],
+                  row[7],
+                  row[8],
+                  row[11],
+                  row[4]
+              ];
+            
+            
+                      allData8.push(reorderedRow);
+                  });
+              });
+            
+              
+              
+            
+              // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+              const columnsToConvert = [4, 5, 6, 7, 8, 9, 10];
+              const columnValues = columnsToConvert.map(col => allData8.map(row => parseFloat(row[col])));
+            
+              // Calculate percentiles
+              const percentiles = columnValues.map(values => {
+                  const sorted = [...values].sort((a, b) => a - b);
+                  return values.map(value => {
+                      const rank = sorted.indexOf(value) + 1;
+                      return (rank / sorted.length);
+                  });
+              });
+            
+              // Replace original values with percentiles
+              allData8.forEach((row, rowIndex) => {
+                  columnsToConvert.forEach((col, colIndex) => {
+                      row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+                  });
+              });
+            }
+                  
+                  Promise.all(fetchPromises1)
+                      .then(responses => {
+                          processAndStoreData1(responses);
+                          // Fetch and process the remaining files
+                          Promise.all(fetchPromises2)
+                              .then(responses2 => {
+                                  processAndStoreData2(responses2);
+                  
+                                  Promise.all(fetchPromises3)
+                                  .then(responses3 => {
+                                      processAndStoreData3(responses3);
+                                      Promise.all(fetchPromises4)
+                                      .then(responses4 => {
+                                          processAndStoreData4(responses4);
+                                          Promise.all(fetchPromises5)
+                                          .then(responses5 => {
+                                              processAndStoreData5(responses5);
+                                              Promise.all(fetchPromises6)
+                                              .then(responses6 => {
+                                                  processAndStoreData6(responses6);
+                                                  Promise.all(fetchPromises7)
+                                                  .then(responses7 => {
+                                                      processAndStoreData7(responses7);
+                                                      Promise.all(fetchPromises8)
+                                                      .then(responses8 => {
+                                                          processAndStoreData8(responses8);
+
+              
+                                  // Concatenate intermediate data with new data
+                                  const finalData = allData1.concat(allData2).concat(allData3).concat(allData4).concat(allData5).concat(allData6).concat(allData7).concat(allData8);
+                  
+                                  // Reset and assign new unique IDs
+                                  finalData.forEach((row, index) => {
+                                      row[0] = `${index + 1}`;
+                                  });
+                                  
+                                  finalData.forEach(row => {
+                                      allDataAsString += row.join(',') + '\n';
+                                  });
+                  
+                  
+                                  const inputLines = allDataAsString.trim().split('\n');
+                  const outputLines = [];
+              
+              // Process each line
+              for (const line of inputLines) {
+                  // Split the line by comma
+                const parts = line.split(',');
+              
+                // Extract the desired fields
+                const name = parts[1];
+                const age = parts[3];
+                const club = parts[2];
+              
+                // Create the formatted string
+                const outputLine = `${name},${age},${club}`;
+              
+                // Add the formatted string to the output array
+                outputLines.push(outputLine);
+              }
+              
+              
+              
+                  const names = outputLines;
+                      const searchInput = document.getElementById('searchInput1');
+                      searchInput.setAttribute("autocomplete", "off");
+               const matchingNamesContainer = document.getElementById("matchingNames");
+              const searchButton = document.getElementById("searchButton1");
+              
+              
+              
+              
+              function isMobileDevice() {
+                const userAgent = navigator.userAgent;
+                return /Android|iPhone/i.test(userAgent);
+              }
+              
+              // Global variables for keyboard navigation
+              let selectedIndex = -1;
+              let currentResults = [];
+              
+              function updateMatchingNames() {
+    const searchQuery = searchInput.value.trim();
+    
+    // If empty search, hide the container
+    if (searchQuery === "") {
+        matchingNamesContainer.style.display = "none";
+        selectedIndex = -1;
+        currentResults = [];
+        return;
+    }
+    
+    // Generate search variations for the query
+    const searchVariations = generateSearchVariations(searchQuery);
+    const foundResults = new Set(); // Use Set to avoid duplicates
+    
+    // Test each search variation against all names
+    searchVariations.forEach(variation => {
+        const matchingNames = names.filter(name => {
+            const [fullName, team, age] = name.split(",");
+            // Check if either fullName or team matches using smart matching
+            return smartNameMatch(variation, fullName) || smartNameMatch(variation, team);
+        });
+        
+        // Add found results to our set
+        matchingNames.forEach(name => foundResults.add(name));
+    });
+    
+        const uniqueMatchingNames = Array.from(foundResults);
+    currentResults = uniqueMatchingNames;
+    
+    matchingNamesContainer.innerHTML = "";
+    
+    if (uniqueMatchingNames.length === 0) {
+        matchingNamesContainer.style.display = "none";
+        selectedIndex = -1;
+        return;
+    }
+    
+    uniqueMatchingNames.forEach((name, index) => {
+        const [fullName, team, age] = name.split(",");
+        
+        const nameElement = document.createElement("div");
+        nameElement.classList.add("name");
+        nameElement.setAttribute("data-index", index);
+        
+        nameElement.innerHTML = `
+            <span class="fullName">${fullName}</span>
+            <span class="age"> (${age}, </span>
+            <span class="team">${team})</span>
+        `;
+        
+        // Add event listener to handle selection
+        nameElement. addEventListener ("mousedown", (e) => {
+e.preventDefault();
+e.stopPropagation();
+            searchInput.value = fullName + "," + team + "," + age; // Set full query as input value
+            searchButton1.click();
+        });
+        
+    
+    nameElement.addEventListener ("touchstart", (e) => {
+e.preventDefault();
+e.stopPropagation();
+searchInput.value = fullName + "," + team + "," + age;
+searchButton1.click();
+}, 
+{ passive: false });
+matchingNamesContainer.appendChild (nameElement);
+              });
+    
+    // Style the container
+    const searchInputWidth = searchInput.offsetWidth;
+    matchingNamesContainer.style.display = "block";
+    matchingNamesContainer.style.padding = "8px";
+    matchingNamesContainer.style.position = "relative";
+    matchingNamesContainer.style.zIndex = "9999"; // Set a high z-index value
+    matchingNamesContainer.style.width = searchInputWidth + "px";
+    matchingNamesContainer.style.maxHeight = "267px"; // Limit height for long lists
+    matchingNamesContainer.style.overflowY = "auto"; // Enable scrolling if content exceeds height
+    matchingNamesContainer.style.border = "1px solid #e0e0e0"; // Light gray border
+    
+    // Reset selection when new results are shown
+    selectedIndex = -1;
+    updateSelection();
+}
+
+function updateSelection() {
+    // Remove previous selection
+    const allNames = matchingNamesContainer.querySelectorAll('.name');
+    allNames.forEach((name, index) => {
+        name.style.backgroundColor = '';
+        name.style.color = '';
+    });
+    
+    // Add selection to current index
+    if (selectedIndex >= 0 && selectedIndex < allNames.length) {
+        const selectedElement = allNames[selectedIndex];
+        selectedElement.style.backgroundColor = 'var(--hover-color)';
+        selectedElement.style.color = 'var(--text-color)';
+        
+        // Scroll into view if needed
+        selectedElement.scrollIntoView({ block: 'nearest' });
+    }
+}
+              
+              searchInput.addEventListener("input", updateMatchingNames);
+              searchInput.addEventListener("keyup", function(event) {
+                if (event.key === "Enter") {
+                  // If there's a selected item, use that
+                  if (selectedIndex >= 0 && currentResults.length > selectedIndex) {
+                    const selectedResult = currentResults[selectedIndex];
+                    const [fullName, team, age] = selectedResult.split(",");
+                    searchInput.value = fullName + "," + team + "," + age;
+                  }
+                  searchButton1.click(); // Trigger the search button click event
+                } else if (event.key === "ArrowDown") {
+                  event.preventDefault();
+                  if (currentResults.length > 0) {
+                    selectedIndex = Math.min(selectedIndex + 1, currentResults.length - 1);
+                    updateSelection();
+                  }
+                } else if (event.key === "ArrowUp") {
+                  event.preventDefault();
+                  if (currentResults.length > 0) {
+                    selectedIndex = Math.max(selectedIndex - 1, 0);
+                    updateSelection();
+                  }
+                } else if (event.key === "Backspace") {
+                  updateMatchingNames();
+                }
+              });
+              
+              // Prevent default arrow key behavior when dropdown is visible
+              searchInput.addEventListener("keydown", function(event) {
+                if ((event.key === "ArrowDown" || event.key === "ArrowUp") && currentResults.length > 0) {
+                  event.preventDefault();
+                }
+              });
+                  
+              const csvData = allDataAsString;
+              let dataArray = csvData.trim().split('\n').map(line => line.split(','));
+              
+              
+              
+                          function calculateEuclideanDifference(data1, data2) {
+                            let difference = 0;
+                            for (let i = 4; i <= 10; i++) {
+                              const metric1 = parseFloat(data1[i]);
+                              const metric2 = parseFloat(data2[i]);
+                              difference += Math.pow(metric1 - metric2, 2);
+                            }
+                            return Math.sqrt(difference);
+                          }
+                          
+                          
+                          const colorClasses = ['result-color-1', 'result-color-2', 'result-color-3', 'result-color-4', 'result-color-5', 'result-color-6', 'result-color-7', 'result-color-8', 'result-color-9', 'result-color-10', 'result-color-11', 'result-color-12', 'result-color-13', 'result-color-14', 'result-color-15', 'result-color-16', 'result-color-17', 'result-color-18', 'result-color-19', 'result-color-20', 'result-color-21', 'result-color-22', 'result-color-23', 'result-color-24', 'result-color-25', 'result-color-26', 'result-color-27', 'result-color-28', 'result-color-29', 'result-color-30', 'result-color-31', 'result-color-32', 'result-color-33', 'result-color-34', 'result-color-35', 'result-color-36', 'result-color-37'];
+                          
+                          let searchResults = []; // Declare the search results variable
+                          
+                          function removeSpecialChars(str) {
+    return str.normalize('NFD')
+        .replace(/[\u0300-\u036f\s]/g, '')  // This already removes spaces with \s
+        .replace(/Ø/g, 'O')
+        .replace(/ø/g, 'o')
+        .replace(/ı/g, 'i')
+        .replace(/ł/g, 'l')              // Added support for ł -> l
+        .replace(/Ł/g, 'L')              // Added support for Ł -> L
+        .replace(/[^\w]/g, '');          // Remove punctuation (no \s needed since spaces already removed)
+}
+
+function generateSearchVariations(query) {
+    const variations = [];
+    const words = query.trim().split(/\s+/).filter(w => w.length > 0 && !/^\d+$/.test(w) && !/^\d+\/\d+$/.test(w));
+
+    
+    // Add original query
+    variations.push(query);
+    
+    // If we have multiple words, try converting first word to initial
+    if (words.length >= 2) {
+        const firstInitial = words[0].charAt(0).toUpperCase();
+        const restOfName = words.slice(1).join(' ');
+        
+        // Add variations with initial
+        variations.push(`${firstInitial}. ${restOfName}`);
+        variations.push(`${firstInitial} ${restOfName}`);
+        variations.push(`${firstInitial}.${restOfName}`);
+    }
+    
+    return variations;
+}
+
+function isInitialMatch(queryWord, nameWord) {
+    // Check if query word is an initial (1-2 chars, possibly with dot)
+    const cleanQuery = queryWord.replace(/\./g, '');
+    if (cleanQuery.length === 1) {
+        // Query is an initial, check if it matches first letter of name word
+        return cleanQuery.toLowerCase() === nameWord.charAt(0).toLowerCase();
+    }
+    return false;
+}
+
+function smartNameMatch(queryName, itemName) {
+    // First try the standard removeSpecialChars approach
+    const normalizedQuery = removeSpecialChars(queryName.toLowerCase());
+    const normalizedItem = removeSpecialChars(itemName.toLowerCase());
+    
+    if (normalizedItem.includes(normalizedQuery)) {
+        return true;
+    }
+    
+    // Then try intelligent word-by-word matching
+    const queryWords = queryName.replace(/[^\w\s]/g, '').split(/\s+/).filter(w => w.length > 0);
+    const itemWords = itemName.replace(/[^\w\s]/g, '').split(/\s+/).filter(w => w.length > 0);
+    
+    if (queryWords.length >= 2 && itemWords.length >= 2) {
+        // Check if first word is initial and matches, and rest of words match
+        const firstWordMatches = isInitialMatch(queryWords[0], itemWords[0]) || 
+                               queryWords[0].toLowerCase() === itemWords[0].toLowerCase();
+        
+        if (firstWordMatches) {
+            // Check if remaining words match
+            const restQueryWords = queryWords.slice(1);
+            const restItemWords = itemWords.slice(1);
+            
+            // Create a combined string from remaining words for comparison
+            const restQuery = removeSpecialChars(restQueryWords.join(' ').toLowerCase());
+            const restItem = removeSpecialChars(restItemWords.join(' ').toLowerCase());
+            
+            return restItem.includes(restQuery);
+        }
+    }
+    
+    return false;
+}
+
+function search(query) {
+    const queryParts = query.split(',').map(part => part.trim()); // Split the query by commas and trim whitespace
+    const name = queryParts[0]; // Extract the name part
+    let age, team;
+
+    // Extract age and team if they exist
+    if (queryParts.length > 1) {
+        age = queryParts[1].trim(); // Trim any leading or trailing spaces
+        if (queryParts.length > 2) {
+            team = queryParts[2].trim(); // Trim any leading or trailing spaces
+        }
+    }
+
+    const nameVariations = generateSearchVariations(name);
+    const foundResults = new Set(); // Use Set to avoid duplicates
+
+    nameVariations.forEach(nameVariation => {
+        const results = dataArray.filter(data => {
+            const normalizedTeam = removeSpecialChars(data[2].toLowerCase());
+            const normalizedAge = data[3].trim().toLowerCase(); // Trim any leading or trailing spaces
+
+            // Check if the name matches using smart matching
+            const nameMatches = smartNameMatch(nameVariation, data[1]);
+
+            // Check if the age matches (or if age is not provided)
+            const ageMatches = !age || normalizedAge === removeSpecialChars(age.toLowerCase());
+
+            // Check if the team matches (or if team is not provided)
+            const teamMatches = !team || normalizedTeam.includes(removeSpecialChars(team.toLowerCase()));
+
+            // Return true if name matches and either age or team matches
+            return nameMatches && ageMatches && teamMatches;
+        });
+
+        // Add found results to our set
+        results.forEach(result => foundResults.add(result));
+    });
+
+    return Array.from(foundResults);
+}
+                          
+                          function createTable(teamName, teamIndex, color) {
+        const resultsTable = document.getElementById('resultsTable');
+                resultsTable.style.display = 'block';
+        const headerNames = [
+            '<span data-i18n="table.percentiles">Percentiles</span>',
+      '<span data-i18n="table.duel">Duel%</span>',
+      '<span data-i18n="table.possWon">Poss won</span>',
+      '<span data-i18n="table.progCarries">Prog carries</span>',
+      '<span data-i18n="table.fwdPasses">Fwd passes</span>',
+      '<span data-i18n="table.fwdPassPct">Fwd pass%</span>',
+      '<span data-i18n="table.keyPasses">Key passes</span>',
+      '<span data-i18n="table.progPasses">Prog passes</span>',
+      '<span data-i18n="table.minutes">Minutes</span>',
+    ];
+    
+      
+      
+        // Check if table headers exist
+        const headersExist = resultsTable.querySelector('th') !== null;
+      
+        const table = headersExist ? resultsTable.querySelector('table') : document.createElement('table');
+        table.classList.add('metrics-table');
+      
+        if (!headersExist) {
+          // Create the table header
+          const headerRow = document.createElement('tr');
+         
+      for (let i = 0; i < headerNames.length; i++) {
+            const th = document.createElement('th');
+            th.innerHTML = headerNames[i];
+            // Make first column wider
+            if (i === 0) {
+              th.style.width = '31%';
+              th.style.textAlign = 'left';
+            }
+            headerRow.appendChild(th);
+          }
+          // Add a separate table header for the "x" column
+          const xHeader = document.createElement('th');
+          xHeader.textContent = '';
+          xHeader.style.width = '4%';
+          headerRow.appendChild(xHeader);
+          table.appendChild(headerRow);
+        }
+        // Get the player data
+        const teamData = dataArray[teamIndex];
+        const dataRow = document.createElement('tr');
+        // First cell: player name, team, age, minutes
+        const tdPlayer = document.createElement('td');
+        tdPlayer.classList.add(color);
+        tdPlayer.style.textAlign = 'left';
+        tdPlayer.style.whiteSpace = 'normal';
+        tdPlayer.style.overflow = 'visible';
+        tdPlayer.style.textOverflow = 'clip';
+        tdPlayer.style.minHeight = '36px';
+        tdPlayer.style.lineHeight = '1.1';
+                // Format player name: make trailing numeric part (e.g. '24/25' or '2025') smaller
+        const playerName = teamData[1];
+        const nameMatch = playerName.match(/^(.*?)(\s+)(\d{2}\/\d{2}|\d{4})$/);
+        let playerNameHTML;
+        if (nameMatch) {
+          playerNameHTML = `${nameMatch[1]}<span style=\"font-size:10px; display:inline-block; vertical-align:baseline;\">&nbsp;${nameMatch[3]}</span>`;
+        } else {
+          playerNameHTML = playerName;
+        }
+        tdPlayer.innerHTML = `
+          <div style=\"font-size:13px; white-space:nowrap;\">${playerNameHTML}</div>
+          <div style=\"font-size:10px; color:#777; margin-top:0px; font-weight:normal;\">${teamData[2]}, ${teamData[3]}</div>
+        `;
+        dataRow.appendChild(tdPlayer);
+        // Metrics columns (Passes cmp, Fwd pass%, Prog passes, Poss won, Def duel%, Aerial duel%, Prog carries)
+        for (let i = 4; i <= 10; i++) {
+          const td = document.createElement('td');
+          const value = parseFloat(teamData[i]) * 100;
+          td.textContent = value.toFixed(1);
+          td.style.fontWeight = '500';
+          td.classList.add(color);
+          dataRow.appendChild(td);
+        }
+        // Add minutes column
+        const tdMinutes = document.createElement('td');
+        tdMinutes.textContent = teamData[11];
+        tdMinutes.style.fontSize = '12px';
+        tdMinutes.style.color = '#777';
+        tdMinutes.style.textAlign = 'center';
+        tdMinutes.classList.add(color); // Apply player color
+        dataRow.appendChild(tdMinutes);
+        // Add a separate table cell for the "x" column
+        const xCell = document.createElement('td');
+        const buttonWrapper = document.createElement('div');
+        buttonWrapper.style.position = 'relative';
+        buttonWrapper.style.width = '100%';
+        buttonWrapper.style.height = '100%';
+        buttonWrapper.style.display = 'flex';
+        buttonWrapper.style.alignItems = 'center';
+        const xButton = document.createElement('button');
+        xButton.textContent = 'x';
+        xButton.style.backgroundColor = 'transparent';
+        xButton.style.border = 'none';
+        xButton.style.color = '#999';
+        xButton.style.fontSize = '14px';
+        xButton.style.cursor = 'pointer';
+        xButton.style.width = '4px';
+        xButton.style.height = '24px';
+        xButton.style.borderRadius = '50%';
+        xButton.style.display = 'flex';
+        xButton.style.alignItems = 'center';
+        xButton.style.justifyContent = 'center';
+        xButton.style.transition = 'all 0.2s';
+        xButton.style.position = 'relative';
+        xButton.style.zIndex = '1';
+        const touchTarget = document.createElement('div');
+        touchTarget.style.position = 'absolute';
+        touchTarget.style.top = '-15px';
+        touchTarget.style.left = '-15px';
+        touchTarget.style.width = '44px';
+        touchTarget.style.height = '44px';
+        touchTarget.style.cursor = 'pointer';
+        touchTarget.style.zIndex = '0';
+        const handleClick = function() {
+          dataRow.remove();
+          const radarPolygons = document.querySelectorAll(`.radarPolygon.${color}`);
+          const radarLines = document.querySelectorAll(`.radarLines.${color}`);
+          const radarCircles = document.querySelectorAll(`.radarCircle.${color}`);
+          radarPolygons.forEach((polygon) => polygon.remove());
+          radarLines.forEach((line) => line.remove());
+          radarCircles.forEach((circle) => circle.remove());
+          const remainingRows = document.querySelectorAll('.metrics-table tr:not(:first-child)');
+          if (remainingRows.length > 0) {
+              const lastRow = remainingRows[remainingRows.length - 1];
+              const lastPlayerCell = lastRow.firstChild;
+              // Extract player name from the formatted HTML structure
+              const playerNameDiv = lastPlayerCell.querySelector('div:first-child');
+              let lastPlayerName = '';
+              if (playerNameDiv) {
+                  // Get the text content including the season
+                  lastPlayerName = playerNameDiv.textContent.trim();
+                  // The season is now in a separate span, so we need to reconstruct the full name
+                  const seasonSpan = playerNameDiv.querySelector('span');
+                  if (seasonSpan) {
+                      // Remove the season from the main text and add it back properly
+                      const nameWithoutSeason = lastPlayerName.replace(seasonSpan.textContent, '').trim();
+                      const season = seasonSpan.textContent.trim();
+                      lastPlayerName = nameWithoutSeason + ' ' + season;
+                  }
+              }
+              const lastPlayerData = dataArray.find(player => player[1] === lastPlayerName);
+              if (lastPlayerData) {
+                  updateSimilarPlayers(lastPlayerData);
+              }
+          } else {
+              // Hide the entire table when all players are removed
+              const resultsTable = document.getElementById('resultsTable');
+              if (resultsTable) {
+                  resultsTable.style.display = 'none';
+              }
+              const similarPlayersContainer = document.getElementById('similarPlayersContainer');
+              if (similarPlayersContainer) {
+                  similarPlayersContainer.innerHTML = '';
+              }
+          }
+          adjustFirstColumnWidth();
+        };
+        xButton.addEventListener('click', handleClick);
+        touchTarget.addEventListener('click', handleClick);
+        buttonWrapper.appendChild(touchTarget);
+        buttonWrapper.appendChild(xButton);
+        xCell.appendChild(buttonWrapper);
+        dataRow.appendChild(xCell);
+        table.appendChild(dataRow);
+        if (!headersExist) {
+          resultsTable.appendChild(table);
+        }
+        adjustFirstColumnWidth();
+        const combResults = dataArray[teamIndex].join(', ');
+      
+      const outerRadius = 214.2;
+      const center = [0, 0];
+      const angles = [
+        0,
+        (2 * Math.PI) / 7,
+        (4 * Math.PI) / 7,
+        (6 * Math.PI) / 7,
+        (8 * Math.PI) / 7,
+        (10 * Math.PI) / 7,
+        (12 * Math.PI) / 7
+      ];
+    
+      function axisValueToCartesian(axis, value) {
+        let angle = angles[axis - 1];
+        angle += (2 * Math.PI / 7) * 0.2;
+        const x = 214.2 * value * Math.cos(angle);
+        const y = 214.2 * value * Math.sin(angle);
+        return { x, y };
+      }
+    
+      const svg = document.querySelector('.radar');
+      const radarWrapper = svg.appendChild(
+        document.createElementNS('http://www.w3.org/2000/svg', 'g')
+      );
+      radarWrapper.innerHTML = '';
+    
+      const data = [];
+      const rowCols = combResults.split(',');
+      for (let i = 4; i < 11; i++) {
+        data.push({ axis: i - 3, value: parseFloat(rowCols[i]) });
+      }
+    
+      const points = data
+        .map(({ axis, value }) => {
+          const { x, y } = axisValueToCartesian(axis, value);
+          return `${x},${y}`;
+        })
+        .join(' ');
+    
+      const polyline = document.createElementNS(
+        'http://www.w3.org/2000/svg',
+        'polyline'
+      );
+      polyline.setAttribute('class', `radarLines ${color}`);
+      polyline.setAttribute('points', `${points} ${points.split(' ')[0]}`);
+      polyline.setAttribute('stroke-width', '3');
+      polyline.setAttribute('fill', 'none');
+      radarWrapper.appendChild(polyline);
+    
+      const polygon = document.createElementNS(
+        'http://www.w3.org/2000/svg',
+        'polygon'
+      );
+      polygon.setAttribute('class', `radarPolygon ${color}`);
+      polygon.setAttribute('points', points);
+      polygon.style.fillOpacity = '0.2';
+      radarWrapper.appendChild(polygon);
+    
+      data.forEach(({ axis, value }) => {
+        const { x, y } = axisValueToCartesian(axis, value);
+        const circle = document.createElementNS(
+          'http://www.w3.org/2000/svg',
+          'circle'
+        );
+        circle.setAttribute('class', `radarCircle ${color}`);
+        circle.style.fillOpacity = '0.86';
+        circle.setAttribute('r', '7.6');
+        circle.setAttribute('cx', x);
+        circle.setAttribute('cy', y);
+        radarWrapper.appendChild(circle);
+      });
+    }
+      
+      const teamNames = new Set();
+                          
+                          
+                          function createTableForTeam1() {
+                            const searchInput = document.getElementById('searchInput1');
+                            const searchButton = document.getElementById('searchButton1');
+                            const resultsTable = document.getElementById('resultsTable');
+                            const teamNamesList = document.createElement('ul');
+                            teamNamesList.style.fontFamily = 'Arial, sans-serif';
+                            teamNamesList.style.listStyleType = 'none';
+                            teamNamesList.style.paddingLeft = '9px';
+                            resultsTable.appendChild(teamNamesList);
+                            let searchCounter = 0;
+                          
+                            searchButton.addEventListener('click', function () {
+                              const searchQuery = searchInput.value;
+                              const results = search(searchQuery);
+                          
+                              // Reset the toggle state before performing a new search
+                              const radarPolygons = document.querySelectorAll('.radarPolygon');
+                              radarPolygons.forEach(polygon => {
+                                polygon.style.fill = '';
+                              });
+                          
+                              if (results) {
+                                const teamId = parseInt(results[0]);
+                                const teamName =
+                                  results[1] + ' (' + results[2] + ', ' + results[3] + ') - ' + results[11] + ' min';
+                                const color = colorClasses[searchCounter % colorClasses.length];
+                          
+                                createTable(teamName, teamId - 1, color);
+                          
+                                searchCounter++;
+                              }
+                            });
+                          }
+                          
+                          createTableForTeam1();
+                          
+                          
+                          
+                          const similarPlayersContainer = document.createElement("div");
+                          similarPlayersContainer.id = "similarPlayersContainer";
+                          const insertHere = document.getElementById("insertHere");
+                          insertHere.appendChild(similarPlayersContainer);
+                          
+                          let colorIndex = 0; // Initialize color index
+                          
+                          searchButton1.addEventListener("click", function() {
+                            const searchQuery = searchInput.value;
+                            const searchedPlayer = search(searchQuery);
+                            if (searchedPlayer.length > 0) {
+                              const searchedPlayerData = searchedPlayer[0];
+                              updateSimilarPlayers(searchedPlayerData);
+                              colorIndex++;
+                          }
+                          searchInput.value = '';
+                          updateMatchingNames();
+                      });
+              
+              function updateSimilarPlayers(playerData) {
+              const searchedPlayerIndex = parseInt(playerData[0]) - 1;
+              const similarPlayers = [];
+              const playerRows = document.querySelectorAll('.metrics-table tr:not(:first-child)');
+              
+              let playerColor = '';
+              
+              if (playerRows.length > 0) {
+                  const lastPlayerRow = playerRows[playerRows.length - 1];
+                  const lastPlayerCell = lastPlayerRow.querySelector('td:first-child');
+                  const classes = Array.from(lastPlayerCell.classList);
+                  playerColor = classes.find(cls => cls.startsWith('result-color-'));
+              }
+              
+              // Store current selector values before clearing container
+              const existingSelectors = similarPlayersContainer.querySelector('.custom-select');
+              const previousLeague = existingSelectors ? existingSelectors.value : 'all';
+              const previousSeason = existingSelectors ? similarPlayersContainer.querySelectorAll('.custom-select')[1].value : 'all';
+              const previousAge = existingSelectors ? similarPlayersContainer.querySelectorAll('.custom-select')[2].value : 'all';
+              
+              // Clear container
+              similarPlayersContainer.innerHTML = '';
+              
+              const similarPlayerTable = document.createElement("table");
+              similarPlayerTable.classList.add("similar-table");
+              
+              const headerRow = document.createElement("tr");
+              const headerCell = document.createElement("th");
+              headerCell.setAttribute("colspan", "5");
+              
+              // Create container for header content
+              const headerContent = document.createElement("div");
+              headerContent.style.position = "relative";
+              headerContent.style.display = "flex";
+              headerContent.style.flexDirection = "column";
+              headerContent.style.gap = "8px";
+              
+              // Add title
+              const title = document.createElement("span");
+                title.classList.add("similar-text");
+              title.innerHTML = `<span data-i18n="similar.to">Similar data to</span><span> ${playerData[1]}</span>`;
+              title.classList.add(playerColor || colorClasses[colorIndex % colorClasses.length]);
+              
+              // Create selector container
+              const selectorContainer = document.createElement("div");
+              selectorContainer.style.display = "flex";
+              selectorContainer.style.gap = "8px";
+              selectorContainer.style.justifyContent = "center";
+              
+              // Create custom league selector
+              const leagueSelectContainer = document.createElement("div");
+              leagueSelectContainer.className = "custom-select-container";
+              
+              const leagueSelectTrigger = document.createElement("div");
+              leagueSelectTrigger.className = "custom-select-trigger";
+              
+              const leagueSelectSpan = document.createElement("span");
+              leagueSelectSpan.textContent = "All Leagues";
+              leagueSelectSpan.setAttribute("data-i18n", "league_all");
+              leagueSelectTrigger.appendChild(leagueSelectSpan);
+              
+              const leagueSelectOptions = document.createElement("div");
+              leagueSelectOptions.className = "custom-select-options";
+              leagueSelectOptions.style.display = "none";
+              
+              // Add league options
+              const leagueOptions = [
+                { value: "all", text: "All Leagues" },
+                { value: "top7", text: "Top 7 Leagues" },
+                { value: "outside", text: "Outside Top 7" }
+              ];
+              
+              // Hidden select for maintaining existing functionality
+              const leagueSelect = document.createElement("select");
+              leagueSelect.classList.add("select-league");
+              leagueSelect.style.display = "none";
+              
+              leagueOptions.forEach((option, index) => {
+                const customOption = document.createElement("div");
+                customOption.className = "custom-select-option";
+                if (index === 0) customOption.classList.add("selected");
+                customOption.setAttribute("data-value", option.value);
+                
+                const optionSpan = document.createElement("span");
+                optionSpan.textContent = option.text;
+                optionSpan.setAttribute("data-i18n", "league_" + option.value);
+                customOption.appendChild(optionSpan);
+                
+                // Add standard option to hidden select
+                const selectOption = document.createElement("option");
+                selectOption.value = option.value;
+                selectOption.textContent = option.text;
+                selectOption.setAttribute("data-i18n", "league_" + option.value);
+                if (index === 0) selectOption.selected = true;
+                leagueSelect.appendChild(selectOption);
+                
+                // Handle option click
+                customOption.addEventListener("click", function() {
+                  // Update selected option
+                  leagueSelectOptions.querySelectorAll(".custom-select-option").forEach(opt => 
+                    opt.classList.remove("selected")
+                  );
+                  customOption.classList.add("selected");
+                  
+                  // Update trigger text
+                  leagueSelectSpan.textContent = option.text;
+                  leagueSelectSpan.setAttribute("data-i18n", "league_" + option.value);
+                  translateElement(leagueSelectSpan, window.translations);                  
+                  // Update hidden select
+                  leagueSelect.value = option.value;
+                  const event = new Event("change");
+                  leagueSelect.dispatchEvent(event);
+                  
+                  // Close dropdown
+                  leagueSelectTrigger.classList.remove("open");
+                  leagueSelectOptions.style.display = "none";
+                });
+                
+                leagueSelectOptions.appendChild(customOption);
+              });
+              
+              // Toggle dropdown on trigger click
+              leagueSelectTrigger.addEventListener("click", function(e) {
+                e.stopPropagation();
+                
+                // Close other open dropdowns
+                document.querySelectorAll(".custom-select-trigger.open").forEach(trigger => {
+                  if (trigger !== leagueSelectTrigger) {
+                    trigger.classList.remove("open");
+                    trigger.nextElementSibling.style.display = "none";
+                  }
+                });
+                
+                // Toggle this dropdown
+                const isOpen = leagueSelectTrigger.classList.contains("open");
+                leagueSelectTrigger.classList.toggle("open");
+                leagueSelectOptions.style.display = isOpen ? "none" : "block";
+              });
+              
+              // Add elements to container
+              leagueSelectContainer.appendChild(leagueSelectTrigger);
+              leagueSelectContainer.appendChild(leagueSelectOptions);
+              leagueSelectContainer.appendChild(leagueSelect);
+              
+              // Create custom season selector 
+              const seasonSelectContainer = document.createElement("div");
+              seasonSelectContainer.className = "custom-select-container";
+              
+              const seasonSelectTrigger = document.createElement("div");
+              seasonSelectTrigger.className = "custom-select-trigger";
+              
+              const seasonSelectSpan = document.createElement("span");
+              seasonSelectSpan.textContent = "All Seasons";
+              seasonSelectSpan.setAttribute("data-i18n", "season_all");
+              seasonSelectTrigger.appendChild(seasonSelectSpan);
+              
+              const seasonSelectOptions = document.createElement("div");
+              seasonSelectOptions.className = "custom-select-options";
+              seasonSelectOptions.style.display = "none";
+              
+              // Add season options
+              const seasonOptions = [
+                { value: "all", text: "All Seasons" },
+                { value: "current", text: "Current Season" }
+              ];
+              
+              // Hidden select for maintaining existing functionality
+              const seasonSelect = document.createElement("select");
+              seasonSelect.classList.add("select-league");
+              seasonSelect.style.display = "none";
+              
+              seasonOptions.forEach((option, index) => {
+                const customOption = document.createElement("div");
+                customOption.className = "custom-select-option";
+                if (index === 0) customOption.classList.add("selected");
+                customOption.setAttribute("data-value", option.value);
+                
+                const optionSpan = document.createElement("span");
+                optionSpan.textContent = option.text;
+                optionSpan.setAttribute("data-i18n", "season_" + option.value);
+                customOption.appendChild(optionSpan);
+                
+                // Add standard option to hidden select
+                const selectOption = document.createElement("option");
+                selectOption.value = option.value;
+                selectOption.textContent = option.text;
+                selectOption.setAttribute("data-i18n", "season_" + option.value);
+                if (index === 0) selectOption.selected = true;
+                seasonSelect.appendChild(selectOption);
+                
+                // Handle option click
+                customOption.addEventListener("click", function() {
+                  // Update selected option
+                  seasonSelectOptions.querySelectorAll(".custom-select-option").forEach(opt => 
+                    opt.classList.remove("selected")
+                  );
+                  customOption.classList.add("selected");
+                  
+                  // Update trigger text
+                  seasonSelectSpan.textContent = option.text;
+                  seasonSelectSpan.setAttribute("data-i18n", "season_" + option.value);
+                  translateElement(seasonSelectSpan, window.translations);                  
+                  // Update hidden select
+                  seasonSelect.value = option.value;
+                  const event = new Event("change");
+                  seasonSelect.dispatchEvent(event);
+                  
+                  // Close dropdown
+                  seasonSelectTrigger.classList.remove("open");
+                  seasonSelectOptions.style.display = "none";
+                });
+                
+                seasonSelectOptions.appendChild(customOption);
+              });
+              
+              // Toggle dropdown on trigger click
+              seasonSelectTrigger.addEventListener("click", function(e) {
+                e.stopPropagation();
+                
+                // Close other open dropdowns
+                document.querySelectorAll(".custom-select-trigger.open").forEach(trigger => {
+                  if (trigger !== seasonSelectTrigger) {
+                    trigger.classList.remove("open");
+                    trigger.nextElementSibling.style.display = "none";
+                  }
+                });
+                
+                // Toggle this dropdown
+                const isOpen = seasonSelectTrigger.classList.contains("open");
+                seasonSelectTrigger.classList.toggle("open");
+                seasonSelectOptions.style.display = isOpen ? "none" : "block";
+              });
+              
+              // Add elements to container
+              seasonSelectContainer.appendChild(seasonSelectTrigger);
+              seasonSelectContainer.appendChild(seasonSelectOptions);
+              seasonSelectContainer.appendChild(seasonSelect);
+              
+              // Create custom age selector
+              const ageSelectContainer = document.createElement("div");
+              ageSelectContainer.className = "custom-select-container";
+              
+              const ageSelectTrigger = document.createElement("div");
+              ageSelectTrigger.className = "custom-select-trigger";
+              
+              const ageSelectSpan = document.createElement("span");
+              ageSelectSpan.textContent = "All Ages";
+              ageSelectSpan.setAttribute("data-i18n", "age_all");
+              ageSelectTrigger.appendChild(ageSelectSpan);
+              
+              const ageSelectOptions = document.createElement("div");
+              ageSelectOptions.className = "custom-select-options";
+              ageSelectOptions.style.display = "none";
+              
+              // Add age options
+              const ageOptions = [
+                { value: "all", text: "All Ages" },
+                { value: "u30", text: "Under 30" },
+                { value: "u25", text: "Under 25" },
+                { value: "u23", text: "Under 23" },
+                { value: "u21", text: "Under 21" }
+              ];
+              
+              // Hidden select for maintaining existing functionality
+              const ageSelect = document.createElement("select");
+              ageSelect.classList.add("select-league");
+              ageSelect.style.display = "none";
+              
+              ageOptions.forEach((option, index) => {
+                const customOption = document.createElement("div");
+                customOption.className = "custom-select-option";
+                if (index === 0) customOption.classList.add("selected");
+                customOption.setAttribute("data-value", option.value);
+                
+                const optionSpan = document.createElement("span");
+                optionSpan.textContent = option.text;
+                optionSpan.setAttribute("data-i18n", "age_" + option.value);
+                customOption.appendChild(optionSpan);
+                
+                // Add standard option to hidden select
+                const selectOption = document.createElement("option");
+                selectOption.value = option.value;
+                selectOption.textContent = option.text;
+                selectOption.setAttribute("data-i18n", "age_" + option.value);
+                if (index === 0) selectOption.selected = true;
+                ageSelect.appendChild(selectOption);
+                
+                // Handle option click
+                customOption.addEventListener("click", function() {
+                  // Update selected option
+                  ageSelectOptions.querySelectorAll(".custom-select-option").forEach(opt => 
+                    opt.classList.remove("selected")
+                  );
+                  customOption.classList.add("selected");
+                  
+                  // Update trigger text
+                  ageSelectSpan.textContent = option.text;
+                  ageSelectSpan.setAttribute("data-i18n", "age_" + option.value);
+                  translateElement(ageSelectSpan, window.translations);              
+                  // Update hidden select
+                  ageSelect.value = option.value;
+                  const event = new Event("change");
+                  ageSelect.dispatchEvent(event);
+                  
+                  // Close dropdown
+                  ageSelectTrigger.classList.remove("open");
+                  ageSelectOptions.style.display = "none";
+                });
+                
+                ageSelectOptions.appendChild(customOption);
+              });
+              
+              // Toggle dropdown on trigger click
+              ageSelectTrigger.addEventListener("click", function(e) {
+                e.stopPropagation();
+                
+                // Close other open dropdowns
+                document.querySelectorAll(".custom-select-trigger.open").forEach(trigger => {
+                  if (trigger !== ageSelectTrigger) {
+                    trigger.classList.remove("open");
+                    trigger.nextElementSibling.style.display = "none";
+                  }
+                });
+                
+                // Toggle this dropdown
+                const isOpen = ageSelectTrigger.classList.contains("open");
+                ageSelectTrigger.classList.toggle("open");
+                ageSelectOptions.style.display = isOpen ? "none" : "block";
+              });
+              
+              // Add elements to container
+              ageSelectContainer.appendChild(ageSelectTrigger);
+              ageSelectContainer.appendChild(ageSelectOptions);
+              ageSelectContainer.appendChild(ageSelect);
+              
+              // Add all custom select containers to selector container
+              selectorContainer.appendChild(leagueSelectContainer);
+              selectorContainer.appendChild(seasonSelectContainer);
+              selectorContainer.appendChild(ageSelectContainer);
+              
+              // Close dropdowns when clicking outside
+              document.addEventListener('click', function() {
+                document.querySelectorAll('.custom-select-trigger.open').forEach(trigger => {
+                  trigger.classList.remove('open');
+                  trigger.nextElementSibling.style.display = 'none';
+                });
+              });
+              
+              // Add everything to header content
+              headerContent.appendChild(title);
+              headerContent.appendChild(selectorContainer);
+              headerCell.appendChild(headerContent);
+              headerRow.appendChild(headerCell);
+              similarPlayerTable.appendChild(headerRow);
+              
+              // Update event listeners
+              leagueSelect.addEventListener('change', function() {
+                  const selectedLeague = this.value;
+                  const selectedSeason = seasonSelect.value;
+                  const selectedAge = ageSelect.value;
+                  updateSimilarPlayersTable(playerData, selectedLeague, selectedSeason, selectedAge, similarPlayerTable);
+              });
+              
+              seasonSelect.addEventListener('change', function() {
+                  const selectedLeague = leagueSelect.value;
+                  const selectedSeason = this.value;
+                  const selectedAge = ageSelect.value;
+                  updateSimilarPlayersTable(playerData, selectedLeague, selectedSeason, selectedAge, similarPlayerTable);
+              });
+              
+              ageSelect.addEventListener('change', function() {
+                  const selectedLeague = leagueSelect.value;
+                  const selectedSeason = seasonSelect.value;
+                  const selectedAge = this.value;
+                  updateSimilarPlayersTable(playerData, selectedLeague, selectedSeason, selectedAge, similarPlayerTable);
+              });
+              
+              // Initial table population with previous values
+              updateSimilarPlayersTable(playerData, previousLeague, previousSeason, previousAge, similarPlayerTable);
+              similarPlayersContainer.appendChild(similarPlayerTable);
+              }
+              
+              // Add these global variables after data loading
+              let playerLookup = {
+                  top7: new Set(),
+                  outside: new Set(),
+  
+              };
+              
+              // Add this after all data is loaded (in the Promise.all chain)
+              function buildPlayerLookup() {
+                  // Build lookup tables for faster searching using both name and team
+                  try {
+                      // Clear existing lookup sets
+                      playerLookup.top7.clear();
+                      playerLookup.outside.clear();
+                      
+                      // Process top 7 leagues data
+                      const top7Data = [].concat(
+                          Array.isArray(allData1) ? allData1 : [],
+                          Array.isArray(allData3) ? allData3 : [],
+                          Array.isArray(allData5) ? allData5 : [],
+
+Array.isArray(allData7) ? allData7 : [],
+
+                      );
+                      
+                      // Process outside top 7 leagues data
+                      const outsideData = [].concat(
+                          Array.isArray(allData2) ? allData2 : [],
+                          Array.isArray(allData4) ? allData4 : [],
+                          Array.isArray(allData6) ? allData6 : [],
+
+Array.isArray(allData8) ? allData8 : []
+                      );
+                      
+                      top7Data.forEach(p => {
+                          if (p && p[1] && p[2]) {
+                              playerLookup.top7.add(p[1] + "|" + p[2]);
+                          }
+                      });
+                      
+                      outsideData.forEach(p => {
+                          if (p && p[1] && p[2]) {
+                              playerLookup.outside.add(p[1] + "|" + p[2]);
+                          }
+                      });
+                      
+                  } catch (error) {
+                  }
+              }
+              
+              function updateSimilarPlayersTable(playerData, selectedLeague, selectedSeason, selectedAge, table) {
+                  // Clear existing rows except header
+                  while (table.rows.length > 1) {
+                      table.deleteRow(1);
+                  }
+              
+                  const searchedPlayerIndex = parseInt(playerData[0]) - 1;
+                  const similarPlayers = [];
+                  
+                  // Process all players
+                  dataArray.forEach((player, index) => {
+                      if (index === searchedPlayerIndex) return;
+              
+                                            const playerName = player[1];
+                      const playerTeam = player[2];
+                      const playerAge = parseInt(player[3]);
+                      const seasonYear = player[1].split(' ').pop(); // Extract year from name
+              
+                      // Apply filters
+                      if (!passesFilters(playerName, playerTeam, playerAge, seasonYear, selectedLeague, selectedSeason, selectedAge)) {
+                          return;
+                      }
+              
+                      const difference = calculateEuclideanDifference(playerData, player);
+                      similarPlayers.push({ index, difference });
+                  });
+              
+                  // Sort and get top 5
+                  const mostSimilarPlayers = similarPlayers
+                      .sort((a, b) => a.difference - b.difference)
+                      .slice(0, 5);
+              
+                  // Create and append the row
+                  const similarPlayerRow = document.createElement("tr");
+                  similarPlayerRow.innerHTML = mostSimilarPlayers
+                      .map(({ index }) => {
+                          const player = dataArray[index];
+                          const playerName = player[1];
+                          const playerTeam = player[2]; 
+                          const playerAge = player[3];
+                          // Show player name with team in a smaller font
+                          return `<td style="font-size: 10.8px; cursor: pointer;">
+                                  <div>${playerName}</div>
+                                  <div style="font-size: 9px; color: #777;">${playerTeam}</div>
+                              </td>`;
+                      })
+                      .join('');
+              
+                  // Add click handlers
+                  similarPlayerRow.querySelectorAll('td').forEach((cell, cellIndex) => {
+                      cell.addEventListener("click", () => {
+                          const player = dataArray[mostSimilarPlayers[cellIndex].index];
+                          const playerName = player[1];
+                          const playerTeam = player[2];
+                          const playerAge = player[3];
+                          // Set the full player info including team and age to ensure the correct player is found
+                          document.getElementById('searchInput1').value = playerName + "," + playerAge + "," + playerTeam;
+                          document.getElementById('searchButton1').click();
+                      });
+                  });;
+              
+                  table.appendChild(similarPlayerRow);
+              }
+              
+              function passesFilters(playerName, playerTeam, playerAge, seasonYear, selectedLeague, selectedSeason, selectedAge) {
+                  try {
+                      if (selectedLeague !== 'all' && playerName && playerTeam) {
+                          const playerKey = playerName + "|" + playerTeam; // Create key with name and team
+                          const isTop7 = playerLookup.top7.has(playerKey);
+                          const isOutside = playerLookup.outside.has(playerKey);
+                          
+                         
+                              if (selectedLeague === 'top7' && !isTop7) return false;
+                              if (selectedLeague === 'outside' && !isOutside) return false;
+                          
+                      }
+                  
+                      if (
+                          selectedSeason === 'current' && playerName &&
+                          !playerName.includes('25/26') && 
+                          !playerName.includes('2026')
+                      ) {
+                          return false;
+                      }
+                  
+                      // Age filter
+                      if (playerAge && !isNaN(playerAge)) {
+                          switch(selectedAge) {
+                              case 'u30': if (playerAge >= 30) return false; break;
+                              case 'u25': if (playerAge >= 25) return false; break;
+                              case 'u23': if (playerAge >= 23) return false; break;
+                              case 'u21': if (playerAge >= 21) return false; break;
+                          }
+                      }
+                  
+                      return true;
+                  } catch (error) {
+                      return true;
+                  }
+              }
+              
+              // Make sure to call buildPlayerLookup after data loading
+              Promise.all([fetchPromises1, fetchPromises2, fetchPromises3, fetchPromises4, fetchPromises5, fetchPromises6, fetchPromises7, fetchPromises8])
+                  .then(() => {
+                      buildPlayerLookup();
+                  });
+              
+              })})})})})})})})
+                          .catch(error => {
+                              console.error('Error fetching or processing data:', error);
+                          });
